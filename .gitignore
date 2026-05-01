@@ -1,0 +1,22 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# CAP
+.gen/
+dist/
+target/
+
+# UI5
+resources/
+webapp/resources/
+webapp/test-resources/
+
+# Env & secrets
+.env
+default-env.json
+
+# BAS / VS Code
+.vscode/
+.idea/
+.DS_Store

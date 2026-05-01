@@ -1,0 +1,19 @@
+# POST http://localhost:4004/odata/v4/otp/sendOTP
+# Content-Type: application/json
+
+# {
+#   "email": "user@test.com",
+#   "mobile": "9876543212"
+# }
+
+POST http://localhost:4004/odata/v4/otp/verifyOTP
+Content-Type: application/json
+
+{"email":"user@test.com","otp":"954086"}
+
+POST http://localhost:4004/odata/v4/otp/submitOnboarding
+Content-Type: application/json
+
+{
+  "email": "user@test.com"
+}
