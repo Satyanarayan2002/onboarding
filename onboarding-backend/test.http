@@ -1,19 +1,176 @@
-# POST http://localhost:4004/odata/v4/otp/sendOTP
+# # POST http://localhost:4004/odata/v4/otp/sendOTP
+# # Content-Type: application/json
+
+# # {
+# #   "email": "user@test.com",
+# #   "mobile": "9876543212"
+# # }
+
+# POST http://localhost:4004/odata/v4/otp/verifyOTP
+# Content-Type: application/json
+
+# {"email":"user@test.com","otp":"954086"}
+
+# POST http://localhost:4004/odata/v4/otp/submitOnboarding
 # Content-Type: application/json
 
 # {
-#   "email": "user@test.com",
-#   "mobile": "9876543212"
-# }
+#   "email": "user@test.com"
+#}
+#############################################################################
+#############################################################################
+### ONBOARDING BACKEND – FULL API TEST FLOW
+#############################################################################
 
-POST http://localhost:4004/odata/v4/otp/verifyOTP
-Content-Type: application/json
+@baseUrl = http://localhost:4004/odata/v4/otp
 
-{"email":"user@test.com","otp":"954086"}
-
-POST http://localhost:4004/odata/v4/otp/submitOnboarding
+#############################################################################
+### 1. CREATE CANDIDATE
+#############################################################################
+POST {{baseUrl}}/Candidates
 Content-Type: application/json
 
 {
-  "email": "user@test.com"
+  "loginId": "candidate4",
+  "candidateCode": "CAND-004",
+  "firstName": "Satya",
+  "lastName": "Pradhan",
+  "gender": "Male"
 }
+
+# ✅ Copy the returned "ID" and paste it as CANDIDATE_ID below
+#############################################################################
+
+
+#############################################################################
+### 2. SEND OTP (Candidate Flow)
+#############################################################################
+POST {{baseUrl}}/sendOTP
+Content-Type: application/json
+
+{
+  "candidateID": "f92e676a-9888-4a6b-815d-f9a606a1a9b5",
+  "channel": "EMAIL",
+  "destination": "sagarsatyan251@gmail.com"
+
+}
+
+# ✅ OTP will be printed in terminal logs
+#############################################################################
+
+
+#############################################################################
+### 3. VERIFY OTP
+#############################################################################
+POST {{baseUrl}}/verifyOTP
+Content-Type: application/json
+
+{
+  "candidateID": "f92e676a-9888-4a6b-815d-f9a606a1a9b5",
+  "otp": "732815"
+}
+
+#############################################################################
+
+
+#############################################################################
+### 4. SUBMIT ONBOARDING
+#############################################################################
+POST {{baseUrl}}/submitOnboarding
+Content-Type: application/json
+
+{
+  "candidateID": "f92e676a-9888-4a6b-815d-f9a606a1a9b5"
+}
+
+#############################################################################
+
+
+#############################################################################
+### 5. UPLOAD DOCUMENT
+#############################################################################
+POST {{baseUrl}}/uploadDocument
+Content-Type: application/json
+
+{
+  "candidateID": "f92e676a-9888-4a6b-815d-f9a606a1a9b5",
+  "documentType": "PAN",
+  "fileName": "PanCard2.jpg",
+  "mimeType": "image/jpeg",
+  "fileSize": 20480,
+  "filePath": "uploads/1777909153828-431102413.jpg"
+}
+# ✅ Copy returned document "ID" → DOCUMENT_ID
+#############################################################################
+
+
+#############################################################################
+### 6. TRIGGER AI VERIFICATION
+#############################################################################
+POST {{baseUrl}}/triggerAIVerification
+Content-Type: application/json
+
+{
+  "documentID": "70fd0686-e03c-4a45-8b79-fab3edcb5a54"
+}
+
+#############################################################################
+
+
+#############################################################################
+### 7. HR – MANUAL APPROVE DOCUMENT
+#############################################################################
+POST {{baseUrl}}/manualApproveDocument
+Content-Type: application/json
+
+{
+  "documentID": "DOCUMENT_ID",
+  "remarks": "Verified manually by HR"
+}
+
+#############################################################################
+
+
+#############################################################################
+### 8. HR – RESTART ONBOARDING
+#############################################################################
+POST {{baseUrl}}/restartOnboarding
+Content-Type: application/json
+
+{
+  "candidateID": "CANDIDATE_ID",
+  "reason": "Incorrect document uploaded"
+}
+
+#############################################################################
+
+
+#############################################################################
+### 9. HR – CANCEL ONBOARDING
+#############################################################################
+POST {{baseUrl}}/cancelOnboarding
+Content-Type: application/json
+
+{
+  "candidateID": "CANDIDATE_ID",
+  "reason": "Policy violation"
+}
+
+#############################################################################
+
+
+#############################################################################
+### 10. READ APIs – VERIFY DATA
+#############################################################################
+
+### Get Candidates
+GET {{baseUrl}}/Candidates
+
+### Get Candidate Documents
+GET {{baseUrl}}/CandidateDocuments
+
+### Get Audit Logs
+GET {{baseUrl}}/AuditLogs
+
+### Get Exceptions
+GET {{baseUrl}}/Exceptions
