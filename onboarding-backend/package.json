@@ -5,7 +5,10 @@
   "dependencies": {
     "@sap/cds": "^9",
     "dotenv": "^17.4.2",
+    "multer": "^2.1.1",
     "nodemailer": "^8.0.7",
+    "sharp": "^0.34.5",
+    "tesseract.js": "^7.0.0",
     "twilio": "^6.0.0"
   },
   "devDependencies": {
@@ -20,6 +23,18 @@
         "kind": "sqlite",
         "credentials": {
           "database": "db.sqlite"
+        }
+      },
+      "auth": {
+        "kind": "mocked"
+      }
+    },
+    "auth": {
+      "mocked": {
+        "users": {
+          "anyone": {
+            "roles": []
+          }
         }
       }
     }

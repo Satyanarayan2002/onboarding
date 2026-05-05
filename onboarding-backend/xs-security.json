@@ -1,0 +1,44 @@
+{
+  "xsappname": "onboarding-backend",
+  "tenant-mode": "dedicated",
+  "description": "XSUAA security configuration for onboarding CAP backend",
+
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.Candidate",
+      "description": "Candidate access to onboarding services"
+    },
+    {
+      "name": "$XSAPPNAME.HR",
+      "description": "HR access to onboarding services"
+    },
+    {
+      "name": "$XSAPPNAME.Admin",
+      "description": "Admin access to onboarding services"
+    }
+  ],
+
+  "role-templates": [
+    {
+      "name": "CandidateRole",
+      "description": "Role for onboarding candidates",
+      "scope-references": [
+        "$XSAPPNAME.Candidate"
+      ]
+    },
+    {
+      "name": "HRRole",
+      "description": "Role for HR users",
+      "scope-references": [
+        "$XSAPPNAME.HR"
+      ]
+    },
+    {
+      "name": "AdminRole",
+      "description": "Administrative role",
+      "scope-references": [
+        "$XSAPPNAME.Admin"
+      ]
+    }
+  ]
+}
