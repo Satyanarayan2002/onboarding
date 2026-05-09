@@ -1,0 +1,440 @@
+<mvc:View
+    controllerName="com.wipro.project1`.controller.SubmissionSuccess"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout">
+ 
+    <Page
+        showHeader="false"
+        class="successPage">
+ 
+        <content>
+ 
+            <!-- ================================================= -->
+<!-- GLOBAL HEADER -->
+<!-- ================================================= -->
+ 
+            <VBox class="shellHeaderWrapper">
+ 
+                <HBox
+                    justifyContent="SpaceBetween"
+                    alignItems="Center"
+                    class="shellHeader">
+ 
+                    <!-- LEFT -->
+ 
+                    <HBox alignItems="Center">
+ 
+                        <Image
+                            src="img/sap-logo.png"
+                            width="54px"/>
+ 
+                        <Title
+                            text="Candidate Onboarding"
+                            level="H4"
+                            class="shellTitle"/>
+ 
+                        <Button
+                            icon="sap-icon://slim-arrow-down"
+                            type="Transparent"/>
+ 
+                    </HBox>
+ 
+                    <!-- RIGHT -->
+ 
+                    <HBox>
+ 
+                        <Button
+                            icon="sap-icon://sys-help"
+                            type="Transparent"/>
+ 
+                        <Button
+                            icon="sap-icon://employee"
+                            type="Transparent"/>
+ 
+                        <Button
+                            icon="sap-icon://slim-arrow-down"
+                            type="Transparent"/>
+ 
+                    </HBox>
+ 
+                </HBox>
+ 
+            </VBox>
+ 
+            <!-- ================================================= -->
+<!-- PAGE CONTENT -->
+<!-- ================================================= -->
+ 
+            <VBox class="pageWrapper">
+ 
+                <!-- PAGE HEADER -->
+ 
+                <HBox
+                    justifyContent="SpaceBetween"
+                    class="pageHeaderSection">
+ 
+                    <!-- LEFT -->
+ 
+                    <VBox width="55%">
+ 
+                        <Title
+                            text="Onboarding Submission Successful"
+                            level="H1"
+                            class="mainTitle"/>
+ 
+                        <Text
+                            text="Thank you for completing your onboarding verification."
+                            class="subTitle"/>
+ 
+                    </VBox>
+ 
+                    <!-- WIZARD -->
+ 
+                    <VBox alignItems="Center">
+ 
+                        <Title
+                            text="Step 4 of 4 – Completed"
+                            level="H5"
+                            class="wizardTitleCompleted"/>
+ 
+                        <HBox
+                            alignItems="Center"
+                            class="wizardWrapper">
+ 
+                            <!-- STEP 1 -->
+ 
+                            <VBox alignItems="Center">
+ 
+                                <Avatar
+                                    initials="✓"
+                                    class="wizardCompleted"/>
+ 
+                                <Text
+                                    text="Welcome"
+                                    class="wizardText"/>
+ 
+                            </VBox>
+ 
+                            <HBox class="wizardLine"/>
+ 
+                            <!-- STEP 2 -->
+ 
+                            <VBox alignItems="Center">
+ 
+                                <Avatar
+                                    initials="✓"
+                                    class="wizardCompleted"/>
+ 
+                                <Text
+                                    text="Personal Details"
+                                    class="wizardText"/>
+ 
+                            </VBox>
+ 
+                            <HBox class="wizardLine"/>
+ 
+                            <!-- STEP 3 -->
+ 
+                            <VBox alignItems="Center">
+ 
+                                <Avatar
+                                    initials="✓"
+                                    class="wizardCompleted"/>
+ 
+                                <Text
+                                    text="Verification"
+                                    class="wizardText"/>
+ 
+                            </VBox>
+ 
+                            <HBox class="wizardLine"/>
+ 
+                            <!-- STEP 4 -->
+ 
+                            <VBox alignItems="Center">
+ 
+                                <Avatar
+                                    initials="✓"
+                                    class="wizardFinalCompleted"/>
+ 
+                                <Text
+                                    text="Completed"
+                                    class="wizardTextActive"/>
+ 
+                            </VBox>
+ 
+                        </HBox>
+ 
+                    </VBox>
+ 
+                </HBox>
+ 
+                <!-- ================================================= -->
+<!-- SUCCESS MESSAGE -->
+<!-- ================================================= -->
+ 
+                <VBox
+                    alignItems="Center"
+                    class="successMessageSection">
+ 
+                    <Avatar
+                        displayShape="Circle"
+                        initials="✓"
+                        class="successAvatar"/>
+ 
+                    <Title
+                        text="Your onboarding information has been successfully verified and submitted."
+                        level="H1"
+                        class="successTitle"/>
+ 
+                    <Text
+                        text="No further action is required from you at this time."
+                        class="successSubTitle"/>
+ 
+                </VBox>
+ 
+                <!-- ================================================= -->
+<!-- SUMMARY CARDS -->
+<!-- ================================================= -->
+ 
+                <HBox
+                    justifyContent="SpaceBetween"
+                    class="summaryCardsWrapper">
+ 
+                    <!-- PERSONAL -->
+ 
+                    <VBox class="summaryCard">
+ 
+                        <HBox alignItems="Center">
+ 
+                            <core:Icon
+                                src="sap-icon://employee"
+                                class="cardIcon"/>
+ 
+                            <Title
+                                text="Personal Information"
+                                level="H4"
+                                class="cardTitle"/>
+ 
+                        </HBox>
+ 
+                        <VBox class="summaryRow">
+<Text text="First Name" class="summaryLabel"/>
+<Text text="John" class="summaryValue"/>
+</VBox>
+ 
+                        <VBox class="summaryRow">
+<Text text="Last Name" class="summaryLabel"/>
+<Text text="Doe" class="summaryValue"/>
+</VBox>
+ 
+                        <VBox class="summaryRow">
+<Text text="Date of Birth" class="summaryLabel"/>
+<Text text="15 Mar 1990" class="summaryValue"/>
+</VBox>
+ 
+                        <VBox class="summaryRow">
+<Text text="Nationality" class="summaryLabel"/>
+<Text text="Indian" class="summaryValue"/>
+</VBox>
+ 
+                    </VBox>
+ 
+                    <!-- CONTACT -->
+ 
+                    <VBox class="summaryCard">
+ 
+                        <HBox alignItems="Center">
+ 
+                            <core:Icon
+                                src="sap-icon://email"
+                                class="cardIcon"/>
+ 
+                            <Title
+                                text="Contact Information"
+                                level="H4"
+                                class="cardTitle"/>
+ 
+                        </HBox>
+ 
+                        <HBox
+                            justifyContent="SpaceBetween"
+                            class="verifiedRow">
+ 
+                            <VBox>
+ 
+                                <Text
+                                    text="Email Address"
+                                    class="summaryLabel"/>
+ 
+                                <Text
+                                    text="john.doe@email.com"
+                                    class="summaryValue"/>
+ 
+                            </VBox>
+ 
+                            <ObjectStatus
+                                text="Verified"
+                                state="Success"
+                                icon="sap-icon://status-positive"/>
+ 
+                        </HBox>
+ 
+                        <VBox class="summaryRow">
+ 
+                            <Text
+                                text="Mobile Number"
+                                class="summaryLabel"/>
+ 
+                            <Text
+                                text="+91 98765 43210"
+                                class="summaryValue"/>
+ 
+                        </VBox>
+ 
+                    </VBox>
+ 
+                    <!-- DOCUMENT -->
+ 
+                    <VBox class="summaryCard">
+ 
+                        <HBox alignItems="Center">
+ 
+                            <core:Icon
+                                src="sap-icon://document-text"
+                                class="cardIcon"/>
+ 
+                            <Title
+                                text="Document Verification"
+                                level="H4"
+                                class="cardTitle"/>
+ 
+                        </HBox>
+ 
+                        <VBox class="summaryRow">
+<Text text="Document Type" class="summaryLabel"/>
+<Text text="Passport" class="summaryValue"/>
+</VBox>
+ 
+                        <VBox class="summaryRow">
+<Text text="Document Number" class="summaryLabel"/>
+<Text text="P1234567" class="summaryValue"/>
+</VBox>
+ 
+                        <HBox
+                            justifyContent="SpaceBetween"
+                            class="verifiedRow">
+ 
+                            <VBox>
+ 
+                                <Text
+                                    text="Document Status"
+                                    class="summaryLabel"/>
+ 
+                                <Text
+                                    text="Verified"
+                                    class="summaryValue"/>
+ 
+                            </VBox>
+ 
+                            <ObjectStatus
+                                text="Verified"
+                                state="Success"
+                                icon="sap-icon://status-positive"/>
+ 
+                        </HBox>
+ 
+                        <VBox class="summaryRow">
+ 
+                            <Text
+                                text="Verified On"
+                                class="summaryLabel"/>
+ 
+                            <Text
+                                text="20 May 2025, 10:24 AM"
+                                class="summaryValue"/>
+ 
+                        </VBox>
+ 
+                    </VBox>
+ 
+                </HBox>
+ 
+                <!-- ================================================= -->
+<!-- WHAT HAPPENS NEXT -->
+<!-- ================================================= -->
+ 
+                <HBox class="nextStepsPanel">
+ 
+                    <core:Icon
+                        src="sap-icon://message-information"
+                        class="nextStepIcon"/>
+ 
+                    <VBox>
+ 
+                        <Title
+                            text="What happens next?"
+                            level="H3"
+                            class="nextStepTitle"/>
+ 
+                        <Text
+                            text="• Your verified details have been forwarded to SuccessFactors."
+                            class="nextStepText"/>
+ 
+                        <Text
+                            text="• The official onboarding process will continue there."
+                            class="nextStepText"/>
+ 
+                        <Text
+                            text="• You will receive further communication from HR or SuccessFactors regarding next steps."
+                            class="nextStepText"/>
+ 
+                    </VBox>
+ 
+                </HBox>
+ 
+                <!-- ================================================= -->
+<!-- EMAIL CONFIRMATION -->
+<!-- ================================================= -->
+ 
+                <HBox
+                    justifyContent="Center"
+                    alignItems="Center"
+                    class="confirmationBar">
+ 
+                    <core:Icon
+                        src="sap-icon://shield"
+                        class="confirmationIcon"/>
+ 
+                    <Text
+                        text="A confirmation email has been sent to john.doe@email.com with your submission details."
+                        class="confirmationText"/>
+ 
+                </HBox>
+ 
+                <!-- ================================================= -->
+<!-- ACTION BUTTON -->
+<!-- ================================================= -->
+ 
+                <HBox
+                    justifyContent="End"
+                    class="buttonSection">
+ 
+                    <Button
+                        text="Close"
+                        icon="sap-icon://navigation-right-arrow"
+                        type="Emphasized"
+                        press=".onClose"
+                        class="closeButton"/>
+ 
+                </HBox>
+ 
+            </VBox>
+ 
+        </content>
+ 
+    </Page>
+ 
+</mvc:View>

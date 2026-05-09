@@ -4,7 +4,7 @@ sap.ui.define([
 ], function (Controller, MessageToast) {
     "use strict";
 
-    return Controller.extend("com.wipro.project1.controller.View1", {
+    return Controller.extend("com.wipro.project1.controller.Verification", {
 
         async onSendOtp() {
             const oModel = this.getView().getModel("onb");
@@ -78,6 +78,9 @@ sap.ui.define([
             const file = oEvent.getParameter("files")[0];
             this.getView().getModel("onb").setProperty("/document", file);
             MessageToast.show("Document uploaded");
+        },
+        onEdit: function () {
+            MessageToast.show("Edit Mode Enabled");
         }
 
     });

@@ -1,0 +1,484 @@
+<!-- <mvc:View
+    controllerName="com.wipro.project1.controller.Verification"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:u="sap.ui.unified">
+
+    <Page
+        id="page"
+        title="Loreal Candidate Onboarding">
+
+        <content>
+
+            <form:SimpleForm
+                id="onboardingForm"
+                editable="true"
+                layout="ResponsiveGridLayout"
+                labelSpanXL="3"
+                labelSpanL="3"
+                labelSpanM="4"
+                labelSpanS="12">
+
+                <Label text="First Name"/>
+                <Input
+                    value="{onb>/firstName}"
+                    required="true"/>
+
+                <Label text="Last Name"/>
+                <Input
+                    value="{onb>/lastName}"
+                    required="true"/>
+
+                <Label text="Email Address"/>
+                <Input
+                    value="{onb>/email}"
+                    type="Email"
+                    required="true"/>
+
+                <Label text="Mobile Number"/>
+                <Input
+                    value="{onb>/mobile}"
+                    type="Tel"
+                    required="true"/>
+
+                <Label text="OTP Verification"/>
+
+                <Button
+                    text="Send OTP"
+                    type="Default"
+                    press=".onSendOtp"
+                    enabled="true"/>
+
+                <Input
+                    placeholder="Enter OTP"
+                    value="{onb>/otp}"
+                    visible="{onb>/otpSent}"
+                    type="Number"
+                    maxLength="6"/>
+
+                <Button
+                    text="Verify OTP"
+                    type="Emphasized"
+                    press=".onVerifyOtp"
+                    visible="{onb>/otpSent}"/>
+
+                <Text
+                    text="OTP successfully verified"
+                    visible="{onb>/otpVerified}"
+                    class="sapUiSmallMarginTop"
+                    wrapping="true"/>
+
+                <Label text="Upload National ID"/>
+                <u:FileUploader
+                    id="fileUploader"
+                    width="100%"
+                    buttonText="Choose File"
+                    fileType="jpg,png,pdf"
+                    change=".onFileUpload"/>
+
+                <Label text=""/>
+
+                <Button
+                    text="Submit Onboarding"
+                    type="Accept"
+                    press=".onSubmit"
+                    enabled="{onb>/otpVerified}"/>
+
+            </form:SimpleForm>
+
+        </content>
+
+    </Page>
+
+</mvc:View> -->
+
+
+<mvc:View
+    controllerName="com.wipro.project1.controller.Verification"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.f"
+    xmlns:l="sap.ui.layout"
+    xmlns:form="sap.ui.layout.form">
+ 
+    <Page
+        id="verificationPage"
+        showHeader="false"
+        class="verificationPage">
+ 
+        <content>
+ 
+            <!-- ========================================= -->
+<!-- GLOBAL HEADER -->
+<!-- ========================================= -->
+ 
+            <VBox class="topShellHeader">
+ 
+                <HBox
+                    justifyContent="SpaceBetween"
+                    alignItems="Center"
+                    class="shellBar">
+ 
+                    <HBox alignItems="Center">
+ 
+                        <Image
+                            src="img/sap-logo.png"
+                            width="52px"
+                            class="sapLogo"/>
+ 
+                        <Title
+                            text="Candidate Onboarding"
+                            level="H4"
+                            class="shellTitle"/>
+ 
+                        <Button
+                            icon="sap-icon://slim-arrow-down"
+                            type="Transparent"
+                            class="headerArrow"/>
+</HBox>
+ 
+                    <HBox alignItems="Center">
+ 
+                        <Button
+                            icon="sap-icon://sys-help"
+                            type="Transparent"/>
+ 
+                        <Button
+                            icon="sap-icon://employee"
+                            type="Transparent"/>
+ 
+                        <Button
+                            icon="sap-icon://slim-arrow-down"
+                            type="Transparent"/>
+ 
+                    </HBox>
+ 
+                </HBox>
+ 
+            </VBox>
+ 
+            <!-- ========================================= -->
+<!-- PAGE HEADER -->
+<!-- ========================================= -->
+ 
+            <VBox class="pageContentWrapper">
+ 
+                <HBox
+                    justifyContent="SpaceBetween"
+                    class="pageHeaderSection">
+ 
+                    <VBox>
+ 
+                        <Title
+                            text="Candidate Onboarding – Identity &amp; Contact Verification"
+                            level="H2"
+                            class="mainPageTitle"/>
+ 
+                        <Text
+                            text="Please verify your contact details and upload required identity documents"
+                            class="pageSubTitle"/>
+ 
+                    </VBox>
+ 
+                    <!-- Wizard Steps -->
+ 
+                    <HBox
+                        alignItems="Center"
+                        class="wizardStepsWrapper">
+ 
+                        <VBox alignItems="Center" class="wizardStep">
+<Avatar
+                                displayShape="Circle"
+                                initials="✓"
+                                class="wizardCompleted"/>
+<Text text="Welcome" class="wizardText"/>
+</VBox>
+ 
+                        <HBox class="wizardLine"/>
+ 
+                        <VBox alignItems="Center" class="wizardStep">
+<Avatar
+                                displayShape="Circle"
+                                initials="✓"
+                                class="wizardCompleted"/>
+<Text text="Personal Details" class="wizardText"/>
+</VBox>
+ 
+                        <HBox class="wizardLine"/>
+ 
+                        <VBox alignItems="Center" class="wizardStep">
+<Avatar
+                                displayShape="Circle"
+                                initials="3"
+                                class="wizardActive"/>
+<Text text="Verification" class="wizardTextActive"/>
+</VBox>
+ 
+                        <HBox class="wizardLine"/>
+ 
+                        <VBox alignItems="Center" class="wizardStep">
+<Avatar
+                                displayShape="Circle"
+                                initials="4"
+                                class="wizardInactive"/>
+<Text text="Review &amp; Submit" class="wizardText"/>
+</VBox>
+ 
+                    </HBox>
+ 
+                </HBox>
+ 
+                <!-- ========================================= -->
+<!-- CONTACT VERIFICATION PANEL -->
+<!-- ========================================= -->
+ 
+                <Panel
+                    class="mainPanel"
+                    expandable="false">
+ 
+                    <headerToolbar>
+<Toolbar class="sectionToolbar">
+<Title text="1. Contact Information Verification"/>
+</Toolbar>
+</headerToolbar>
+ 
+                    <content>
+ 
+                        <HBox
+                            class="panelContentSpacing"
+                            justifyContent="SpaceBetween">
+ 
+                            <!-- LEFT -->
+ 
+                            <VBox width="48%">
+ 
+                                <Title
+                                    text="Contact Details"
+                                    level="H5"
+                                    class="innerSectionTitle"/>
+ 
+                                <Label
+                                    text="Email Address *"
+                                    class="fieldLabel"/>
+ 
+                                <Input
+                                    value="john.doe@email.com"
+                                    valueState="Success"
+                                    class="inputField"/>
+ 
+                                <Text
+                                    text="Please enter a valid email address."
+                                    class="helperText"/>
+ 
+                                <Label
+                                    text="Mobile Number"
+                                    class="fieldLabel topSpacing"/>
+ 
+                                <Input
+                                    value="+91 98765 43210"
+                                    class="inputField"/>
+ 
+                                <Text
+                                    text="Include country code (e.g., +91 9876543210)"
+                                    class="helperText"/>
+ 
+                            </VBox>
+ 
+                            <!-- RIGHT -->
+ 
+                            <VBox width="46%">
+ 
+                                <Title
+                                    text="Email OTP Verification"
+                                    level="H5"
+                                    class="innerSectionTitle"/>
+ 
+                                <Button
+                                    text="Send OTP to Email"
+                                    icon="sap-icon://paper-plane"
+                                    type="Transparent"
+                                    class="otpButton"/>
+ 
+                                <MessageStrip
+                                    text="OTP sent successfully to your email."
+                                    type="Success"
+                                    showIcon="true"
+                                    class="otpSuccess"/>
+ 
+                                <Label
+                                    text="Enter OTP *"
+                                    class="fieldLabel topSpacing"/>
+ 
+                                <Input
+                                    placeholder="Enter 6-digit OTP"
+                                    class="inputField"/>
+ 
+                                <Button
+                                    text="Verify OTP"
+                                    enabled="false"
+                                    class="verifyButton"/>
+ 
+                                <HBox class="otpInfoWrapper">
+ 
+                                    <core:Icon
+                                        src="sap-icon://message-information"
+                                        class="infoIcon"/>
+ 
+                                    <Text
+                                        text="OTP is valid for 5 minutes."
+                                        class="otpInfoText"/>
+ 
+                                </HBox>
+ 
+                            </VBox>
+ 
+                        </HBox>
+ 
+                    </content>
+ 
+                </Panel>
+ 
+                <!-- ========================================= -->
+<!-- DOCUMENT VERIFICATION -->
+<!-- ========================================= -->
+ 
+                <Panel class="mainPanel">
+ 
+                    <headerToolbar>
+<Toolbar class="sectionToolbar">
+<Title text="2. Identity Document Verification"/>
+</Toolbar>
+</headerToolbar>
+ 
+                    <content>
+ 
+                        <HBox
+                            justifyContent="SpaceBetween"
+                            class="panelContentSpacing">
+ 
+                            <VBox width="30%">
+ 
+                                <Label text="Document Type *" class="fieldLabel"/>
+ 
+                                <Select class="inputField">
+<items>
+<core:Item key="passport" text="Passport"/>
+<core:Item key="aadhaar" text="Aadhaar"/>
+</items>
+</Select>
+ 
+                                <Text
+                                    text="Select the type of document"
+                                    class="helperText"/>
+ 
+                            </VBox>
+ 
+                            <VBox width="28%">
+ 
+                                <Label text="Document Number *" class="fieldLabel"/>
+ 
+                                <Input
+                                    value="Z1234567"
+                                    class="inputField"/>
+ 
+                                <Text
+                                    text="Enter the document number as per selected type"
+                                    class="helperText"/>
+ 
+                            </VBox>
+ 
+                            <VBox width="36%">
+ 
+                                <Label text="Document Upload *" class="fieldLabel"/>
+ 
+                                <VBox class="uploadArea">
+ 
+                                    <core:Icon
+                                        src="sap-icon://upload"
+                                        class="uploadIcon"/>
+ 
+                                    <Text
+                                        text="Drag and drop file here or"
+                                        class="uploadText"/>
+ 
+                                    <Link text="Browse Files"/>
+ 
+                                    <Text
+                                        text="Allowed types: PDF, JPG, PNG"
+                                        class="uploadSubText"/>
+ 
+                                    <Text
+                                        text="Max file size: 5 MB"
+                                        class="uploadSubText"/>
+ 
+                                </VBox>
+ 
+                            </VBox>
+ 
+                        </HBox>
+ 
+                        <!-- SUCCESS MESSAGE -->
+ 
+                        <MessageStrip
+                            text="Document details successfully verified. The information on your document matches your provided details."
+                            type="Success"
+                            showIcon="true"
+                            class="documentSuccess"/>
+ 
+                    </content>
+ 
+                </Panel>
+ 
+                <!-- ========================================= -->
+<!-- SUBMISSION -->
+<!-- ========================================= -->
+ 
+                <Panel class="mainPanel">
+ 
+                    <headerToolbar>
+<Toolbar class="sectionToolbar">
+<Title text="3. Submission Actions"/>
+</Toolbar>
+</headerToolbar>
+ 
+                    <content>
+ 
+                        <HBox
+                            justifyContent="SpaceBetween"
+                            alignItems="Center"
+                            class="submissionSection">
+ 
+                            <Text
+                                text="Please ensure your contact is verified and document is validated before submitting."
+                                class="submissionText"/>
+ 
+                            <HBox>
+ 
+                                <Button
+                                    text="Edit Details"
+                                    icon="sap-icon://edit"
+                                    class="secondaryButton"/>
+ 
+                                <Button
+                                    text="Validate &amp; Submit"
+                                    icon="sap-icon://locked"
+                                    type="Emphasized"
+                                    class="primaryButton"/>
+ 
+                            </HBox>
+ 
+                        </HBox>
+ 
+                    </content>
+ 
+                </Panel>
+ 
+            </VBox>
+ 
+        </content>
+ 
+    </Page>
+ 
+</mvc:View>
