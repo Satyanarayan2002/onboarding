@@ -26,6 +26,11 @@ sap.ui.define([
             }
         })
         .catch(err => console.error("❌ Failed to resolve candidate", err));
+        
+// Ensure document type = PAN
+            oModel.setProperty("/documentType", "PAN");
+            oModel.setProperty("/documentVerified", null);
+
 },
         async onSendOtp() {
             const oModel = this.getView().getModel("onb");
@@ -53,56 +58,210 @@ sap.ui.define([
             }
         },
 
-        async onVerifyOtp() {
-            const oModel = this.getView().getModel("onb");
-            const oData = oModel.getData();
+       async onVerifyOtp() {
+    const oModel = this.getOwnerComponent().getModel("onb");
 
-            const response = await fetch("/odata/v4/otp/verifyOTP", {
+    const candidateID = oModel.getProperty("/candidateID");
+    const otp = oModel.getProperty("/otp");
+
+    console.log("VERIFY OTP →", { candidateID, otp });
+
+    if (!candidateID || !otp) {
+        MessageToast.show("Missing candidate or OTP");
+        return;
+    }
+
+    const response = await fetch("/odata/v4/otp/verifyOTP", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            candidateID,
+            otp
+        })
+    });
+
+    if (response.ok) {
+        MessageToast.show("OTP verified successfully");
+        oModel.setProperty("/otpVerified", true);
+    } else {
+        MessageToast.show("Invalid or expired OTP");
+    }
+},
+
+async onFileUpload(oEvent) {
+  const oModel = this.getOwnerComponent().getModel("onb");
+  const file = oEvent.getParameter("files")[0];
+
+  if (!file) {
+    MessageToast.show("No file selected");
+    return;
+  }
+
+  const candidateID = oModel.getProperty("/candidateID");
+  if (!candidateID) {
+    MessageToast.show("Candidate not resolved");
+    return;
+  }
+
+  // ✅ Convert file → base64
+  const base64 = await this._toBase64(file);
+
+  // ✅ Call CAP OData action
+  const response = await fetch("/odata/v4/otp/uploadDocumentFile", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      candidateID,
+      documentType: "PAN",
+      fileName: file.name,
+      mimeType: file.type,
+      content: base64
+    })
+  });
+
+  if (!response.ok) {
+    MessageToast.show("Upload failed");
+    return;
+  }
+
+  const documentID = await response.json();
+
+  // ✅ IMPORTANT UI FLAGS
+  oModel.setProperty("/documentID", documentID);
+  oModel.setProperty("/documentUploaded", true);
+  oModel.setProperty("/documentValidated", null);
+
+  MessageToast.show("Document uploaded successfully");
+},
+_toBase64(file) {
+    return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => {
+            const base64 = reader.result.split(",")[1];
+            resolve(base64);
+        };
+        reader.onerror = reject;
+        reader.readAsDataURL(file);
+    });
+},
+async onValidateDocument() {
+  const oModel = this.getOwnerComponent().getModel("onb");
+  const documentID = oModel.getProperty("/documentID");
+
+  if (!documentID) {
+    MessageToast.show("No document uploaded");
+    return;
+  }
+
+  const response = await fetch("/odata/v4/otp/triggerAIVerification", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ documentID })
+  });
+
+  const result = await response.json();
+
+  if (result.result === "MATCHED") {
+    oModel.setProperty("/documentValidated", true);
+    MessageToast.show("✅ PAN verified successfully");
+  } else {
+    oModel.setProperty("/documentValidated", false);
+    MessageToast.show("❌ PAN verification failed");
+  }
+},
+
+
+        /* ===================================================== */
+        /* AI VERIFICATION                                      */
+        /* ===================================================== */
+        async _triggerVerification(documentID) {
+            console.log("🧠 Triggering AI verification for:", documentID);
+
+            const oModel = this.getOwnerComponent().getModel("onb");
+
+            const verifyRes = await fetch("/odata/v4/otp/triggerAIVerification", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    email: oData.email,
-                    otp: oData.otp
-                })
+                body: JSON.stringify({ documentID })
             });
 
-            if (response.ok) {
-                MessageToast.show("OTP verified successfully");
+            const result = await verifyRes.json();
+            console.log("🧪 Verification result:", result);
 
-                // ✅ Update UI state
-                oModel.setProperty("/otpVerified", true);
+            if (result.result === "MATCHED") {
+                oModel.setProperty("/documentVerified", true);
+                MessageToast.show("✅ PAN verified successfully");
             } else {
-                MessageToast.show("Invalid or expired OTP");
+                oModel.setProperty("/documentVerified", false);
+                MessageToast.show("❌ PAN verification failed");
             }
         },
 
+        /* ===================================================== */
+        /* SUBMIT                                               */
+        /* ===================================================== */
         async onSubmit() {
-            const oModel = this.getView().getModel("onb");
-            const email = oModel.getProperty("/email");
+    const oModel = this.getOwnerComponent().getModel("onb");
 
-            const response = await fetch("/odata/v4/otp/submitOnboarding", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ email })
-            });
+    const candidateID = oModel.getProperty("/candidateID");
+    const documentValidated = oModel.getProperty("/documentValidated");
 
-            if (response.ok) {
-                MessageToast.show("Onboarding submitted successfully");
+    console.log("📤 Submit clicked");
+    console.log({ candidateID, documentValidated });
 
-                // Optional reset
-                oModel.setData(models.createOnboardingModel().getData());
-            } else {
-                const err = await response.json();
-                MessageToast.show(err.error.message);
-            }
-        },
+    if (!candidateID) {
+        MessageToast.show("Missing candidate information");
+        return;
+    }
 
-        onFileUpload(oEvent) {
-            const file = oEvent.getParameter("files")[0];
-            this.getView().getModel("onb").setProperty("/document", file);
-            MessageToast.show("Document uploaded");
-        },
-        onEdit: function () {
+    if (!documentValidated) {
+        MessageToast.show("Document not verified yet");
+        return;
+    }
+
+    const response = await fetch("/odata/v4/otp/submitOnboarding", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ candidateID })
+    });
+
+    if (response.ok) {
+        MessageToast.show("✅ Onboarding submitted successfully");
+        console.log("✅ submitOnboarding successful");
+    } else {
+        const err = await response.json();
+        console.error("❌ submitOnboarding failed:", err);
+        MessageToast.show(err.error?.message || "Submission failed");
+    }
+}
+
+        // async onSubmit() {
+        //     const oModel = this.getView().getModel("onb");
+        //     const email = oModel.getProperty("/email");
+
+        //     const response = await fetch("/odata/v4/otp/submitOnboarding", {
+        //         method: "POST",
+        //         headers: { "Content-Type": "application/json" },
+        //         body: JSON.stringify({ email })
+        //     });
+
+        //     if (response.ok) {
+        //         MessageToast.show("Onboarding submitted successfully");
+
+        //         // Optional reset
+        //         oModel.setData(models.createOnboardingModel().getData());
+        //     } else {
+        //         const err = await response.json();
+        //         MessageToast.show(err.error.message);
+        //     }
+        // },
+
+        // onFileUpload(oEvent) {
+        //     const file = oEvent.getParameter("files")[0];
+        //     this.getView().getModel("onb").setProperty("/document", file);
+        //     MessageToast.show("Document uploaded");
+        // },
+        , onEdit: function () {
             MessageToast.show("Edit Mode Enabled");
         }
 

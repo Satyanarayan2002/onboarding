@@ -1,36 +1,55 @@
 sap.ui.define([
     "sap/ui/model/json/JSONModel",
     "sap/ui/Device"
-], 
+],
 function (JSONModel, Device) {
     "use strict";
 
     return {
-        /**
-         * Provides runtime information for the device the UI5 app is running on as a JSONModel.
-         * @returns {sap.ui.model.json.JSONModel} The device model.
-         */
+
         createDeviceModel: function () {
-            var oModel = new JSONModel(Device);
+            const oModel = new JSONModel(Device);
             oModel.setDefaultBindingMode("OneWay");
             return oModel;
         },
-        
+
         createOnboardingModel: function () {
             return new JSONModel({
+
+                /* ======================
+                   CANDIDATE INFO
+                ====================== */
+                candidateID: "",
+
                 firstName: "",
                 lastName: "",
                 email: "",
                 mobile: "",
+
+                /* ======================
+                   OTP FLOW
+                ====================== */
                 otp: "",
                 otpSent: false,
                 otpVerified: false,
-                
+
+                /* ======================
+                   DOCUMENT FLOW (PAN)
+                ====================== */
+                documentType: "PAN",       // ✅ force PAN
+                documentID: "",
                 documentUploaded: false,
-                documentValidated: false
+                documentVerified: null,    // true / false after AI check
+                filePath: "",
+
+                /* ======================
+                   UI / STATE FLAGS
+                ====================== */
+                submissionAllowed: false
 
             });
         }
-    }
 
+    };
 });
+``

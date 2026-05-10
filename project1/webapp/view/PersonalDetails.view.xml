@@ -251,7 +251,21 @@
                                         class="helperText"/>
  
                                 </VBox>
- 
+                                    
+                                <!-- ADD EMAIL FIELD (IMPORTANT) -->
+                                <VBox class="fieldWrapper">
+                                    <Label text="Email Address *" class="fieldLabel"/>
+                                    <Input
+                                        value="{onb>/email}"
+                                        type="Email"
+                                        placeholder="abc@gmail.com"
+                                        class="customInput"
+                                        required="true"/>
+                                    <Text
+                                        text="We will send OTP to this email for verification."
+                                        class="helperText"/>
+                                </VBox>
+
                                 <!-- DATE -->
  
                                 <VBox class="fieldWrapper">

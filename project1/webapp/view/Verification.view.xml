@@ -223,6 +223,7 @@
                                 <Input
                                     placeholder="Enter 6-digit OTP"
                                     class="inputField"
+                                    value="{onb>/otp}"
                                     visible="{onb>/otpSent}"/>
 
                                 <Button
@@ -272,13 +273,14 @@
                             <VBox width="30%">
  
                                 <Label text="Document Type *" class="fieldLabel"/>
- 
-                                <Select class="inputField">
-<items>
-<core:Item key="passport" text="Passport"/>
-<core:Item key="aadhaar" text="Aadhaar"/>
-</items>
-</Select>
+                                <Select
+                                    selectedKey="{onb>/documentType}"
+                                    class="inputField"
+                                    enabled="{onb>/otpVerified}">
+                                    <items>
+                                        <core:Item key="PAN" text="PAN Card"/>
+                                    </items>
+                                </Select>
  
                                 <Text
                                     text="Select the type of document"
@@ -324,9 +326,14 @@
                                         text="Max file size: 5 MB"
                                         class="uploadSubText"/> -->
                                         
-                                    <u:FileUploader
-                                        enabled="{onb>/otpVerified}"
-                                        change=".onFileUpload"/>
+                                    
+<u:FileUploader
+  enabled="{onb>/otpVerified}"
+  change=".onFileUpload"
+  uploadOnChange="false"
+  fileType="png,jpg,jpeg,pdf"
+  maximumFileSize="5120" />
+
 
  
                                 </VBox>
@@ -337,12 +344,19 @@
  
                         <!-- SUCCESS MESSAGE -->
  
-                        <MessageStrip
-                            text="Document details successfully verified. The information on your document matches your provided details."
-                            type="Success"
-                            showIcon="true"
-                            class="documentSuccess"/>
- 
+                       
+<MessageStrip
+    text="✅ Document verified successfully."
+    type="Success"
+    showIcon="true"
+    visible="{= ${onb>/documentValidated} === true }"/>
+
+<MessageStrip
+    text="❌ Document verification failed."
+    type="Error"
+    showIcon="true"
+    visible="{= ${onb>/documentValidated} === false }"/>
+
                     </content>
  
                 </Panel>
@@ -378,11 +392,16 @@
                                     class="secondaryButton"/>
  
                                 
-                        <Button
-                            text="Validate"
-                            type="Emphasized"
-                            press=".onValidateDocument"
-                            visible="{= !${onb>/documentValidated} }"/>
+
+
+<Button
+  text="Validate"
+  press=".onValidateDocument"
+  enabled="{onb>/documentUploaded}"
+  visible="{= ${onb>/documentValidated} !== true }"/>
+
+
+
 
                         <Button
                             text="Submit"
