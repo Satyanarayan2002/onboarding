@@ -62,33 +62,102 @@
       ]
     },
     "routing": {
-      "config": {
-        "routerClass": "sap.m.routing.Router",
-        "controlAggregation": "pages",
-        "controlId": "app",
-        "transition": "slide",
-        "type": "View",
-        "viewType": "XML",
-        "path": "com.wipro.project1.view",
-        "async": true,
-        "viewPath": "com.wipro.project1.view"
-      },
-      "routes": [
-        {
-          "name": "RouteView1",
-          "pattern": ":?query:",
-          "target": [
-            "TargetView1"
-          ]
-        }
-      ],
-      "targets": {
-        "TargetView1": {
-          "id": "View1",
-          "name": "View1"
-        }
-      }
+    "config": {
+      "routerClass": "sap.m.routing.Router",
+      "controlAggregation": "pages",
+      "controlId": "app",
+      "transition": "slide",
+      "type": "View",
+      "viewType": "XML",
+      "path": "com.wipro.project1.view",
+      "async": true
     },
+  
+    "routes": [
+  
+      {
+        "name": "welcome",
+        "pattern": "",
+        "target": "welcome"
+      },
+  
+      {
+        "name": "personalDetails",
+        "pattern": "personalDetails",
+        "target": "personalDetails"
+      },
+  
+      {
+        "name": "verification",
+        "pattern": "verification",
+        "target": "verification"
+      },
+  
+      {
+        "name": "reviewSubmit",
+        "pattern": "reviewSubmit",
+        "target": "reviewSubmit"
+      },
+  
+      {
+        "name": "submissionSuccess",
+        "pattern": "submissionSuccess",
+        "target": "submissionSuccess"
+      },
+  
+      {
+        "name": "dashboard",
+        "pattern": "dashboard",
+        "target": "dashboard"
+      },
+  
+      {
+        "name": "candidateDetails",
+        "pattern": "candidateDetails",
+        "target": "candidateDetails"
+      }
+  
+    ],
+  
+    "targets": {
+  
+      "welcome": {
+        "id": "welcome",
+        "name": "Welcome"
+      },
+  
+      "personalDetails": {
+        "id": "personalDetails",
+        "name": "PersonalDetails"
+      },
+  
+      "verification": {
+        "id": "verification",
+        "name": "Verification"
+      },
+  
+      "reviewSubmit": {
+        "id": "reviewSubmit",
+        "name": "ReviewSubmit"
+      },
+  
+      "submissionSuccess": {
+        "id": "submissionSuccess",
+        "name": "SubmissionSuccess"
+      },
+  
+      "dashboard": {
+        "id": "dashboard",
+        "name": "Dashboard"
+      },
+  
+      "candidateDetails": {
+        "id": "candidateDetails",
+        "name": "CandidateDetails"
+      }
+  
+    }
+  },
     "rootView": {
       "viewName": "com.wipro.project1.view.App",
       "type": "XML",

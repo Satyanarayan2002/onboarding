@@ -1,0 +1,64 @@
+<!-- Welcome.view.xml -->
+ 
+<mvc:View
+    controllerName="com.wipro.project1.controller.Welcome"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    displayBlock="true">
+ 
+    <Page
+        showHeader="false"
+        class="welcomePage">
+ 
+        <content>
+ 
+            <!-- Main Center Layout -->
+ 
+            <FlexBox
+                justifyContent="Center"
+                alignItems="Center"
+                direction="Column"
+                class="welcomeContainer">
+ 
+                <!-- Welcome Card -->
+ 
+                <VBox class="welcomeCard">
+ 
+                    <!-- Icon -->
+ 
+                    <!-- <Icon
+                        src="sap-icon://employee-pane"
+                        size="4rem"
+                        color="#0a6ed1"
+                        class="welcomeIcon"/> -->
+ 
+                    <!-- Title -->
+ 
+                    <Title
+                        text="Welcome to Candidate Onboarding"
+                        class="welcomeTitle"/>
+ 
+                    <!-- Subtitle -->
+ 
+                    <Text
+                        text="Your onboarding process has been initiated. Click below to begin providing your details."
+                        textAlign="Center"
+                        class="welcomeSubtitle"/>
+ 
+                    <!-- Start Button -->
+ 
+                    <Button
+                        text="Start Onboarding"
+                        type="Emphasized"
+                        press=".onStartOnboarding"
+                        class="startButton"/>
+ 
+                </VBox>
+ 
+            </FlexBox>
+ 
+        </content>
+ 
+    </Page>
+ 
+</mvc:View>

@@ -1,0 +1,920 @@
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:00.162835] Updated app with guid 1e89e680-5b45-4777-b12c-11839bfec8fd ({"lifecycle"=>{"data"=>{"buildpacks"=>["nodejs_buildpack"]}, "type"=>"buildpack"}}) (STDOUT, API)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:00.264264] Updating process: "web" (STDOUT, API)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:07.479986] Uploading app package for app with guid 1e89e680-5b45-4777-b12c-11839bfec8fd (STDOUT, API)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:07.680823] Updated app with guid 1e89e680-5b45-4777-b12c-11839bfec8fd ({"environment_variables"=>"[PRIVATE DATA HIDDEN]"}) (STDOUT, API)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:17.596694] Creating build for app with guid 1e89e680-5b45-4777-b12c-11839bfec8fd (STDOUT, API)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:18.014877] Downloading nodejs_buildpack... (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:18.060448] Downloaded nodejs_buildpack (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:18.060565] Cell 684caff8-89cd-492b-be01-b3d0835f1763 creating container for instance 98f5d393-c8e3-460a-81dc-4f6b9c569bf3 (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:18.802538] Security group rules were updated (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:19.183865] Cell 684caff8-89cd-492b-be01-b3d0835f1763 successfully created container for instance 98f5d393-c8e3-460a-81dc-4f6b9c569bf3 (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:20.144380] Downloading app package... (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:20.144400] Downloading build artifacts cache... (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:20.247554] Downloaded build artifacts cache (219B) (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:21.474437] Downloaded app package (7.5M) (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:21.595210] -----> Nodejs Buildpack version 1.8.44 (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:22.028513] -----> Bootstrapping python (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:22.028552] -----> Installing python 3.11.14 (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:22.028570] Copy [/tmp/buildpacks/978cee5ec9c58000/dependencies/b5e0345ae0ae1932e7d56fffaa49a487/python_3.11.14_linux_x64_cflinuxfs4_66f53248.tgz] (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:26.194280] -----> Installing binaries (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:26.194347] engines.node (package.json): 18.x (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:26.194352] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:26.194579] [31;1m**ERROR**[0m Unable to install node: no match found for 18.x in [20.19.5 20.20.0 22.22.0 24.13.0] (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:26.199340] Failed to compile droplet: Failed to run all supply scripts: exit status 14 (STDERR, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:26.208176] Failed to read buildpack config.yml for buildpack key 9fbe9eac-5a7f-49f1-ac5b-ae3764ad0dd8_71cbb9be2067d85095e3e6acec9f8d1aa203126cdbc256809fad89bcf257a2a1: open /tmp/contents3438477433/deps/0/config.yml: no such file or directoryExit status 223 (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:27.068733] Cell 684caff8-89cd-492b-be01-b3d0835f1763 stopping instance 98f5d393-c8e3-460a-81dc-4f6b9c569bf3 (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:27.068782] Cell 684caff8-89cd-492b-be01-b3d0835f1763 destroying container for instance 98f5d393-c8e3-460a-81dc-4f6b9c569bf3 (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:27.104073] Staging failed for build 98f5d393-c8e3-460a-81dc-4f6b9c569bf3 (STDOUT, API)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:27.114263] Failed to stage build: staging failed (STDERR, API)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:28.726168] Creating build for app with guid 1e89e680-5b45-4777-b12c-11839bfec8fd (STDOUT, API)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:29.117883] Downloading nodejs_buildpack... (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:29.170861] Downloaded nodejs_buildpack (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:29.170988] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 creating container for instance fcf3776b-d828-4999-9410-7e6d0c80975c (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:29.910264] Security group rules were updated (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:30.012393] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 successfully created container for instance fcf3776b-d828-4999-9410-7e6d0c80975c (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:30.427641] Cell 684caff8-89cd-492b-be01-b3d0835f1763 successfully destroyed container for instance 98f5d393-c8e3-460a-81dc-4f6b9c569bf3 (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:31.250031] Downloading build artifacts cache... (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:31.250079] Downloading app package... (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:31.319907] Downloaded build artifacts cache (219B) (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:32.566135] Downloaded app package (7.5M) (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:32.686735] -----> Nodejs Buildpack version 1.8.44 (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:33.175673] -----> Bootstrapping python (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:33.175776] -----> Installing python 3.11.14 (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:33.175833] Copy [/tmp/buildpacks/978cee5ec9c58000/dependencies/b5e0345ae0ae1932e7d56fffaa49a487/python_3.11.14_linux_x64_cflinuxfs4_66f53248.tgz] (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:37.733791] -----> Installing binaries (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:37.733916] engines.node (package.json): 18.x (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:37.733940] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:37.734102] [31;1m**ERROR**[0m Unable to install node: no match found for 18.x in [20.19.5 20.20.0 22.22.0 24.13.0] (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:37.741214] Failed to compile droplet: Failed to run all supply scripts: exit status 14 (STDERR, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:37.750647] Failed to read buildpack config.yml for buildpack key 9fbe9eac-5a7f-49f1-ac5b-ae3764ad0dd8_71cbb9be2067d85095e3e6acec9f8d1aa203126cdbc256809fad89bcf257a2a1: open /tmp/contents1721208065/deps/0/config.yml: no such file or directoryExit status 223 (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:38.554735] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 stopping instance fcf3776b-d828-4999-9410-7e6d0c80975c (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:38.554788] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 destroying container for instance fcf3776b-d828-4999-9410-7e6d0c80975c (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:38.600771] Staging failed for build fcf3776b-d828-4999-9410-7e6d0c80975c (STDOUT, API)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:38.613346] Failed to stage build: staging failed (STDERR, API)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:42.109131] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 successfully destroyed container for instance fcf3776b-d828-4999-9410-7e6d0c80975c (STDOUT, STG)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:50.032536] Creating build for app with guid 1e89e680-5b45-4777-b12c-11839bfec8fd (STDOUT, API)#
+#2026 05 10 06:47:49.742#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:50.360381] Downloading nodejs_buildpack... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:50.416436] Downloaded nodejs_buildpack (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:50.416523] Cell 684caff8-89cd-492b-be01-b3d0835f1763 creating container for instance 3b3043d3-dc89-4e33-9a33-9d6294b7c68c (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:51.185047] Security group rules were updated (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:51.276473] Cell 684caff8-89cd-492b-be01-b3d0835f1763 successfully created container for instance 3b3043d3-dc89-4e33-9a33-9d6294b7c68c (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:52.381594] Downloading build artifacts cache... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:52.382114] Downloading app package... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:52.445515] Downloaded build artifacts cache (219B) (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:53.997809] Downloaded app package (7.5M) (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:54.120182] -----> Nodejs Buildpack version 1.8.44 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:54.549244] -----> Bootstrapping python (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:54.549270] -----> Installing python 3.11.14 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:54.549286] Copy [/tmp/buildpacks/978cee5ec9c58000/dependencies/b5e0345ae0ae1932e7d56fffaa49a487/python_3.11.14_linux_x64_cflinuxfs4_66f53248.tgz] (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:58.640367] -----> Installing binaries (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:58.640416] engines.node (package.json): 18.x (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:58.640420] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:58.640563] [31;1m**ERROR**[0m Unable to install node: no match found for 18.x in [20.19.5 20.20.0 22.22.0 24.13.0] (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:58.645446] Failed to compile droplet: Failed to run all supply scripts: exit status 14 (STDERR, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:58.653804] Failed to read buildpack config.yml for buildpack key 9fbe9eac-5a7f-49f1-ac5b-ae3764ad0dd8_71cbb9be2067d85095e3e6acec9f8d1aa203126cdbc256809fad89bcf257a2a1: open /tmp/contents358588056/deps/0/config.yml: no such file or directoryExit status 223 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:58.900049] Cell 684caff8-89cd-492b-be01-b3d0835f1763 stopping instance 3b3043d3-dc89-4e33-9a33-9d6294b7c68c (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:58.900095] Cell 684caff8-89cd-492b-be01-b3d0835f1763 destroying container for instance 3b3043d3-dc89-4e33-9a33-9d6294b7c68c (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:58.936714] Staging failed for build 3b3043d3-dc89-4e33-9a33-9d6294b7c68c (STDOUT, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:30:58.946961] Failed to stage build: staging failed (STDERR, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:02.566470] Cell 684caff8-89cd-492b-be01-b3d0835f1763 successfully destroyed container for instance 3b3043d3-dc89-4e33-9a33-9d6294b7c68c (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:08.269266] Creating build for app with guid 1e89e680-5b45-4777-b12c-11839bfec8fd (STDOUT, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:08.634175] Downloading nodejs_buildpack... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:08.685426] Downloaded nodejs_buildpack (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:08.685522] Cell 684caff8-89cd-492b-be01-b3d0835f1763 creating container for instance 2ccfadf5-ccd4-4651-86ac-410ed5ebe9a1 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:09.514555] Security group rules were updated (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:09.640890] Cell 684caff8-89cd-492b-be01-b3d0835f1763 successfully created container for instance 2ccfadf5-ccd4-4651-86ac-410ed5ebe9a1 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:10.576143] Downloading app package... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:10.576505] Downloading build artifacts cache... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:10.643852] Downloaded build artifacts cache (219B) (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:11.920907] Downloaded app package (7.5M) (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:12.041140] -----> Nodejs Buildpack version 1.8.44 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:12.441872] -----> Bootstrapping python (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:12.441895] -----> Installing python 3.11.14 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:12.442061] Copy [/tmp/buildpacks/978cee5ec9c58000/dependencies/b5e0345ae0ae1932e7d56fffaa49a487/python_3.11.14_linux_x64_cflinuxfs4_66f53248.tgz] (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:16.719887] -----> Installing binaries (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:16.720025] engines.node (package.json): 18.x (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:16.720038] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:16.720166] [31;1m**ERROR**[0m Unable to install node: no match found for 18.x in [20.19.5 20.20.0 22.22.0 24.13.0] (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:16.725496] Failed to compile droplet: Failed to run all supply scripts: exit status 14 (STDERR, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:16.734508] Failed to read buildpack config.yml for buildpack key 9fbe9eac-5a7f-49f1-ac5b-ae3764ad0dd8_71cbb9be2067d85095e3e6acec9f8d1aa203126cdbc256809fad89bcf257a2a1: open /tmp/contents1525896695/deps/0/config.yml: no such file or directoryExit status 223 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:17.645713] Cell 684caff8-89cd-492b-be01-b3d0835f1763 stopping instance 2ccfadf5-ccd4-4651-86ac-410ed5ebe9a1 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:17.645768] Cell 684caff8-89cd-492b-be01-b3d0835f1763 destroying container for instance 2ccfadf5-ccd4-4651-86ac-410ed5ebe9a1 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:17.684137] Staging failed for build 2ccfadf5-ccd4-4651-86ac-410ed5ebe9a1 (STDOUT, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:17.695870] Failed to stage build: staging failed (STDERR, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:31:21.499925] Cell 684caff8-89cd-492b-be01-b3d0835f1763 successfully destroyed container for instance 2ccfadf5-ccd4-4651-86ac-410ed5ebe9a1 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:25.216005] Updated app with guid 1e89e680-5b45-4777-b12c-11839bfec8fd ({"lifecycle"=>{"data"=>{"buildpacks"=>["nodejs_buildpack"]}, "type"=>"buildpack"}}) (STDOUT, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:25.312932] Updating process: "web" (STDOUT, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:25.416542] Scaling process: "web" (STDOUT, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:38.300109] Uploading app package for app with guid 1e89e680-5b45-4777-b12c-11839bfec8fd (STDOUT, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:38.489852] Updated app with guid 1e89e680-5b45-4777-b12c-11839bfec8fd ({"environment_variables"=>"[PRIVATE DATA HIDDEN]"}) (STDOUT, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:48.224154] Creating build for app with guid 1e89e680-5b45-4777-b12c-11839bfec8fd (STDOUT, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:48.608767] Downloading nodejs_buildpack... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:48.656589] Downloaded nodejs_buildpack (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:48.656683] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 creating container for instance a7102770-01bb-4809-a0fb-bcbe3bab0d6e (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:49.391750] Security group rules were updated (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:49.491977] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully created container for instance a7102770-01bb-4809-a0fb-bcbe3bab0d6e (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:51.528558] Downloading app package... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:51.528571] Downloading build artifacts cache... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:51.625029] Downloaded build artifacts cache (219B) (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:53.905439] Downloaded app package (17.4M) (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:54.033019] -----> Nodejs Buildpack version 1.8.44 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:54.766788] -----> Bootstrapping python (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:54.766817] -----> Installing python 3.11.14 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:54.766847] Copy [/tmp/buildpacks/978cee5ec9c58000/dependencies/b5e0345ae0ae1932e7d56fffaa49a487/python_3.11.14_linux_x64_cflinuxfs4_66f53248.tgz] (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:59.044268] -----> Installing binaries (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:59.044305] engines.node (package.json): 18.x (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:59.044310] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:59.044318] [31;1m**ERROR**[0m Unable to install node: no match found for 18.x in [20.19.5 20.20.0 22.22.0 24.13.0] (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:59.056008] Failed to compile droplet: Failed to run all supply scripts: exit status 14 (STDERR, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:37:59.066475] Failed to read buildpack config.yml for buildpack key 9fbe9eac-5a7f-49f1-ac5b-ae3764ad0dd8_71cbb9be2067d85095e3e6acec9f8d1aa203126cdbc256809fad89bcf257a2a1: open /tmp/contents2207620374/deps/0/config.yml: no such file or directoryExit status 223 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:00.144285] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 stopping instance a7102770-01bb-4809-a0fb-bcbe3bab0d6e (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:00.144328] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 destroying container for instance a7102770-01bb-4809-a0fb-bcbe3bab0d6e (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:00.179207] Staging failed for build a7102770-01bb-4809-a0fb-bcbe3bab0d6e (STDOUT, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:00.190188] Failed to stage build: staging failed (STDERR, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:03.933233] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully destroyed container for instance a7102770-01bb-4809-a0fb-bcbe3bab0d6e (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:09.348537] Creating build for app with guid 1e89e680-5b45-4777-b12c-11839bfec8fd (STDOUT, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:09.719290] Downloading nodejs_buildpack... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:09.765126] Downloaded nodejs_buildpack (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:09.765264] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 creating container for instance d8e76323-cf61-43a4-934c-b5e113de6013 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:10.594835] Security group rules were updated (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:11.025330] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 successfully created container for instance d8e76323-cf61-43a4-934c-b5e113de6013 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:11.530798] Downloading app package... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:11.530916] Downloading build artifacts cache... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:11.601673] Downloaded build artifacts cache (219B) (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:13.854615] Downloaded app package (17.4M) (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:13.980632] -----> Nodejs Buildpack version 1.8.44 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:14.749474] -----> Bootstrapping python (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:14.749654] -----> Installing python 3.11.14 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:14.749785] Copy [/tmp/buildpacks/978cee5ec9c58000/dependencies/b5e0345ae0ae1932e7d56fffaa49a487/python_3.11.14_linux_x64_cflinuxfs4_66f53248.tgz] (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:19.246479] -----> Installing binaries (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:19.246778] engines.node (package.json): 18.x (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:19.247527] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:19.247776] [31;1m**ERROR**[0m Unable to install node: no match found for 18.x in [20.19.5 20.20.0 22.22.0 24.13.0] (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:19.251610] Failed to compile droplet: Failed to run all supply scripts: exit status 14 (STDERR, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:19.261525] Failed to read buildpack config.yml for buildpack key 9fbe9eac-5a7f-49f1-ac5b-ae3764ad0dd8_71cbb9be2067d85095e3e6acec9f8d1aa203126cdbc256809fad89bcf257a2a1: open /tmp/contents954039198/deps/0/config.yml: no such file or directoryExit status 223 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:20.120122] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 stopping instance d8e76323-cf61-43a4-934c-b5e113de6013 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:20.120168] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 destroying container for instance d8e76323-cf61-43a4-934c-b5e113de6013 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:20.154599] Staging failed for build d8e76323-cf61-43a4-934c-b5e113de6013 (STDOUT, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:20.164658] Failed to stage build: staging failed (STDERR, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:24.041913] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 successfully destroyed container for instance d8e76323-cf61-43a4-934c-b5e113de6013 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:30.599615] Creating build for app with guid 1e89e680-5b45-4777-b12c-11839bfec8fd (STDOUT, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:31.090786] Downloading nodejs_buildpack... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:31.134913] Downloaded nodejs_buildpack (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:31.135] Cell c839c7b1-088e-41af-b9b7-66256aacd457 creating container for instance b384e764-f553-4c33-b25e-960262019c4f (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:31.957139] Security group rules were updated (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:32.042559] Cell c839c7b1-088e-41af-b9b7-66256aacd457 successfully created container for instance b384e764-f553-4c33-b25e-960262019c4f (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:32.341386] Downloading app package... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:32.341458] Downloading build artifacts cache... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:32.424406] Downloaded build artifacts cache (219B) (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:34.985987] Downloaded app package (17.4M) (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:35.107308] -----> Nodejs Buildpack version 1.8.44 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:35.843015] -----> Bootstrapping python (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:35.843065] -----> Installing python 3.11.14 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:35.843268] Copy [/tmp/buildpacks/978cee5ec9c58000/dependencies/b5e0345ae0ae1932e7d56fffaa49a487/python_3.11.14_linux_x64_cflinuxfs4_66f53248.tgz] (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:40.288881] -----> Installing binaries (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:40.289050] engines.node (package.json): 18.x (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:40.289063] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:40.289298] [31;1m**ERROR**[0m Unable to install node: no match found for 18.x in [20.19.5 20.20.0 22.22.0 24.13.0] (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:40.296547] Failed to compile droplet: Failed to run all supply scripts: exit status 14 (STDERR, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:40.306553] Failed to read buildpack config.yml for buildpack key 9fbe9eac-5a7f-49f1-ac5b-ae3764ad0dd8_71cbb9be2067d85095e3e6acec9f8d1aa203126cdbc256809fad89bcf257a2a1: open /tmp/contents610117817/deps/0/config.yml: no such file or directoryExit status 223 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:40.767180] Cell c839c7b1-088e-41af-b9b7-66256aacd457 stopping instance b384e764-f553-4c33-b25e-960262019c4f (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:40.767212] Cell c839c7b1-088e-41af-b9b7-66256aacd457 destroying container for instance b384e764-f553-4c33-b25e-960262019c4f (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:40.800871] Staging failed for build b384e764-f553-4c33-b25e-960262019c4f (STDOUT, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:40.810803] Failed to stage build: staging failed (STDERR, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:44.805301] Cell c839c7b1-088e-41af-b9b7-66256aacd457 successfully destroyed container for instance b384e764-f553-4c33-b25e-960262019c4f (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:48.884667] Creating build for app with guid 1e89e680-5b45-4777-b12c-11839bfec8fd (STDOUT, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:49.232289] Downloading nodejs_buildpack... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:49.281146] Downloaded nodejs_buildpack (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:49.281245] Cell c839c7b1-088e-41af-b9b7-66256aacd457 creating container for instance 71566529-1d89-4517-b5f8-c54925a340a1 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:50.048115] Security group rules were updated (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:50.142450] Cell c839c7b1-088e-41af-b9b7-66256aacd457 successfully created container for instance 71566529-1d89-4517-b5f8-c54925a340a1 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:50.752734] Downloading app package... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:50.752735] Downloading build artifacts cache... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:50.818796] Downloaded build artifacts cache (219B) (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:53.300201] Downloaded app package (17.4M) (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:53.418490] -----> Nodejs Buildpack version 1.8.44 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:54.482821] -----> Bootstrapping python (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:54.482853] -----> Installing python 3.11.14 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:54.482949] Copy [/tmp/buildpacks/978cee5ec9c58000/dependencies/b5e0345ae0ae1932e7d56fffaa49a487/python_3.11.14_linux_x64_cflinuxfs4_66f53248.tgz] (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:58.877717] -----> Installing binaries (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:58.877826] engines.node (package.json): 18.x (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:58.877848] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:58.877952] [31;1m**ERROR**[0m Unable to install node: no match found for 18.x in [20.19.5 20.20.0 22.22.0 24.13.0] (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:58.881216] Failed to compile droplet: Failed to run all supply scripts: exit status 14 (STDERR, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:58.890047] Failed to read buildpack config.yml for buildpack key 9fbe9eac-5a7f-49f1-ac5b-ae3764ad0dd8_71cbb9be2067d85095e3e6acec9f8d1aa203126cdbc256809fad89bcf257a2a1: open /tmp/contents1664826894/deps/0/config.yml: no such file or directoryExit status 223 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:59.305713] Cell c839c7b1-088e-41af-b9b7-66256aacd457 stopping instance 71566529-1d89-4517-b5f8-c54925a340a1 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:59.305750] Cell c839c7b1-088e-41af-b9b7-66256aacd457 destroying container for instance 71566529-1d89-4517-b5f8-c54925a340a1 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:59.342139] Staging failed for build 71566529-1d89-4517-b5f8-c54925a340a1 (STDOUT, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:38:59.353353] Failed to stage build: staging failed (STDERR, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:39:02.450412] Cell c839c7b1-088e-41af-b9b7-66256aacd457 successfully destroyed container for instance 71566529-1d89-4517-b5f8-c54925a340a1 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:15.875978] Updated app with guid 1e89e680-5b45-4777-b12c-11839bfec8fd ({"lifecycle"=>{"data"=>{"buildpacks"=>[]}, "type"=>"buildpack"}}) (STDOUT, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:15.987039] Updating process: "web" (STDOUT, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:29.927783] Uploading app package for app with guid 1e89e680-5b45-4777-b12c-11839bfec8fd (STDOUT, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:30.120708] Updated app with guid 1e89e680-5b45-4777-b12c-11839bfec8fd ({"environment_variables"=>"[PRIVATE DATA HIDDEN]"}) (STDOUT, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:39.891776] Creating build for app with guid 1e89e680-5b45-4777-b12c-11839bfec8fd (STDOUT, API)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.457621] Downloading zero_trust_sidecar_buildpack_1_15... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.458050] Downloading sap_java_buildpack_jakarta... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.458160] Downloading staticfile_buildpack... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.458258] Downloading java_buildpack... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.473652] Downloading nodejs_buildpack... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.497940] Downloaded staticfile_buildpack (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.498013] Downloading go_buildpack... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.515397] Downloaded nodejs_buildpack (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.515437] Downloading python_buildpack... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.533188] Downloaded go_buildpack (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.533232] Downloading php_buildpack... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.555943] Downloaded python_buildpack (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.555982] Downloading nginx_buildpack... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.574048] Downloaded php_buildpack (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.574085] Downloading binary_buildpack... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.595837] Downloaded nginx_buildpack (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.595889] Downloading zero_trust_sidecar_buildpack... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.615451] Downloaded binary_buildpack (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.615502] Downloading sap_java_buildpack_jakarta_2_56... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.616177] Downloaded zero_trust_sidecar_buildpack (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.616198] Downloading sap_java_buildpack_jakarta_2_55... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.639489] Downloaded sap_java_buildpack_jakarta_2_55 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.639531] Downloading sap_java_buildpack_jakarta_2_53... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.667494] Downloaded sap_java_buildpack_jakarta_2_56 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.667540] Downloading zero_trust_sidecar_buildpack_1_14... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.681200] Downloaded sap_java_buildpack_jakarta_2_53 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.681257] Downloading zero_trust_sidecar_buildpack_1_13... (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.711707] Downloaded zero_trust_sidecar_buildpack_1_14 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:40.723871] Downloaded zero_trust_sidecar_buildpack_1_13 (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:42.191781] Downloaded zero_trust_sidecar_buildpack_1_15 (31.1M) (STDOUT, STG)#
+#2026 05 10 06:47:49.743#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36017#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:47:48.780537] Downloaded sap_java_buildpack_jakarta (356.6M) (STDOUT, STG)#
+#2026 05 10 06:48:09.770#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36031#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:01.410532] Downloaded java_buildpack (902M) (STDOUT, STG)#
+#2026 05 10 06:48:09.770#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36031#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:01.410636] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 creating container for instance 7c596882-5357-4e63-96b7-ead0d0122426 (STDOUT, STG)#
+#2026 05 10 06:48:09.770#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36031#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:02.155445] Security group rules were updated (STDOUT, STG)#
+#2026 05 10 06:48:09.770#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36031#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:02.246919] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully created container for instance 7c596882-5357-4e63-96b7-ead0d0122426 (STDOUT, STG)#
+#2026 05 10 06:48:09.770#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36031#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:03.254888] Downloading app package... (STDOUT, STG)#
+#2026 05 10 06:48:09.770#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36031#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:03.255276] Downloading build artifacts cache... (STDOUT, STG)#
+#2026 05 10 06:48:09.770#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36031#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:03.329026] Downloaded build artifacts cache (219B) (STDOUT, STG)#
+#2026 05 10 06:48:09.770#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36031#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:04.504627] Downloaded app package (7.5M) (STDOUT, STG)#
+#2026 05 10 06:48:09.770#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36031#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:05.311583] -----> Nodejs Buildpack version 1.8.44 (STDOUT, STG)#
+#2026 05 10 06:48:09.770#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36031#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:05.744056] -----> Bootstrapping python (STDOUT, STG)#
+#2026 05 10 06:48:09.770#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36031#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:05.744083] -----> Installing python 3.11.14 (STDOUT, STG)#
+#2026 05 10 06:48:09.770#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36031#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:05.744292] Copy [/tmp/buildpacks/978cee5ec9c58000/dependencies/b5e0345ae0ae1932e7d56fffaa49a487/python_3.11.14_linux_x64_cflinuxfs4_66f53248.tgz] (STDOUT, STG)#
+#2026 05 10 06:48:19.796#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-12750#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:10.027640] -----> Installing binaries (STDOUT, STG)#
+#2026 05 10 06:48:19.796#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-12750#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:10.027803] engines.node (package.json): 18.x (STDOUT, STG)#
+#2026 05 10 06:48:19.796#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-12750#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:10.027905] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+#2026 05 10 06:48:19.796#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-12750#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:10.028141] [31;1m**ERROR**[0m Unable to install node: no match found for 18.x in [20.19.5 20.20.0 22.22.0 24.13.0] (STDOUT, STG)#
+#2026 05 10 06:48:19.796#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-12750#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:10.032847] Failed to compile droplet: Failed to run all supply scripts: exit status 14 (STDERR, STG)#
+#2026 05 10 06:48:19.796#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-12750#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:10.041516] Failed to read buildpack config.yml for buildpack key 9fbe9eac-5a7f-49f1-ac5b-ae3764ad0dd8_71cbb9be2067d85095e3e6acec9f8d1aa203126cdbc256809fad89bcf257a2a1: open /tmp/contents3059274039/deps/0/config.yml: no such file or directoryExit status 223 (STDOUT, STG)#
+#2026 05 10 06:48:19.796#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-12750#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:10.278514] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 stopping instance 7c596882-5357-4e63-96b7-ead0d0122426 (STDOUT, STG)#
+#2026 05 10 06:48:19.796#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-12750#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:10.278554] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 destroying container for instance 7c596882-5357-4e63-96b7-ead0d0122426 (STDOUT, STG)#
+#2026 05 10 06:48:19.796#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-12750#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:10.315928] Staging failed for build 7c596882-5357-4e63-96b7-ead0d0122426 (STDOUT, API)#
+#2026 05 10 06:48:19.796#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-12750#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:10.325861] Failed to stage build: staging failed (STDERR, API)#
+#2026 05 10 06:48:19.796#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-12750#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:13.813421] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully destroyed container for instance 7c596882-5357-4e63-96b7-ead0d0122426 (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:10.027640] -----> Installing binaries (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:10.027803] engines.node (package.json): 18.x (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:10.027905] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:10.028141] [31;1m**ERROR**[0m Unable to install node: no match found for 18.x in [20.19.5 20.20.0 22.22.0 24.13.0] (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:10.032847] Failed to compile droplet: Failed to run all supply scripts: exit status 14 (STDERR, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:10.041516] Failed to read buildpack config.yml for buildpack key 9fbe9eac-5a7f-49f1-ac5b-ae3764ad0dd8_71cbb9be2067d85095e3e6acec9f8d1aa203126cdbc256809fad89bcf257a2a1: open /tmp/contents3059274039/deps/0/config.yml: no such file or directoryExit status 223 (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:10.278514] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 stopping instance 7c596882-5357-4e63-96b7-ead0d0122426 (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:10.278554] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 destroying container for instance 7c596882-5357-4e63-96b7-ead0d0122426 (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:10.315928] Staging failed for build 7c596882-5357-4e63-96b7-ead0d0122426 (STDOUT, API)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:10.325861] Failed to stage build: staging failed (STDERR, API)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:13.813421] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully destroyed container for instance 7c596882-5357-4e63-96b7-ead0d0122426 (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:20.782400] Creating build for app with guid 1e89e680-5b45-4777-b12c-11839bfec8fd (STDOUT, API)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.287061] Downloading zero_trust_sidecar_buildpack_1_15... (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.287825] Downloading staticfile_buildpack... (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.287947] Downloading java_buildpack... (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.288076] Downloading nodejs_buildpack... (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.302521] Downloading go_buildpack... (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.327217] Downloaded nodejs_buildpack (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.327284] Downloading python_buildpack... (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.328087] Downloaded zero_trust_sidecar_buildpack_1_15 (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.328111] Downloading php_buildpack... (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.332513] Downloaded java_buildpack (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.332553] Downloading nginx_buildpack... (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.333755] Downloaded staticfile_buildpack (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.333777] Downloading binary_buildpack... (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.340668] Downloaded go_buildpack (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.340721] Downloading sap_java_buildpack_jakarta... (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.357443] Downloaded sap_java_buildpack_jakarta (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.357484] Downloading sap_java_buildpack_jakarta_2_56... (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.366295] Downloaded python_buildpack (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.366335] Downloading sap_java_buildpack_jakarta_2_55... (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.369174] Downloaded nginx_buildpack (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.369285] Downloading sap_java_buildpack_jakarta_2_53... (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.370415] Downloaded php_buildpack (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.370455] Downloading zero_trust_sidecar_buildpack_1_14... (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.374549] Downloaded binary_buildpack (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.374577] Downloading zero_trust_sidecar_buildpack_1_13... (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.377085] Downloaded sap_java_buildpack_jakarta_2_56 (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.377122] Downloading zero_trust_sidecar_buildpack... (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.382983] Downloaded sap_java_buildpack_jakarta_2_55 (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.396901] Downloaded zero_trust_sidecar_buildpack (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.407128] Downloaded sap_java_buildpack_jakarta_2_53 (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.408526] Downloaded zero_trust_sidecar_buildpack_1_13 (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.410781] Downloaded zero_trust_sidecar_buildpack_1_14 (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:21.410883] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 creating container for instance 7259c87d-c1f8-4526-86a6-235d1829f9a8 (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:22.223476] Security group rules were updated (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:22.340540] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully created container for instance 7259c87d-c1f8-4526-86a6-235d1829f9a8 (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:22.772769] Downloading app package... (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:22.772838] Downloading build artifacts cache... (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:22.823468] Downloaded build artifacts cache (219B) (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:24.061026] Downloaded app package (7.5M) (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:24.874573] -----> Nodejs Buildpack version 1.8.44 (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:25.341863] -----> Bootstrapping python (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:25.341892] -----> Installing python 3.11.14 (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:25.342027] Copy [/tmp/buildpacks/978cee5ec9c58000/dependencies/b5e0345ae0ae1932e7d56fffaa49a487/python_3.11.14_linux_x64_cflinuxfs4_66f53248.tgz] (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:29.563467] -----> Installing binaries (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:29.565836] engines.node (package.json): 18.x (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:29.565854] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:29.566055] [31;1m**ERROR**[0m Unable to install node: no match found for 18.x in [20.19.5 20.20.0 22.22.0 24.13.0] (STDOUT, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:29.570125] Failed to compile droplet: Failed to run all supply scripts: exit status 14 (STDERR, STG)#
+#2026 05 10 06:48:29.817#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36045#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:29.578343] Failed to read buildpack config.yml for buildpack key 9fbe9eac-5a7f-49f1-ac5b-ae3764ad0dd8_71cbb9be2067d85095e3e6acec9f8d1aa203126cdbc256809fad89bcf257a2a1: open /tmp/contents3021214490/deps/0/config.yml: no such file or directoryExit status 223 (STDOUT, STG)#
+#2026 05 10 06:48:39.832#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36050#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:29.884] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 stopping instance 7259c87d-c1f8-4526-86a6-235d1829f9a8 (STDOUT, STG)#
+#2026 05 10 06:48:39.832#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36050#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:29.884039] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 destroying container for instance 7259c87d-c1f8-4526-86a6-235d1829f9a8 (STDOUT, STG)#
+#2026 05 10 06:48:39.832#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36050#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:29.922159] Staging failed for build 7259c87d-c1f8-4526-86a6-235d1829f9a8 (STDOUT, API)#
+#2026 05 10 06:48:39.832#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36050#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:29.932730] Failed to stage build: staging failed (STDERR, API)#
+#2026 05 10 06:48:39.832#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36050#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:33.498439] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully destroyed container for instance 7259c87d-c1f8-4526-86a6-235d1829f9a8 (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:29.884] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 stopping instance 7259c87d-c1f8-4526-86a6-235d1829f9a8 (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:29.884039] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 destroying container for instance 7259c87d-c1f8-4526-86a6-235d1829f9a8 (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:29.922159] Staging failed for build 7259c87d-c1f8-4526-86a6-235d1829f9a8 (STDOUT, API)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:29.932730] Failed to stage build: staging failed (STDERR, API)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:33.498439] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully destroyed container for instance 7259c87d-c1f8-4526-86a6-235d1829f9a8 (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:42.057614] Creating build for app with guid 1e89e680-5b45-4777-b12c-11839bfec8fd (STDOUT, API)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:42.935115] Downloading zero_trust_sidecar_buildpack_1_15... (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:42.935133] Downloading nodejs_buildpack... (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:42.935146] Downloading staticfile_buildpack... (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:42.935184] Downloading java_buildpack... (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:42.935205] Downloading sap_java_buildpack_jakarta... (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:42.980480] Downloaded nodejs_buildpack (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:42.982923] Downloaded java_buildpack (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:42.982924] Downloaded sap_java_buildpack_jakarta (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:42.982946] Downloading php_buildpack... (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:42.982958] Downloading go_buildpack... (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:42.983110] Downloaded staticfile_buildpack (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:42.983126] Downloading python_buildpack... (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:42.983415] Downloaded zero_trust_sidecar_buildpack_1_15 (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:42.983442] Downloading nginx_buildpack... (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:42.999332] Downloading sap_java_buildpack_jakarta_2_53... (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:43.030390] Downloaded go_buildpack (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:43.030435] Downloading sap_java_buildpack_jakarta_2_56... (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:43.032657] Downloaded sap_java_buildpack_jakarta_2_53 (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:43.032684] Downloaded php_buildpack (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:43.032697] Downloading sap_java_buildpack_jakarta_2_55... (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:43.032718] Downloading binary_buildpack... (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:43.033397] Downloaded nginx_buildpack (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:43.033415] Downloading zero_trust_sidecar_buildpack_1_13... (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:43.035280] Downloaded python_buildpack (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:43.035304] Downloading zero_trust_sidecar_buildpack... (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:43.053691] Downloaded binary_buildpack (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:43.053731] Downloading zero_trust_sidecar_buildpack_1_14... (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:43.069330] Downloaded sap_java_buildpack_jakarta_2_56 (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:43.072948] Downloaded sap_java_buildpack_jakarta_2_55 (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:43.076669] Downloaded zero_trust_sidecar_buildpack_1_13 (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:43.081223] Downloaded zero_trust_sidecar_buildpack (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:43.094209] Downloaded zero_trust_sidecar_buildpack_1_14 (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:43.094296] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 creating container for instance 9a6a0632-cfaf-4421-8363-a32e60444b29 (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:43.863538] Security group rules were updated (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:44.022316] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully created container for instance 9a6a0632-cfaf-4421-8363-a32e60444b29 (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:45.060750] Downloading build artifacts cache... (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:45.060803] Downloading app package... (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:45.137204] Downloaded build artifacts cache (219B) (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:46.319019] Downloaded app package (7.5M) (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:47.116126] -----> Nodejs Buildpack version 1.8.44 (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:47.551210] -----> Bootstrapping python (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:47.551252] -----> Installing python 3.11.14 (STDOUT, STG)#
+#2026 05 10 06:48:49.918#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36055#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:47.551370] Copy [/tmp/buildpacks/978cee5ec9c58000/dependencies/b5e0345ae0ae1932e7d56fffaa49a487/python_3.11.14_linux_x64_cflinuxfs4_66f53248.tgz] (STDOUT, STG)#
+#2026 05 10 06:49:00.039#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-13588#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:52.096750] -----> Installing binaries (STDOUT, STG)#
+#2026 05 10 06:49:00.039#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-13588#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:52.096966] engines.node (package.json): 18.x (STDOUT, STG)#
+#2026 05 10 06:49:00.039#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-13588#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:52.096979] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+#2026 05 10 06:49:00.039#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-13588#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:52.097122] [31;1m**ERROR**[0m Unable to install node: no match found for 18.x in [20.19.5 20.20.0 22.22.0 24.13.0] (STDOUT, STG)#
+#2026 05 10 06:49:00.039#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-13588#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:52.100674] Failed to compile droplet: Failed to run all supply scripts: exit status 14 (STDERR, STG)#
+#2026 05 10 06:49:00.039#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-13588#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:52.110218] Failed to read buildpack config.yml for buildpack key 9fbe9eac-5a7f-49f1-ac5b-ae3764ad0dd8_71cbb9be2067d85095e3e6acec9f8d1aa203126cdbc256809fad89bcf257a2a1: open /tmp/contents3737019782/deps/0/config.yml: no such file or directoryExit status 223 (STDOUT, STG)#
+#2026 05 10 06:49:00.039#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-13588#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:53.107584] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 stopping instance 9a6a0632-cfaf-4421-8363-a32e60444b29 (STDOUT, STG)#
+#2026 05 10 06:49:00.039#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-13588#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:53.107631] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 destroying container for instance 9a6a0632-cfaf-4421-8363-a32e60444b29 (STDOUT, STG)#
+#2026 05 10 06:49:00.039#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-13588#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:53.145609] Staging failed for build 9a6a0632-cfaf-4421-8363-a32e60444b29 (STDOUT, API)#
+#2026 05 10 06:49:00.039#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-13588#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:53.157741] Failed to stage build: staging failed (STDERR, API)#
+#2026 05 10 06:49:00.039#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-13588#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:56.697964] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully destroyed container for instance 9a6a0632-cfaf-4421-8363-a32e60444b29 (STDOUT, STG)#
+#2026 05 10 06:49:09.905#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:52.096750] -----> Installing binaries (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:52.096966] engines.node (package.json): 18.x (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:52.096979] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:52.097122] [31;1m**ERROR**[0m Unable to install node: no match found for 18.x in [20.19.5 20.20.0 22.22.0 24.13.0] (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:52.100674] Failed to compile droplet: Failed to run all supply scripts: exit status 14 (STDERR, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:52.110218] Failed to read buildpack config.yml for buildpack key 9fbe9eac-5a7f-49f1-ac5b-ae3764ad0dd8_71cbb9be2067d85095e3e6acec9f8d1aa203126cdbc256809fad89bcf257a2a1: open /tmp/contents3737019782/deps/0/config.yml: no such file or directoryExit status 223 (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:53.107584] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 stopping instance 9a6a0632-cfaf-4421-8363-a32e60444b29 (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:53.107631] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 destroying container for instance 9a6a0632-cfaf-4421-8363-a32e60444b29 (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:53.145609] Staging failed for build 9a6a0632-cfaf-4421-8363-a32e60444b29 (STDOUT, API)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:53.157741] Failed to stage build: staging failed (STDERR, API)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:48:56.697964] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully destroyed container for instance 9a6a0632-cfaf-4421-8363-a32e60444b29 (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.306015] Creating build for app with guid 1e89e680-5b45-4777-b12c-11839bfec8fd (STDOUT, API)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.859659] Downloading zero_trust_sidecar_buildpack_1_15... (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.860056] Downloading sap_java_buildpack_jakarta... (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.860108] Downloading sap_java_buildpack_jakarta_2_56... (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.860144] Downloading sap_java_buildpack_jakarta_2_55... (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.860176] Downloading sap_java_buildpack_jakarta_2_53... (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.911453] Downloaded sap_java_buildpack_jakarta_2_53 (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.911496] Downloading zero_trust_sidecar_buildpack_1_14... (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.914590] Downloaded sap_java_buildpack_jakarta (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.914626] Downloading zero_trust_sidecar_buildpack_1_13... (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.914656] Downloaded sap_java_buildpack_jakarta_2_56 (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.914677] Downloading zero_trust_sidecar_buildpack... (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.916414] Downloaded sap_java_buildpack_jakarta_2_55 (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.916664] Downloaded zero_trust_sidecar_buildpack_1_15 (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.916682] Downloading staticfile_buildpack... (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.934032] Downloading java_buildpack... (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.935428] Downloaded staticfile_buildpack (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.935467] Downloading nodejs_buildpack... (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.951834] Downloaded zero_trust_sidecar_buildpack (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.951887] Downloading go_buildpack... (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.952984] Downloaded zero_trust_sidecar_buildpack_1_14 (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.953005] Downloading python_buildpack... (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.962060] Downloaded zero_trust_sidecar_buildpack_1_13 (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.962093] Downloading php_buildpack... (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.974728] Downloaded nodejs_buildpack (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.974763] Downloading nginx_buildpack... (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.978860] Downloaded java_buildpack (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.978891] Downloading binary_buildpack... (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.982398] Downloaded php_buildpack (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.992313] Downloaded nginx_buildpack (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.996718] Downloaded go_buildpack (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:03.996779] Downloaded python_buildpack (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:04.024594] Downloaded binary_buildpack (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:04.024702] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 creating container for instance ddb9aa32-d669-42f0-a900-6ade6cbfe467 (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:04.719532] Security group rules were updated (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:04.802255] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully created container for instance ddb9aa32-d669-42f0-a900-6ade6cbfe467 (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:05.208870] Downloading app package... (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:05.208910] Downloading build artifacts cache... (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:05.267483] Downloaded build artifacts cache (219B) (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:06.459610] Downloaded app package (7.5M) (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:07.245165] -----> Nodejs Buildpack version 1.8.44 (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:07.656007] -----> Bootstrapping python (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:07.656243] -----> Installing python 3.11.14 (STDOUT, STG)#
+#2026 05 10 06:49:09.906#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36064#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:07.656412] Copy [/tmp/buildpacks/978cee5ec9c58000/dependencies/b5e0345ae0ae1932e7d56fffaa49a487/python_3.11.14_linux_x64_cflinuxfs4_66f53248.tgz] (STDOUT, STG)#
+#2026 05 10 06:49:19.907#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36069#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:12.109405] -----> Installing binaries (STDOUT, STG)#
+#2026 05 10 06:49:19.907#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36069#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:12.109538] engines.node (package.json): 18.x (STDOUT, STG)#
+#2026 05 10 06:49:19.907#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36069#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:12.109556] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+#2026 05 10 06:49:19.907#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36069#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:12.109742] [31;1m**ERROR**[0m Unable to install node: no match found for 18.x in [20.19.5 20.20.0 22.22.0 24.13.0] (STDOUT, STG)#
+#2026 05 10 06:49:19.907#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36069#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:12.114192] Failed to compile droplet: Failed to run all supply scripts: exit status 14 (STDERR, STG)#
+#2026 05 10 06:49:19.907#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36069#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:12.123287] Failed to read buildpack config.yml for buildpack key 9fbe9eac-5a7f-49f1-ac5b-ae3764ad0dd8_71cbb9be2067d85095e3e6acec9f8d1aa203126cdbc256809fad89bcf257a2a1: open /tmp/contents1362976032/deps/0/config.yml: no such file or directoryExit status 223 (STDOUT, STG)#
+#2026 05 10 06:49:19.907#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36069#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:12.699635] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 stopping instance ddb9aa32-d669-42f0-a900-6ade6cbfe467 (STDOUT, STG)#
+#2026 05 10 06:49:19.907#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36069#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:12.699681] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 destroying container for instance ddb9aa32-d669-42f0-a900-6ade6cbfe467 (STDOUT, STG)#
+#2026 05 10 06:49:19.907#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36069#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:12.737190] Staging failed for build ddb9aa32-d669-42f0-a900-6ade6cbfe467 (STDOUT, API)#
+#2026 05 10 06:49:19.907#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36069#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:12.748293] Failed to stage build: staging failed (STDERR, API)#
+#2026 05 10 06:49:19.907#Z#DEBUG#13edb48d-4c3c-11f1-ad7f-eeee0a8b5753.onboarding-backend-srv#flowable-async-job-executor-thread-36069#
+[PollStageAppStatusExecution] 1e89e680-5b45-4777-b12c-11839bfec8fd [2026-05-10T06:49:16.394161] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully destroyed container for instance ddb9aa32-d669-42f0-a900-6ade6cbfe467 (STDOUT, STG)#

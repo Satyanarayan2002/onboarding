@@ -1,1 +1,549 @@
-/* Enter your custom styles here */
+.verificationPage {
+    background: #f5f6f7;
+}
+
+/* ========================================= */
+/* HEADER */
+/* ========================================= */
+
+.topShellHeader {
+    background: #ffffff;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.shellBar {
+    height: 56px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.sapLogo {
+    margin-right: 18px;
+}
+
+.shellTitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: #223548;
+}
+
+.pageContentWrapper {
+    padding: 24px;
+}
+
+.mainPageTitle {
+    font-size: 34px;
+    font-weight: 700;
+    color: #0a1f33;
+}
+
+.pageSubTitle {
+    margin-top: 8px;
+    color: #5c6b77;
+    font-size: 15px;
+}
+
+.pageHeaderSection {
+    margin-bottom: 28px;
+}
+
+/* ========================================= */
+/* WIZARD */
+/* ========================================= */
+
+.wizardStepsWrapper {
+    gap: 14px;
+}
+
+.wizardLine {
+    width: 70px;
+    height: 2px;
+    background: #cfd8e3;
+}
+
+.wizardCompleted {
+    background: #ffffff;
+    border: 2px solid #0a6ed1;
+    color: #0a6ed1;
+}
+
+.wizardActive {
+    background: #0a6ed1;
+    color: white;
+}
+
+.wizardInactive {
+    background: white;
+    border: 2px solid #cfd8e3;
+    color: #5c6b77;
+}
+
+.wizardText {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #5c6b77;
+}
+
+.wizardTextActive {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #0a6ed1;
+    font-weight: 600;
+}
+
+/* ========================================= */
+/* PANELS */
+/* ========================================= */
+
+.mainPanel {
+    margin-bottom: 24px;
+    border-radius: 8px;
+    border: 1px solid #d9d9d9;
+    overflow: hidden;
+    background: white;
+}
+
+.sectionToolbar {
+    background: white;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.panelContentSpacing {
+    padding: 24px;
+}
+
+.innerSectionTitle {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.fieldLabel {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #223548;
+}
+
+.topSpacing {
+    margin-top: 18px;
+}
+
+.inputField {
+    height: 44px;
+}
+
+.helperText {
+    font-size: 12px;
+    color: #6a6d70;
+    margin-top: 6px;
+}
+
+/* ========================================= */
+/* OTP */
+/* ========================================= */
+
+.otpButton {
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+.otpSuccess {
+    margin-bottom: 18px;
+}
+
+.verifyButton {
+    margin-top: 18px;
+}
+
+.otpInfoWrapper {
+    margin-top: 14px;
+    align-items: center;
+}
+
+.infoIcon {
+    color: #0a6ed1;
+    margin-right: 6px;
+}
+
+.otpInfoText {
+    font-size: 12px;
+    color: #5c6b77;
+}
+
+/* ========================================= */
+/* UPLOAD */
+/* ========================================= */
+
+.uploadArea {
+    border: 2px dashed #cfd8e3;
+    border-radius: 8px;
+    padding: 28px;
+    align-items: center;
+    justify-content: center;
+    background: #fafafa;
+}
+
+.uploadIcon {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #5c6b77;
+}
+
+.uploadText {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.uploadSubText {
+    font-size: 12px;
+    color: #6a6d70;
+}
+
+.documentSuccess {
+    margin: 24px;
+}
+
+/* ========================================= */
+/* SUBMISSION */
+/* ========================================= */
+
+.submissionSection {
+    padding: 20px 24px;
+}
+
+.submissionText {
+    color: #5c6b77;
+}
+
+.secondaryButton {
+    margin-right: 12px;
+}
+
+.primaryButton {
+    min-width: 180px;
+}
+
+/* ================================================= */
+/* PAGE */
+/* ================================================= */
+ 
+.onboardingPage {
+    background: #f5f6f7;
+}
+ 
+/* ================================================= */
+/* HEADER */
+/* ================================================= */
+ 
+.shellHeaderWrapper {
+    background: #ffffff;
+    border-bottom: 1px solid #d9d9d9;
+}
+ 
+.shellHeader {
+    height: 56px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+ 
+.shellTitle {
+    margin-left: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #223548;
+}
+ 
+/* ================================================= */
+/* PAGE CONTENT */
+/* ================================================= */
+ 
+.pageWrapper {
+    padding: 24px;
+}
+ 
+.pageHeaderSection {
+    margin-bottom: 28px;
+}
+ 
+.mainTitle {
+    font-size: 42px;
+    font-weight: 700;
+    color: #0f1f33;
+}
+ 
+.subTitle {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #5f6b7a;
+}
+ 
+/* ================================================= */
+/* WIZARD */
+/* ================================================= */
+ 
+.wizardTitle {
+    color: #0a6ed1;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+ 
+.wizardWrapper {
+    gap: 12px;
+}
+ 
+.wizardLine {
+    width: 80px;
+    height: 2px;
+    background: #cfd8e3;
+}
+ 
+.wizardCompleted {
+    background: white;
+    border: 2px solid #0a6ed1;
+    color: #0a6ed1;
+}
+ 
+.wizardActive {
+    background: #0a6ed1;
+    color: white;
+}
+ 
+.wizardInactive {
+    background: white;
+    border: 2px solid #cfd8e3;
+    color: #5f6b7a;
+}
+ 
+.wizardText {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #5f6b7a;
+}
+ 
+.wizardTextActive {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #0a6ed1;
+    font-weight: 700;
+}
+ 
+/* ================================================= */
+/* PANEL */
+/* ================================================= */
+ 
+.mainPanel {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #d9d9d9;
+    background: white;
+}
+ 
+.formWrapper {
+    padding: 24px;
+}
+ 
+/* ================================================= */
+/* FORM */
+/* ================================================= */
+ 
+.fieldWrapper {
+    margin-bottom: 28px;
+}
+ 
+.fieldLabel {
+    font-size: 15px;
+    font-weight: 600;
+    color: #223548;
+    margin-bottom: 8px;
+}
+ 
+/* .customInput {
+    height: 44px;
+}  */
+/*  
+.customInput .sapMInputBaseInner {
+    height: 44px !important;
+    border-radius: 6px;
+    border: 1px solid #b8c4d1;
+    font-size: 16px;
+    padding: 14px;
+    padding: 14px;
+} */
+ 
+.readOnlyInput .sapMInputBaseInner {
+    background: #f5f6f7;
+    color: #5f6b7a;
+}
+ 
+.helperText {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #6a6d70;
+}
+ 
+/* ================================================= */
+/* BUTTONS */
+/* ================================================= */
+ 
+.buttonSection {
+    padding: 0 24px 24px 24px;
+    gap: 16px;
+}
+ 
+.secondaryBtn {
+    width: 140px;
+    height: 44px;
+}
+ 
+.primaryBtn {
+    width: 180px;
+    height: 44px;
+}
+ 
+/* ================================================= */
+/* INFO STRIP */
+/* ================================================= */
+ 
+.infoStrip {
+    margin: 0 24px 24px 24px;
+    padding: 16px;
+    border-radius: 6px;
+    background: #f3f8ff;
+    align-items: center;
+}
+ 
+.infoIcon {
+    color: #0a6ed1;
+    margin-right: 10px;
+}
+ 
+.infoText {
+    font-size: 14px;
+    color: #223548;
+}
+ 
+/* ================================================= */
+/* FOOTER */
+/* ================================================= */
+ 
+.footerSection {
+    margin-top: 24px;
+    gap: 18px;
+}
+ 
+.footerText {
+    font-size: 12px;
+    color: #5f6b7a;
+}
+ 
+.footerLink {
+    font-size: 12px;
+}
+.sapUiBody {
+    background: #f5f6f7;
+    font-family: "72", Arial, sans-serif;
+}
+ 
+.pagePadding {
+    padding: 1.5rem;
+}
+ 
+.sectionSpacing {
+    margin-top: 1rem;
+}
+ 
+.pageTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+ 
+.pageSubtitle {
+    font-size: 1rem;
+    color: #64748b;
+    margin-top: 0.3rem;
+}
+ 
+.sfCard {
+    background: #ffffff;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+ 
+.sfCardHeader {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+ 
+.sfCardBody {
+    padding: 1.5rem;
+}
+ 
+.sfInput .sapMInputBaseInner,
+.sfSelect .sapMSlt {
+    height: 3rem !important;
+    border-radius: 0.5rem !important;
+    font-size: 1rem !important;
+}
+ 
+.readOnlyField {
+    background: #f8fafc;
+    border-radius: 0.5rem;
+    padding: 0.85rem 1rem;
+    min-height: 2.75rem;
+}
+ 
+.primaryButton .sapMBtnInner {
+    margin-left: 20px;
+    background: #0a6ed1;
+    border-radius: 0.5rem;
+    height: 2.75rem;
+    align-items: center;
+    font-weight: 600;
+}
+ 
+.secondaryButton .sapMBtnInner {
+    border-radius: 0.5rem;
+    height: 2.75rem;
+    align-items: center;
+}
+ 
+.statusSuccess {
+    background: #dcfce7;
+    color: #15803d;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    font-weight: 600;
+}
+ 
+.statusWarning {
+    background: #fef3c7;
+    color: #b45309;
+}
+ 
+.statusError {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+ 
+/* @media screen and (max-width: 768px) {
+ 
+    .pageTitle {
+        font-size: 1.5rem;
+    }
+ 
+    .sfCardBody {
+        padding: 1rem;
+    }
+ 
+    .sapMFlexBox {
+        flex-direction: column !important;
+    }
+ 
+    .responsiveGrid {
+        width: 100% !important;
+    }
+} */
+ 
