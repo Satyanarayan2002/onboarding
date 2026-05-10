@@ -5,7 +5,28 @@ sap.ui.define([
     "use strict";
 
     return Controller.extend("com.wipro.project1.controller.Verification", {
+        onInit: function () {
+    const oModel = this.getOwnerComponent().getModel("onb");
 
+    const loginId = oModel.getProperty("/email"); 
+    // or pass email explicitly from previous step
+
+    console.log("loginId"+loginId)
+    fetch(`/odata/v4/otp/Candidates?$filter=loginId eq '${loginId}'`)
+        .then(res => res.json())
+        .then(data => {
+            if (data.value && data.value.length === 1) {
+                const candidate = data.value[0];
+
+                oModel.setProperty("/candidateID", candidate.ID);
+
+                console.log("✅ Candidate resolved:", candidate.ID);
+            } else {
+                console.error("❌ Candidate not found or multiple candidates");
+            }
+        })
+        .catch(err => console.error("❌ Failed to resolve candidate", err));
+},
         async onSendOtp() {
             const oModel = this.getView().getModel("onb");
             const oData = oModel.getData();
@@ -14,8 +35,10 @@ sap.ui.define([
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
-                    email: oData.email,
-                    mobile: oData.mobile
+                    candidateID: oModel.getProperty("/candidateID"),
+                    channel: "EMAIL",
+                    destination: oModel.getProperty("/email")
+
                 })
             });
 

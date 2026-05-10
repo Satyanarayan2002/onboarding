@@ -161,4 +161,13 @@ entity DocumentVerifications
     candidateID : UUID,
     reason      : String
   );
+  
+  action uploadDocumentFile(
+    candidateID : UUID,
+    documentType : String,
+    fileName : String,
+    mimeType : String,
+    content : LargeBinary
+  ) returns UUID;
+
 }

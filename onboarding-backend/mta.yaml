@@ -1,0 +1,14 @@
+_schema-version: "3.3.0"
+ID: onboarding-backend
+version: 1.0.0
+description: "CAP onboarding backend"
+
+modules:
+  - name: onboarding-backend-srv
+    type: nodejs
+    path: gen/srv
+    parameters:
+      memory: 512M
+      disk-quota: 1G
+
+resources: []

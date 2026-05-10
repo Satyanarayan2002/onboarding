@@ -1,99 +1,3 @@
-<!-- <mvc:View
-    controllerName="com.wipro.project1.controller.Verification"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m"
-    xmlns:form="sap.ui.layout.form"
-    xmlns:u="sap.ui.unified">
-
-    <Page
-        id="page"
-        title="Loreal Candidate Onboarding">
-
-        <content>
-
-            <form:SimpleForm
-                id="onboardingForm"
-                editable="true"
-                layout="ResponsiveGridLayout"
-                labelSpanXL="3"
-                labelSpanL="3"
-                labelSpanM="4"
-                labelSpanS="12">
-
-                <Label text="First Name"/>
-                <Input
-                    value="{onb>/firstName}"
-                    required="true"/>
-
-                <Label text="Last Name"/>
-                <Input
-                    value="{onb>/lastName}"
-                    required="true"/>
-
-                <Label text="Email Address"/>
-                <Input
-                    value="{onb>/email}"
-                    type="Email"
-                    required="true"/>
-
-                <Label text="Mobile Number"/>
-                <Input
-                    value="{onb>/mobile}"
-                    type="Tel"
-                    required="true"/>
-
-                <Label text="OTP Verification"/>
-
-                <Button
-                    text="Send OTP"
-                    type="Default"
-                    press=".onSendOtp"
-                    enabled="true"/>
-
-                <Input
-                    placeholder="Enter OTP"
-                    value="{onb>/otp}"
-                    visible="{onb>/otpSent}"
-                    type="Number"
-                    maxLength="6"/>
-
-                <Button
-                    text="Verify OTP"
-                    type="Emphasized"
-                    press=".onVerifyOtp"
-                    visible="{onb>/otpSent}"/>
-
-                <Text
-                    text="OTP successfully verified"
-                    visible="{onb>/otpVerified}"
-                    class="sapUiSmallMarginTop"
-                    wrapping="true"/>
-
-                <Label text="Upload National ID"/>
-                <u:FileUploader
-                    id="fileUploader"
-                    width="100%"
-                    buttonText="Choose File"
-                    fileType="jpg,png,pdf"
-                    change=".onFileUpload"/>
-
-                <Label text=""/>
-
-                <Button
-                    text="Submit Onboarding"
-                    type="Accept"
-                    press=".onSubmit"
-                    enabled="{onb>/otpVerified}"/>
-
-            </form:SimpleForm>
-
-        </content>
-
-    </Page>
-
-</mvc:View> -->
-
-
 <mvc:View
     controllerName="com.wipro.project1.controller.Verification"
     xmlns:mvc="sap.ui.core.mvc"
@@ -101,7 +5,8 @@
     xmlns:core="sap.ui.core"
     xmlns:f="sap.f"
     xmlns:l="sap.ui.layout"
-    xmlns:form="sap.ui.layout.form">
+    xmlns:form="sap.ui.layout.form"
+     xmlns:u="sap.ui.unified">
  
     <Page
         id="verificationPage"
@@ -264,7 +169,8 @@
                                     class="fieldLabel"/>
  
                                 <Input
-                                    value="john.doe@email.com"
+                                    value="{onb>/email}"
+                                    placeholder="abc@gmail.com"
                                     valueState="Success"
                                     class="inputField"/>
  
@@ -277,8 +183,9 @@
                                     class="fieldLabel topSpacing"/>
  
                                 <Input
-                                    value="+91 98765 43210"
-                                    class="inputField"/>
+                                    value=""
+                                    class="inputField"
+                                    placeholder="Enter Mobile numberart"/>
  
                                 <Text
                                     text="Include country code (e.g., +91 9876543210)"
@@ -299,12 +206,14 @@
                                     text="Send OTP to Email"
                                     icon="sap-icon://paper-plane"
                                     type="Transparent"
+                                    press=".onSendOtp"
                                     class="otpButton"/>
  
                                 <MessageStrip
                                     text="OTP sent successfully to your email."
                                     type="Success"
                                     showIcon="true"
+                                    visible="{onb>/otpSent}"
                                     class="otpSuccess"/>
  
                                 <Label
@@ -313,11 +222,13 @@
  
                                 <Input
                                     placeholder="Enter 6-digit OTP"
-                                    class="inputField"/>
- 
+                                    class="inputField"
+                                    visible="{onb>/otpSent}"/>
+
                                 <Button
                                     text="Verify OTP"
-                                    enabled="false"
+                                    enabled="{onb>/otpSent}"
+                                    press=".onVerifyOtp"
                                     class="verifyButton"/>
  
                                 <HBox class="otpInfoWrapper">
@@ -395,7 +306,7 @@
  
                                 <VBox class="uploadArea">
  
-                                    <core:Icon
+                                    <!-- <core:Icon
                                         src="sap-icon://upload"
                                         class="uploadIcon"/>
  
@@ -411,7 +322,12 @@
  
                                     <Text
                                         text="Max file size: 5 MB"
-                                        class="uploadSubText"/>
+                                        class="uploadSubText"/> -->
+                                        
+                                    <u:FileUploader
+                                        enabled="{onb>/otpVerified}"
+                                        change=".onFileUpload"/>
+
  
                                 </VBox>
  
@@ -461,11 +377,19 @@
                                     icon="sap-icon://edit"
                                     class="secondaryButton"/>
  
-                                <Button
-                                    text="Validate &amp; Submit"
-                                    icon="sap-icon://locked"
-                                    type="Emphasized"
-                                    class="primaryButton"/>
+                                
+                        <Button
+                            text="Validate"
+                            type="Emphasized"
+                            press=".onValidateDocument"
+                            visible="{= !${onb>/documentValidated} }"/>
+
+                        <Button
+                            text="Submit"
+                            type="Accept"
+                            press=".onSubmit"
+                            visible="{onb>/documentValidated}"/>
+
  
                             </HBox>
  

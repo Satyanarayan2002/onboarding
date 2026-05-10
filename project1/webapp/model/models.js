@@ -25,7 +25,10 @@ function (JSONModel, Device) {
                 otp: "",
                 otpSent: false,
                 otpVerified: false,
-                document: null
+                
+                documentUploaded: false,
+                documentValidated: false
+
             });
         }
     }

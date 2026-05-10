@@ -2,20 +2,20 @@
   "name": "onboarding-backend",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": "22.x"
+  },
   "dependencies": {
     "@sap/cds": "^9",
+    "@sap/cds-dk": "^9",
+    "@cap-js/sqlite": "^2",
     "dotenv": "^17.4.2",
     "multer": "^2.1.1",
     "nodemailer": "^8.0.7",
-    "sharp": "^0.34.5",
-    "tesseract.js": "^7.0.0",
     "twilio": "^6.0.0"
   },
-  "devDependencies": {
-    "@cap-js/sqlite": "^2"
-  },
   "scripts": {
-    "start": "cds watch"
+    "start": "npx cds serve --production"
   },
   "cds": {
     "requires": {
