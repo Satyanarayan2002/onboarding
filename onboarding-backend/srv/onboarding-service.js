@@ -35,6 +35,19 @@ cds.on("served", () => {
       filePath: req.file.path
     });
   });
+  app.post("/test-ai", async (req, res) => {
+  try {
+    const result = await cds.run(
+      INSERT.into("dummy_test").entries({ test: "OK" })
+    );
+    console.log("✅ TEST HIT");
+    res.json({ message: "Working" });
+  } catch (e) {
+    console.error(e);
+    res.status(500).send(e.message);
+  }
+});
+
 
   console.log("✅ /upload endpoint registered");
 });
@@ -61,6 +74,29 @@ module.exports = cds.service.impl(async function () {
   function hashOTP(otp) {
     return crypto.createHash("sha256").update(otp).digest("hex");
   }
+  function normalizeName(name) {
+  return (name || "")
+    .toUpperCase()
+    .replace(/[^A-Z\s]/g, "")
+    .trim();
+}
+
+function isNameMatch(dbName, ocrName) {
+  if (!dbName || !ocrName) return false;
+
+  const db = normalizeName(dbName);
+  const ocr = normalizeName(ocrName);
+
+  // ✅ match by first token
+  const dbParts = db.split(" ");
+  const ocrParts = ocr.split(" ");
+
+  return (
+    db.includes(ocr) ||
+    ocr.includes(db) ||
+    dbParts.some(p => ocrParts.includes(p))
+  );
+}
 
   async function writeAudit(tx, candidateID, action, details) {
     await tx.run(
@@ -275,12 +311,34 @@ module.exports = cds.service.impl(async function () {
       return { ID: documentID }; 
 });
 
+function formatDateToDDMMYYYY(dateStr) {
+  if (!dateStr) return null;
+
+  const parts = dateStr.split("-");
+  return `${parts[2]}/${parts[1]}/${parts[0]}`;
+}
+
   /* ==========================================================
      AI / OCR VERIFICATION (CLEAN & CORRECT)
      ========================================================== */
   this.on("triggerAIVerification", async (req) => {
     const { documentID } = req.data;
     const tx = cds.transaction(req);
+console.log("REQ DATA:", req.data);
+console.log("OCR function:", extractTextFromImage);
+
+  // ✅ TEMP TEST (before main logic)
+  // try {
+  //   const testPath = "uploads/1778441725135-PanCard2_11zon (1).jpg";   // use a real file here
+  //   if (fs.existsSync(testPath)) {
+  //     const text = await extractTextFromImage(testPath);
+  //     console.log("✅ OCR TEXT:", text);
+  //   } else {
+  //     console.log("⚠️ test.jpg not found");
+  //   }
+  // } catch (err) {
+  //   console.error("❌ OCR runtime error:", err);
+  // }
 
     const doc = await tx.run(
       SELECT.one.from(CandidateDocuments).where({ ID: documentID })
@@ -318,9 +376,27 @@ if (!extractTextFromImage) {
   };
 }
 const rawText = await extractTextFromImage(absolutePath);
-    if (!rawText) req.reject(500, "OCR failed");
 
-    const normalizedText = rawText.replace(/\s+/g, " ").toUpperCase();
+if (!rawText) req.reject(500, "OCR failed");
+
+// ✅ Step 1: convert to uppercase
+const upperText = rawText.toUpperCase();
+
+// ✅ Step 2: clean garbage text
+
+function cleanOCRText(text) {
+  return text
+    .replace(/[^A-Z0-9\/\s]/g, " ")
+    .replace(/\b[A-Z]{1,2}\b/g, "")  // remove noise like OD, RE
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+
+// ✅ Step 3: final cleaned text
+const normalizedText = cleanOCRText(upperText);
+
+console.log("✅ CLEAN TEXT:", normalizedText);
 
     let extracted;
     if (doc.documentType === "AADHAR") {
@@ -330,11 +406,79 @@ const rawText = await extractTextFromImage(absolutePath);
     } else {
       req.reject(400, "Unsupported document type");
     }
+    // ✅ LOG EXTRACTED DATA
+console.log("🔍 Extracted Data:", extracted);
 
-    const verification = verifyDocument(candidate, {
-      ...extracted,
-      rawText: normalizedText
-    });
+// ✅ GET INPUT VALUES FROM UI (IMPORTANT: they must be sent from UI)
+const inputPAN = req.data.panNumber || null;
+const inputDOB = req.data.dob || null;
+
+// ✅ LOG INPUT vs EXTRACTED
+console.log("📌 INPUT PAN:", inputPAN);
+console.log("📌 EXTRACTED PAN:", extracted.panNumber);
+
+console.log("📌 INPUT DOB:", inputDOB);
+console.log("📌 EXTRACTED DOB:", extracted.dob);
+
+    //
+// ✅ Full name from DB
+const dbFullName = `${candidate.firstName} ${candidate.lastName}`;
+
+// ✅ PAN format validation (important)
+function isValidPANFormat(pan) {
+  return /^[A-Z]{5}[0-9]{4}[A-Z]$/.test(pan);
+}
+
+// ✅ Validate extracted PAN
+const panValid = isValidPANFormat(extracted.panNumber);
+
+// ✅ PAN match (if you are NOT storing user-entered PAN separately)
+const panMatch = panValid;
+
+// 👉 OPTIONAL (if you store PAN from UI, use this instead)
+// const inputPAN = userEnteredPANFromUI;
+// const panMatch = panValid && inputPAN === extracted.panNumber;
+
+// ✅ Name match (fuzzy match function we defined earlier)
+const nameMatch = isNameMatch(dbFullName, extracted.name);
+
+// ✅ Final decision
+//const isValid = panValid && panMatch && nameMatch;  // my change 
+const isValid = nameMatch;
+
+// ✅ Convert input DOB
+const formattedInputDOB = formatDateToDDMMYYYY(inputDOB);
+
+// ✅ Compare DOB
+const dobMatch =
+  formattedInputDOB &&
+  extracted.dob &&
+  formattedInputDOB === extracted.dob;
+
+// ✅ LOG DOB COMPARISON
+console.log("📌 FORMATTED INPUT DOB:", formattedInputDOB);
+console.log("📌 EXTRACTED DOB:", extracted.dob);
+console.log("✅ DOB MATCH:", dobMatch);
+
+// ✅ Debug logs (VERY useful)
+console.log("🔍 Extracted PAN:", extracted.panNumber);
+console.log("🔍 Extracted Name:", extracted.name);
+console.log("👤 DB Name:", dbFullName);
+console.log("✅ PAN VALID:", panValid);
+console.log("✅ NAME MATCH:", nameMatch);
+
+// ✅ Final response
+const verification = {
+  result: isValid ? "MATCHED" : "FAILED",
+  score: isValid ? 0.95 : 0.5
+};
+
+
+// const verification = {
+//   result: isValidPAN ? "MATCHED" : "FAILED",
+//   score: isValidPAN ? 0.95 : 0.4
+// };
+
 
     await tx.run(
       UPDATE(CandidateDocuments)
