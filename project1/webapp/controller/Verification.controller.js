@@ -183,7 +183,13 @@ async onValidateDocument() {
             const verifyRes = await fetch("/odata/v4/otp/triggerAIVerification", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ documentID })
+                
+                body: JSON.stringify({
+                documentID,
+                panNumber: this.getView().getModel("onb").getProperty("/panNumber"),
+                dob: this.getView().getModel("onb").getProperty("/dob")
+                })
+
             });
 
             const result = await verifyRes.json();

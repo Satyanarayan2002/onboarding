@@ -276,13 +276,16 @@
 
                                         class="fieldLabel"/>
  
-                                    <DatePicker
+                                    
+                                <DatePicker
+                                    value="{onb>/dob}"
+                                    displayFormat="dd/MM/yyyy"
+                                    valueFormat="yyyy-MM-dd"
+                                    placeholder="Select date of birth"
+                                    class="customInput"
+                                    required="true"
+                                    width="100%"/>
 
-                                        placeholder="Select date of birth"
-
-                                        class="customInput" required="true"
-
-                                        width="100%"/>
  
                                     <Text
 

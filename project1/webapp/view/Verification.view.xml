@@ -293,7 +293,7 @@
                                 <Label text="Document Number *" class="fieldLabel"/>
  
                                 <Input
-                                    value="Z1234567"
+                                    value="{onb>/panNumber}"
                                     class="inputField"/>
  
                                 <Text
