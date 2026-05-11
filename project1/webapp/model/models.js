@@ -25,6 +25,10 @@ function (JSONModel, Device) {
                 lastName: "",
                 email: "",
                 mobile: "",
+                
+                // ✅ ADD THESE
+                    panNumber: "",   // <---- ADD THIS
+                    dob: "",         // <---- ADD THIS
 
                 /* ======================
                    OTP FLOW
