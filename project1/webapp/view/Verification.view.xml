@@ -397,8 +397,7 @@
 <Button
   text="Validate"
   press=".onValidateDocument"
-  enabled="{onb>/documentUploaded}"
-  visible="{= ${onb>/documentValidated} !== true }"/>
+  />
 
 
 

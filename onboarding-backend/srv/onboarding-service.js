@@ -1,4 +1,5 @@
 const cds = require("@sap/cds");
+const { v4: uuidv4 } = require("uuid"); 
 const crypto = require("crypto");
 const path = require("path");
 const fs = require("fs");
@@ -84,7 +85,7 @@ module.exports = cds.service.impl(async function () {
       SELECT.one.from(Candidates).where({ ID: candidateID })
     );
     if (!candidate) req.reject(404, "Candidate not found");
-    if (candidate.status !== "DRAFT") {
+    if (candidate.status !== "DRAFT" && candidate.status !== "CONTACT_VERIFIED") {
       req.reject(409, "OTP allowed only in DRAFT state");
     }
 
@@ -256,8 +257,10 @@ module.exports = cds.service.impl(async function () {
 
     const filePath = `${uploadDir}/${Date.now()}-${fileName}`;
     fs.writeFileSync(filePath, buffer);
+       const documentID = uuidv4();
 
     const doc = await INSERT.into(this.entities.CandidateDocuments).entries({
+        ID: documentID,  
         candidate_ID: candidateID,
         documentType,
         fileName,
@@ -268,8 +271,8 @@ module.exports = cds.service.impl(async function () {
         verificationStatus: "UPLOADED"
     });
 
-    console.log("✅ Document created:", doc.ID);
-    return doc.ID;
+    console.log("✅ Document created:", documentID);
+      return { ID: documentID }; 
 });
 
   /* ==========================================================
