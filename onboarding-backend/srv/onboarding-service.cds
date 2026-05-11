@@ -148,9 +148,16 @@ entity DocumentVerifications
     filePath     : String
   );
 
-  action triggerAIVerification(
-    documentID : UUID
-  );
+action triggerAIVerification(
+  documentID : UUID,
+  panNumber  : String,
+  dob        : String
+)
+returns {
+  result : String;
+  score  : Decimal(5,2);
+  reason : String;
+};
 
   action restartOnboarding(
     candidateID : UUID,
