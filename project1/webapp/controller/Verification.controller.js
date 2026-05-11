@@ -124,7 +124,8 @@ async onFileUpload(oEvent) {
     return;
   }
 
-  const documentID = await response.json();
+  const data = await response.json();
+  const documentID = data.ID;
 
   // ✅ IMPORTANT UI FLAGS
   oModel.setProperty("/documentID", documentID);
