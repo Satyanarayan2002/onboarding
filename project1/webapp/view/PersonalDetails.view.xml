@@ -1,466 +1,391 @@
-
- 
 <mvc:View
-
     controllerName="com.wipro.project1.controller.PersonalDetails"
-
     xmlns:mvc="sap.ui.core.mvc"
-
     xmlns="sap.m"
-
     xmlns:core="sap.ui.core"
-
-    xmlns:l="sap.ui.layout">
- 
+    xmlns:l="sap.ui.layout"
+>
     <Page
-
         showHeader="false"
-
-        class="onboardingPage">
- 
+        class="onboardingPage"
+    >
         <content>
- 
             <!-- HEADER -->
- 
+
             <VBox class="shellHeaderWrapper">
- 
                 <HBox
-
                     justifyContent="SpaceBetween"
-
                     alignItems="Center"
-
-                    class="shellHeader">
- 
+                    class="shellHeader"
+                >
                     <HBox alignItems="Center">
- 
                         <Image
-
                             src="img/sap-logo.png"
+                            width="54px"
+                        />
 
-                            width="54px"/>
- 
                         <Title
-
                             text="Candidate Onboarding"
-
                             level="H4"
+                            class="shellTitle"
+                        />
 
-                            class="shellTitle"/>
- 
                         <Button
-
                             icon="sap-icon://slim-arrow-down"
-
-                            type="Transparent"/>
- 
+                            type="Transparent"
+                        />
                     </HBox>
- 
+
                     <HBox>
- 
                         <Button
-
                             icon="sap-icon://sys-help"
+                            type="Transparent"
+                        />
 
-                            type="Transparent"/>
- 
                         <Button
-
                             icon="sap-icon://employee"
+                            type="Transparent"
+                        />
 
-                            type="Transparent"/>
- 
                         <Button
-
                             icon="sap-icon://slim-arrow-down"
-
-                            type="Transparent"/>
- 
+                            type="Transparent"
+                        />
                     </HBox>
- 
                 </HBox>
- 
             </VBox>
- 
+
             <!-- MAIN CONTENT -->
- 
+
             <VBox class="pageWrapper">
- 
                 <!-- TITLE + STEPPER -->
- 
+
                 <HBox
-
                     justifyContent="SpaceBetween"
-
-                    class="pageHeaderSection">
- 
+                    class="pageHeaderSection"
+                >
                     <VBox width="55%">
- 
                         <Title
-
                             text="Candidate Onboarding – Basic Personal Information"
-
                             level="H1"
+                            class="mainTitle"
+                        />
 
-                            class="mainTitle"/>
- 
                         <Text
-
                             text="Please ensure your personal details exactly match your official documents."
-
-                            class="subTitle"/>
- 
+                            class="subTitle"
+                        />
                     </VBox>
- 
+
                     <!-- STEPPER -->
- 
+
                     <VBox alignItems="Center">
- 
                         <Title
-
                             text="Step 2 of 4 – Personal Details"
-
                             level="H5"
+                            class="wizardTitle"
+                        />
 
-                            class="wizardTitle"/>
- 
                         <HBox
-
                             alignItems="Center"
-
-                            class="wizardWrapper">
- 
+                            class="wizardWrapper"
+                        >
                             <VBox alignItems="Center">
-<Avatar
-
+                                <Avatar
                                     initials="✓"
+                                    class="wizardCompleted"
+                                />
+                                <Text
+                                    text="Welcome"
+                                    class="wizardText"
+                                />
+                            </VBox>
 
-                                    class="wizardCompleted"/>
-<Text text="Welcome" class="wizardText"/>
-</VBox>
- 
-                            <HBox class="wizardLine"/>
- 
+                            <HBox class="wizardLine" />
+
                             <VBox alignItems="Center">
-<Avatar
-
+                                <Avatar
                                     initials="2"
+                                    class="wizardActive"
+                                />
+                                <Text
+                                    text="Personal Details"
+                                    class="wizardTextActive"
+                                />
+                            </VBox>
 
-                                    class="wizardActive"/>
-<Text text="Personal Details" class="wizardTextActive"/>
-</VBox>
- 
-                            <HBox class="wizardLine"/>
- 
+                            <HBox class="wizardLine" />
+
                             <VBox alignItems="Center">
-<Avatar
-
+                                <Avatar
                                     initials="3"
+                                    class="wizardInactive"
+                                />
+                                <Text
+                                    text="Verification"
+                                    class="wizardText"
+                                />
+                            </VBox>
 
-                                    class="wizardInactive"/>
-<Text text="Verification" class="wizardText"/>
-</VBox>
- 
-                            <HBox class="wizardLine"/>
- 
+                            <HBox class="wizardLine" />
+
                             <VBox alignItems="Center">
-<Avatar
-
+                                <Avatar
                                     initials="4"
-
-                                    class="wizardInactive"/>
-<Text text="Review &amp; Submit" class="wizardText"/>
-</VBox>
- 
+                                    class="wizardInactive"
+                                />
+                                <Text
+                                    text="Review &amp; Submit"
+                                    class="wizardText"
+                                />
+                            </VBox>
                         </HBox>
- 
                     </VBox>
- 
                 </HBox>
- 
+
                 <!-- FORM PANEL -->
- 
+
                 <Panel class="mainPanel">
- 
                     <headerToolbar>
-<Toolbar>
-<Title
-
+                        <Toolbar>
+                            <Title
                                 text="Basic Identity Information"
+                                level="H3"
+                            />
+                        </Toolbar>
+                    </headerToolbar>
 
-                                level="H3"/>
-</Toolbar>
-</headerToolbar>
- 
                     <content>
- 
                         <VBox class="formWrapper">
- 
                             <l:Grid
-
                                 defaultSpan="XL6 L6 M12 S12"
-
                                 hSpacing="2"
-
-                                vSpacing="2">
- 
+                                vSpacing="2"
+                            >
                                 <!-- FIRST NAME -->
- 
-                                <VBox class="fieldWrapper">
- 
-                                    <Label
 
+                                <VBox class="fieldWrapper">
+                                    <Label
                                         text="First Name"
+                                        class="fieldLabel"
+                                    />
 
-                                        class="fieldLabel"/>
- 
                                     <Input
-
                                         placeholder="Enter your first name"
+                                        class="customInput"
+                                        value="{onb>/firstName}"
+                                        required="true"
+                                    />
 
-                                        class="customInput" value="{onb>/firstName}" required="true"/>
- 
                                     <Text
-
                                         text="Enter your first name exactly as it appears on your ID document."
-
-                                        class="helperText"/>
- 
+                                        class="helperText"
+                                    />
                                 </VBox>
- 
+
                                 <!-- LAST NAME -->
- 
+
                                 <VBox class="fieldWrapper">
- 
                                     <Label
-
                                         text="Last Name"
+                                        class="fieldLabel"
+                                    />
 
-                                        class="fieldLabel"/>
- 
                                     <Input
-
                                         placeholder="Enter your last name"
+                                        class="customInput"
+                                        value="{onb>/lastName}"
+                                        required="true"
+                                    />
 
-                                        class="customInput" value="{onb>/lastName}" required="true"/>
- 
                                     <Text
-
                                         text="Enter your last name exactly as it appears on your ID document."
-
-                                        class="helperText"/>
- 
+                                        class="helperText"
+                                    />
                                 </VBox>
-                                    
+
                                 <!-- ADD EMAIL FIELD (IMPORTANT) -->
                                 <VBox class="fieldWrapper">
-                                    <Label text="Email Address *" class="fieldLabel"/>
+                                    <Label
+                                        text="Email Address *"
+                                        class="fieldLabel"
+                                    />
                                     <Input
                                         value="{onb>/email}"
                                         type="Email"
                                         placeholder="abc@gmail.com"
                                         class="customInput"
-                                        required="true"/>
+                                        required="true"
+                                    />
                                     <Text
                                         text="We will send OTP to this email for verification."
-                                        class="helperText"/>
+                                        class="helperText"
+                                    />
                                 </VBox>
 
                                 <!-- DATE -->
- 
-                                <VBox class="fieldWrapper">
- 
-                                    <Label
 
+                                <VBox class="fieldWrapper">
+                                    <Label
                                         text="Date of Birth"
+                                        class="fieldLabel"
+                                    />
 
-                                        class="fieldLabel"/>
- 
-                                    
-                                <DatePicker
-                                    value="{onb>/dob}"
-                                    displayFormat="dd/MM/yyyy"
-                                    valueFormat="yyyy-MM-dd"
-                                    placeholder="Select date of birth"
-                                    class="customInput"
-                                    required="true"
-                                    width="100%"/>
-
- 
-                                    <Text
-
-                                        text="Used for identity validation purposes."
-
-                                        class="helperText"/>
- 
-                                </VBox>
- 
-                                <!-- GENDER -->
- 
-                                <VBox class="fieldWrapper">
- 
-                                    <Label
-
-                                        text="Gender"
-
-                                        class="fieldLabel"/>
- 
-                                    <Select selectedKey="{onb>/gender}"
-
+                                    <DatePicker
+                                        value="{onb>/dob}"
+                                        displayFormat="dd/MM/yyyy"
+                                        valueFormat="yyyy-MM-dd"
+                                        placeholder="Select date of birth"
                                         class="customInput"
+                                        required="true"
+                                        width="100%"
+                                    />
 
-                                        width="100%"  required="true">
- 
+                                    <Text
+                                        text="Used for identity validation purposes."
+                                        class="helperText"
+                                    />
+                                </VBox>
+
+                                <!-- GENDER -->
+
+                                <VBox class="fieldWrapper">
+                                    <Label
+                                        text="Gender"
+                                        class="fieldLabel"
+                                    />
+
+                                    <Select
+                                        selectedKey="{onb>/gender}"
+                                        class="customInput"
+                                        width="100%"
+                                        required="true"
+                                    >
                                         <items>
-<core:Item key="m" text="Male"/>
-<core:Item key="f" text="Female"/>
-</items>
- 
+                                            <core:Item
+                                                key="m"
+                                                text="Male"
+                                            />
+                                            <core:Item
+                                                key="f"
+                                                text="Female"
+                                            />
+                                        </items>
                                     </Select>
- 
-                                    <Text
 
+                                    <Text
                                         text="Select your gender as per your official documents."
-
-                                        class="helperText"/>
- 
+                                        class="helperText"
+                                    />
                                 </VBox>
- 
+
                                 <!-- NATIONALITY -->
- 
-                                <VBox class="fieldWrapper">
- 
-                                    <Label
 
+                                <VBox class="fieldWrapper">
+                                    <Label
                                         text="Nationality"
+                                        class="fieldLabel"
+                                    />
 
-                                        class="fieldLabel"/>
- 
                                     <ComboBox
+                                        placeholder="Search and select nationality"
+                                        value="{onb>/nationality}"
+                                        class="customInput"
+                                        required="true"
+                                        width="100%"
+                                    />
 
-                                        placeholder="Search and select nationality" value="{onb>/nationality}"
-
-                                        class="customInput"  required="true"
-
-                                        width="100%"/>
- 
                                     <Text
-
                                         text="Select your nationality as per your official documents."
-
-                                        class="helperText"/>
- 
+                                        class="helperText"
+                                    />
                                 </VBox>
- 
+
                                 <!-- SYSTEM ID -->
- 
+
                                 <VBox class="fieldWrapper">
- 
                                     <Label
-
                                         text="Candidate System ID"
+                                        class="fieldLabel"
+                                    />
 
-                                        class="fieldLabel"/>
- 
                                     <Input
-
                                         value="AV-CAND-102938"
-
                                         editable="false"
+                                        class="customInput readOnlyInput"
+                                    />
 
-                                        class="customInput readOnlyInput" />
- 
                                     <Text
-
                                         text="System generated ID for tracking purposes (read-only)."
-
-                                        class="helperText"/>
- 
+                                        class="helperText"
+                                    />
                                 </VBox>
- 
                             </l:Grid>
- 
                         </VBox>
- 
+
                         <!-- BUTTONS -->
- 
+
                         <HBox
-
                             justifyContent="End"
-
-                            class="buttonSection">
- 
+                            class="buttonSection"
+                        >
                             <Button
-
                                 text="Back"
-
                                 icon="sap-icon://nav-back"
-
                                 press=".onBack"
+                                class="secondaryBtn"
+                            />
 
-                                class="secondaryBtn"/>
- 
                             <Button
-
                                 text="Save &amp; Continue"
-
                                 icon="sap-icon://navigation-right-arrow"
-
                                 type="Emphasized"
-
                                 press=".onContinue"
-
-                                class="primaryBtn"/>
- 
+                                class="primaryBtn"
+                            />
                         </HBox>
- 
+
                         <!-- INFO STRIP -->
- 
+
                         <HBox class="infoStrip">
- 
                             <core:Icon
-
                                 src="sap-icon://message-information"
+                                class="infoIcon"
+                            />
 
-                                class="infoIcon"/>
- 
                             <Text
-
                                 text="All fields marked with * are mandatory."
-
-                                class="infoText"/>
- 
+                                class="infoText"
+                            />
                         </HBox>
- 
                     </content>
- 
                 </Panel>
- 
+
                 <!-- FOOTER -->
- 
+
                 <HBox
-
                     justifyContent="Center"
-
-                    class="footerSection">
- 
+                    class="footerSection"
+                >
                     <Text
-
                         text="© 2025 SAP SE or an SAP affiliate company. All rights reserved."
+                        class="footerText"
+                    />
 
-                        class="footerText"/>
- 
-                    <Link text="Privacy" class="footerLink"/>
-<Link text="Terms of Use" class="footerLink"/>
-<Link text="Cookie Preferences" class="footerLink"/>
- 
+                    <Link
+                        text="Privacy"
+                        class="footerLink"
+                    />
+                    <Link
+                        text="Terms of Use"
+                        class="footerLink"
+                    />
+                    <Link
+                        text="Cookie Preferences"
+                        class="footerLink"
+                    />
                 </HBox>
- 
             </VBox>
- 
         </content>
- 
     </Page>
- 
 </mvc:View>
- 
