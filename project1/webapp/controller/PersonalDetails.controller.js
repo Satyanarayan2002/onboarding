@@ -17,12 +17,17 @@ sap.ui.define([
             },
  
             onContinue: function () {
- 
-                MessageToast.show(
-                    "Personal Information Saved Successfully"
-                );
+
+                // ✅ Get full onboarding model
+                var oData = this.getView().getModel("onb").getData();
+
+                // ✅ Log to console (for debugging)
+                console.log("✅ Personal Details Model:", oData);
+
+                MessageToast.show("Personal Information Saved Successfully");
+
+                // ✅ Navigate to verification page
                 this.getRouter().navTo("verification");
- 
             }
  
         }

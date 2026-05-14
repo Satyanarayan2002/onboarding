@@ -27,47 +27,87 @@ exports.extractPANData = (text) => {
 
   // ✅ STEP 1: CLEAN TEXT
   const cleaned = text
-    .replace(/[^A-Z0-9\/\s]/g, " ")
-    .replace(/\b(OD|RE|AE|SE|ET|ST|EE|FT|TAR|SUTRA)\b/g, "")
+    .replace(/[^A-Z0-9\/:\s]/g, " ")
     .replace(/\s+/g, " ")
     .trim();
 
   console.log("✅ CLEANED TEXT:", cleaned);
-
-  // ✅ STEP 2: NORMALIZE FULL TEXT (REMOVE ALL NOISE)
-  const normalizedPANText = cleaned.replace(/[^A-Z0-9]/g, "");
-
-  console.log("🔍 NORMALIZED PAN TEXT:", normalizedPANText);
 
   let panNumber = null;
   let name = null;
   let motherName = null;
   let dob = null;
 
-  // ✅ STEP 3: GLOBAL PAN MATCH
-  const allMatches = normalizedPANText.match(/[A-Z]{5}[0-9]{4}[A-Z]/g);
+  // ==================================================
+  // ✅ STEP 2: PAN EXTRACTION (FINAL - KEYWORD BASED)
+  // ==================================================
 
-  if (allMatches && allMatches.length > 0) {
-    panNumber = allMatches[0];
-    console.log("✅ EXTRACTED PAN:", panNumber);
-  } else {
-    console.log("❌ PAN NOT FOUND");
+  const keyword = "PERMANENT ACCOUNT NUMBER";
+
+  if (cleaned.includes(keyword)) {
+
+    const afterKeyword = cleaned.split(keyword)[1]?.trim();
+
+    console.log("🔍 AFTER KEYWORD:", afterKeyword);
+
+    if (afterKeyword) {
+
+      // ✅ take first word after keyword
+      const firstWord = afterKeyword.split(" ")[0];
+
+      // ✅ remove any OCR garbage
+      const cleanedPAN = firstWord.replace(/[^A-Z0-9]/g, "");
+
+      // ✅ PAN should be 10 chars → fix OCR noise
+      panNumber = cleanedPAN.substring(0, 10);
+    }
   }
 
-  // ✅ STEP 4: DOB
-  const dobMatch = cleaned.match(/\d{2}\/\d{2}\/\d{4}/);
-  dob = dobMatch ? dobMatch[0] : null;
-  console.log("✅ EXTRACTED DOB:", dob);
+  // ✅ FALLBACK (in case keyword fails)
+  if (!panNumber) {
+    const fallbackMatch = cleaned.match(/[A-Z]{5}[0-9]{4}[A-Z]/);
+    if (fallbackMatch) {
+      panNumber = fallbackMatch[0];
+    }
+  }
 
-  // ✅ STEP 5: NAME
-  const nameMatch = cleaned.match(/NAME\s+[A-Z\s]*?([A-Z]+\s+[A-Z]+)/);
-  name = nameMatch ? nameMatch[1] : null;
-  console.log("✅ EXTRACTED NAME:", name);
+  console.log("✅ PAN:", panNumber);
 
-  // ✅ STEP 6: MOTHER NAME
+  // ==================================================
+  // ✅ STEP 3: NAME EXTRACTION
+  // ==================================================
+
+  const nameMatch = cleaned.match(/NAME\s+([A-Z]+\s+[A-Z]+)/);
+
+  if (nameMatch) {
+    name = nameMatch[1];
+  }
+
+  console.log("✅ NAME:", name);
+
+  // ==================================================
+  // ✅ STEP 4: MOTHER NAME
+  // ==================================================
+
   const motherMatch = cleaned.match(/MOTHER\s+NAME\s+([A-Z]+\s+[A-Z]+)/);
-  motherName = motherMatch ? motherMatch[1] : null;
-  console.log("✅ EXTRACTED MOTHER NAME:", motherName);
+
+  if (motherMatch) {
+    motherName = motherMatch[1];
+  }
+
+  console.log("✅ MOTHER NAME:", motherName);
+
+  // ==================================================
+  // ✅ STEP 5: DOB
+  // ==================================================
+
+  const dobMatch = cleaned.match(/\d{2}\/\d{2}\/\d{4}/);
+
+  if (dobMatch) {
+    dob = dobMatch[0];
+  }
+
+  console.log("✅ DOB:", dob);
 
   return {
     panNumber,

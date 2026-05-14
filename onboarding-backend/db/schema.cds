@@ -202,3 +202,41 @@ entity AuditLog : cuid, managed {
 
   eventTime      : Timestamp;
 }
+
+entity DashboardData {
+
+    key ID : UUID;
+
+    candidateName : String;
+    candidateId   : String;
+    email         : String;
+    position      : String;
+
+    status        : String;
+    validation    : String;
+    failureReason : String;
+
+    uploadedAt    : Timestamp;
+    verifiedAt    : Timestamp;
+
+}
+
+entity DashboardKPI {
+
+    key ID : Integer;
+
+    totalCandidates     : Integer;
+    pendingValidation   : Integer;
+    failedValidation    : Integer;
+    successfulSubmission: Integer;
+
+}
+
+entity DashboardAnalytics {
+
+    key ID : Integer;
+
+    status        : String;
+    count         : Integer;
+
+}

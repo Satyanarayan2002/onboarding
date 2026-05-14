@@ -121,7 +121,7 @@ function isNameMatch(dbName, ocrName) {
       SELECT.one.from(Candidates).where({ ID: candidateID })
     );
     if (!candidate) req.reject(404, "Candidate not found");
-    if (candidate.status !== "DRAFT" && candidate.status !== "CONTACT_VERIFIED") {
+    if (candidate.status !== "DRAFT" && candidate.status !== "CONTACT_VERIFIED" && candidate.status !== "DOCS_UPLOADED" ) {
       req.reject(409, "OTP allowed only in DRAFT state");
     }
 
@@ -321,184 +321,442 @@ function formatDateToDDMMYYYY(dateStr) {
   /* ==========================================================
      AI / OCR VERIFICATION (CLEAN & CORRECT)
      ========================================================== */
-  this.on("triggerAIVerification", async (req) => {
-    const { documentID } = req.data;
-    const tx = cds.transaction(req);
-console.log("REQ DATA:", req.data);
-console.log("OCR function:", extractTextFromImage);
+//   this.on("triggerAIVerification", async (req) => {
+    
+// const {
+//   documentID,
+//   firstName,
+//   lastName,
+//   panNumber,
+//   dob,
+//   nationality
+// } = req.data;
 
-  // ✅ TEMP TEST (before main logic)
-  // try {
-  //   const testPath = "uploads/1778441725135-PanCard2_11zon (1).jpg";   // use a real file here
-  //   if (fs.existsSync(testPath)) {
-  //     const text = await extractTextFromImage(testPath);
-  //     console.log("✅ OCR TEXT:", text);
-  //   } else {
-  //     console.log("⚠️ test.jpg not found");
-  //   }
-  // } catch (err) {
-  //   console.error("❌ OCR runtime error:", err);
-  // }
+//     const tx = cds.transaction(req);
+// console.log("REQ DATA:", req.data);
+// console.log("OCR function:", extractTextFromImage);
 
-    const doc = await tx.run(
-      SELECT.one.from(CandidateDocuments).where({ ID: documentID })
+//   // ✅ TEMP TEST (before main logic)
+//   // try {
+//   //   const testPath = "uploads/1778441725135-PanCard2_11zon (1).jpg";   // use a real file here
+//   //   if (fs.existsSync(testPath)) {
+//   //     const text = await extractTextFromImage(testPath);
+//   //     console.log("✅ OCR TEXT:", text);
+//   //   } else {
+//   //     console.log("⚠️ test.jpg not found");
+//   //   }
+//   // } catch (err) {
+//   //   console.error("❌ OCR runtime error:", err);
+//   // }
+
+// console.log("📥 UI DATA RECEIVED:");
+// console.log("First Name:", firstName);
+// console.log("Last Name:", lastName);
+// console.log("PAN:", panNumber);
+// console.log("DOB:", dob);
+// console.log("Nationality:", nationality);
+
+//     const doc = await tx.run(
+//       SELECT.one.from(CandidateDocuments).where({ ID: documentID })
+//     );
+//     if (!doc) req.reject(404, "Document not found");
+
+//     const candidate = await tx.run(
+//       SELECT.one.from(Candidates).where({ ID: doc.candidate_ID })
+//     );
+//     if (!candidate) req.reject(404, "Candidate not found");
+
+//     const absolutePath = path.resolve(doc.filePath);
+//     if (!fs.existsSync(absolutePath)) {
+//       req.reject(500, "Uploaded file not found on server");
+//     }
+
+//     // const rawText = await extractTextFromImage(absolutePath);
+//     // ✅ MOCK OCR when running in Cloud Foundry
+// if (!extractTextFromImage) {
+//   console.log("⚠️ OCR not available, using mock verification");
+
+//   await tx.run(
+//     UPDATE(CandidateDocuments)
+//       .set({
+//         verificationStatus: "VERIFIED",
+//         aiConfidenceScore: 0.95
+//       })
+//       .where({ ID: documentID })
+//   );
+
+//   return {
+//     result: "MATCHED",
+//     score: 0.95,
+//     reason: "MOCK_VERIFICATION"
+//   };
+// }
+// const rawText = await extractTextFromImage(absolutePath);
+
+// if (!rawText) req.reject(500, "OCR failed");
+
+// // ✅ Step 1: convert to uppercase
+// const upperText = rawText.toUpperCase();
+
+// // ✅ Step 2: clean garbage text
+
+// function cleanOCRText(text) {
+//   return text
+//     .replace(/[^A-Z0-9\/\s]/g, " ")
+//     .replace(/\b[A-Z]{1,2}\b/g, "")  // remove noise like OD, RE
+//     .replace(/\s+/g, " ")
+//     .trim();
+// }
+
+
+// // ✅ Step 3: final cleaned text
+// const normalizedText = cleanOCRText(upperText);
+
+// console.log("✅ CLEAN TEXT:", normalizedText);
+
+//     let extracted;
+//     if (doc.documentType === "AADHAR") {
+//       extracted = extractAadhaarData(normalizedText);
+//     } else if (doc.documentType === "PAN") {
+//       extracted = extractPANData(normalizedText);
+//     } else {
+//       req.reject(400, "Unsupported document type");
+//     }
+//     // ✅ LOG EXTRACTED DATA
+// console.log("🔍 Extracted Data:", extracted);
+
+// // ✅ GET INPUT VALUES FROM UI (IMPORTANT: they must be sent from UI)
+// const inputPAN = panNumber || null;
+// const inputDOB = dob || null;
+
+// // Build full name from UI instead of DB (if needed)
+// const uiFullName = `${firstName || ""} ${lastName || ""}`.trim();
+
+// // ✅ LOG INPUT vs EXTRACTED
+// console.log("📌 INPUT PAN:", inputPAN);
+// console.log("📌 EXTRACTED PAN:", extracted.panNumber);
+
+// console.log("📌 INPUT DOB:", inputDOB);
+// console.log("📌 EXTRACTED DOB:", extracted.dob);
+
+//     //
+// // ✅ Full name from DB
+// const dbFullName = `${candidate.firstName} ${candidate.lastName}`;
+
+// // ✅ PAN format validation (important)
+// function isValidPANFormat(pan) {
+//   return /^[A-Z]{5}[0-9]{4}[A-Z]$/.test(pan);
+// }
+
+// // ✅ Validate extracted PAN
+// const panValid = isValidPANFormat(extracted.panNumber);
+
+// // ✅ PAN match (if you are NOT storing user-entered PAN separately)
+// const panMatch = panValid;
+
+// // 👉 OPTIONAL (if you store PAN from UI, use this instead)
+// // const inputPAN = userEnteredPANFromUI;
+// // const panMatch = panValid && inputPAN === extracted.panNumber;
+
+// // ✅ Name match (fuzzy match function we defined earlier)
+// const nameToCompare = uiFullName || dbFullName;
+// const nameMatch = isNameMatch(nameToCompare, extracted.name);
+
+// // ✅ Final decision
+// //const isValid = panValid && panMatch && nameMatch;  // my change 
+// const isValid = nameMatch;
+
+// // ✅ Convert input DOB
+// const formattedInputDOB = formatDateToDDMMYYYY(inputDOB);
+
+// // ✅ Compare DOB
+// const dobMatch =
+//   formattedInputDOB &&
+//   extracted.dob &&
+//   formattedInputDOB === extracted.dob;
+
+// // ✅ LOG DOB COMPARISON
+// console.log("📌 FORMATTED INPUT DOB:", formattedInputDOB);
+// console.log("📌 EXTRACTED DOB:", extracted.dob);
+// console.log("✅ DOB MATCH:", dobMatch);
+
+// // ✅ Debug logs (VERY useful)
+// console.log("🔍 Extracted PAN:", extracted.panNumber);
+// console.log("🔍 Extracted Name:", extracted.name);
+// console.log("👤 DB Name:", dbFullName);
+// console.log("✅ PAN VALID:", panValid);
+// console.log("✅ NAME MATCH:", nameMatch);
+
+// // ✅ Final response
+// const verification = {
+//   result: isValid ? "MATCHED" : "FAILED",
+//   score: isValid ? 0.95 : 0.5
+// };
+
+
+// // const verification = {
+// //   result: isValidPAN ? "MATCHED" : "FAILED",
+// //   score: isValidPAN ? 0.95 : 0.4
+// // };
+
+
+//     await tx.run(
+//       UPDATE(CandidateDocuments)
+//         .set({
+//           verificationStatus: verification.result,
+//           aiConfidenceScore: verification.score
+//         })
+//         .where({ ID: documentID })
+//     );
+
+//     await tx.run(
+//       INSERT.into(DocumentVerifications).entries({
+//         document_ID: documentID,
+//         aiEngine: "OCR_RULE_ENGINE",
+//         verificationResult: verification.result,
+//         matchedFields: JSON.stringify(extracted),
+//         verifiedAt: new Date()
+//       })
+//     );
+
+//     return verification;
+//   });
+this.on("triggerAIVerification", async (req) => {
+
+  const {
+    documentID,
+    firstName,
+    lastName,
+    panNumber,
+    dob,
+    nationality
+  } = req.data;
+
+  const tx = cds.transaction(req);
+
+  console.log("📥 UI DATA:", req.data);
+
+  const doc = await tx.run(
+    SELECT.one.from(CandidateDocuments).where({ ID: documentID })
+  );
+  if (!doc) req.reject(404, "Document not found");
+
+  const candidate = await tx.run(
+    SELECT.one.from(Candidates).where({ ID: doc.candidate_ID })
+  );
+  if (!candidate) req.reject(404, "Candidate not found");
+
+  const absolutePath = path.resolve(doc.filePath);
+  if (!fs.existsSync(absolutePath)) {
+    req.reject(500, "Uploaded file not found");
+  }
+
+  // ✅ OCR NOT AVAILABLE (mock)
+  if (!extractTextFromImage) {
+    await tx.run(
+      UPDATE(CandidateDocuments)
+        .set({ verificationStatus: "VERIFIED", aiConfidenceScore: 0.95 })
+        .where({ ID: documentID })
     );
-    if (!doc) req.reject(404, "Document not found");
 
-    const candidate = await tx.run(
-      SELECT.one.from(Candidates).where({ ID: doc.candidate_ID })
-    );
-    if (!candidate) req.reject(404, "Candidate not found");
+    return { result: "MATCHED", score: 0.95 };
+  }
 
-    const absolutePath = path.resolve(doc.filePath);
-    if (!fs.existsSync(absolutePath)) {
-      req.reject(500, "Uploaded file not found on server");
-    }
+  const rawText = await extractTextFromImage(absolutePath);
+  if (!rawText) req.reject(500, "OCR failed");
 
-    // const rawText = await extractTextFromImage(absolutePath);
-    // ✅ MOCK OCR when running in Cloud Foundry
-if (!extractTextFromImage) {
-  console.log("⚠️ OCR not available, using mock verification");
+  // ============================
+  // ✅ CLEAN TEXT
+  // ============================
+  const cleanedText = rawText
+    .toUpperCase()
+    .replace(/[^A-Z0-9\/\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 
+  console.log("✅ CLEAN TEXT:", cleanedText);
+
+  // ============================
+  // ✅ EXTRACT DATA
+  // ============================
+  let extracted;
+  if (doc.documentType === "PAN") {
+    extracted = extractPANData(cleanedText);
+  } else {
+    req.reject(400, "Only PAN supported for now");
+  }
+
+  console.log("🔍 Extracted:", extracted);
+
+  // ============================
+  // ✅ NORMALIZE PAN
+  // ============================
+  const normalizedExtractedPAN = (extracted?.panNumber || "")
+    .replace(/[^A-Z0-9]/g, "")
+    .trim()
+    .toUpperCase();
+
+  const normalizedInputPAN = (panNumber || "")
+    .replace(/[^A-Z0-9]/g, "")
+    .trim()
+    .toUpperCase();
+
+  console.log("✅ INPUT PAN:", normalizedInputPAN);
+  console.log("✅ OCR PAN:", normalizedExtractedPAN);
+
+  // ✅ VALIDATE PAN FORMAT
+  const panValid = /^[A-Z]{5}[0-9]{4}[A-Z]$/.test(normalizedExtractedPAN);
+
+  // ✅ STRICT MATCH
+  const panMatch =
+    //panValid &&
+    normalizedInputPAN == normalizedExtractedPAN;
+
+  console.log("✅ PAN VALID:", panValid);
+  console.log("✅ PAN MATCH:", panMatch);
+
+  // ============================
+  // ✅ NORMALIZE NAMES
+  // ============================
+  function normalizeName(name) {
+    return (name || "")
+      .replace(/[^A-Z\s]/gi, "")
+      .replace(/\s+/g, " ")
+      .trim()
+      .toUpperCase();
+  }
+
+  const dbFullName = `${candidate.firstName} ${candidate.lastName}`;
+  const uiFullName = `${firstName || ""} ${lastName || ""}`.trim();
+
+  const normalizedDBName = normalizeName(dbFullName);
+  const normalizedUIName = normalizeName(uiFullName);
+  const normalizedExtractedName = normalizeName(extracted?.name);
+
+  console.log("✅ DB NAME:", normalizedDBName);
+  console.log("✅ UI NAME:", normalizedUIName);
+  console.log("✅ OCR NAME:", normalizedExtractedName);
+
+  // ✅ STRICT NAME MATCH
+  const nameMatch =
+    normalizedExtractedName === normalizedDBName ||
+    normalizedExtractedName === normalizedUIName;
+
+  console.log("✅ NAME MATCH:", nameMatch);
+
+  // ============================
+  // ✅ DOB MATCH
+  // ============================
+  function formatDOB(dateStr) {
+    if (!dateStr) return null;
+
+    if (dateStr.includes("/")) return dateStr;
+
+    const parts = dateStr.split("-");
+    if (parts.length !== 3) return null;
+
+    return `${parts[2]}/${parts[1]}/${parts[0]}`;
+  }
+
+  const formattedDOB = formatDOB(dob);
+
+  const dobMatch =
+    formattedDOB &&
+    extracted?.dob &&
+    formattedDOB === extracted.dob;
+
+  console.log("✅ DOB MATCH:", dobMatch);
+
+  // ============================
+  // ✅ FINAL VALIDATION
+  // ============================
+  const isValid =
+    panMatch &&
+    nameMatch &&
+    (dobMatch || !dob);
+
+  const verification = {
+    result: isValid ? "MATCHED" : "FAILED",
+    score: isValid ? 0.95 : 0.5
+  };
+
+  // ============================
+  // ✅ SAVE RESULT
+  // ============================
   await tx.run(
     UPDATE(CandidateDocuments)
       .set({
-        verificationStatus: "VERIFIED",
-        aiConfidenceScore: 0.95
+        verificationStatus: verification.result,
+        aiConfidenceScore: verification.score
       })
       .where({ ID: documentID })
   );
 
-  return {
-    result: "MATCHED",
-    score: 0.95,
-    reason: "MOCK_VERIFICATION"
-  };
-}
-const rawText = await extractTextFromImage(absolutePath);
+  await tx.run(
+    INSERT.into(DocumentVerifications).entries({
+      document_ID: documentID,
+      aiEngine: "OCR_RULE_ENGINE",
+      verificationResult: verification.result,
+      matchedFields: JSON.stringify(extracted),
+      verifiedAt: new Date()
+    })
+  );
 
-if (!rawText) req.reject(500, "OCR failed");
+  return verification;
+});
+this.on("getDashboardKPI", async (req) => {
 
-// ✅ Step 1: convert to uppercase
-const upperText = rawText.toUpperCase();
+    const tx = cds.transaction(req);
 
-// ✅ Step 2: clean garbage text
-
-function cleanOCRText(text) {
-  return text
-    .replace(/[^A-Z0-9\/\s]/g, " ")
-    .replace(/\b[A-Z]{1,2}\b/g, "")  // remove noise like OD, RE
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-
-// ✅ Step 3: final cleaned text
-const normalizedText = cleanOCRText(upperText);
-
-console.log("✅ CLEAN TEXT:", normalizedText);
-
-    let extracted;
-    if (doc.documentType === "AADHAR") {
-      extracted = extractAadhaarData(normalizedText);
-    } else if (doc.documentType === "PAN") {
-      extracted = extractPANData(normalizedText);
-    } else {
-      req.reject(400, "Unsupported document type");
-    }
-    // ✅ LOG EXTRACTED DATA
-console.log("🔍 Extracted Data:", extracted);
-
-// ✅ GET INPUT VALUES FROM UI (IMPORTANT: they must be sent from UI)
-const inputPAN = req.data.panNumber || null;
-const inputDOB = req.data.dob || null;
-
-// ✅ LOG INPUT vs EXTRACTED
-console.log("📌 INPUT PAN:", inputPAN);
-console.log("📌 EXTRACTED PAN:", extracted.panNumber);
-
-console.log("📌 INPUT DOB:", inputDOB);
-console.log("📌 EXTRACTED DOB:", extracted.dob);
-
-    //
-// ✅ Full name from DB
-const dbFullName = `${candidate.firstName} ${candidate.lastName}`;
-
-// ✅ PAN format validation (important)
-function isValidPANFormat(pan) {
-  return /^[A-Z]{5}[0-9]{4}[A-Z]$/.test(pan);
-}
-
-// ✅ Validate extracted PAN
-const panValid = isValidPANFormat(extracted.panNumber);
-
-// ✅ PAN match (if you are NOT storing user-entered PAN separately)
-const panMatch = panValid;
-
-// 👉 OPTIONAL (if you store PAN from UI, use this instead)
-// const inputPAN = userEnteredPANFromUI;
-// const panMatch = panValid && inputPAN === extracted.panNumber;
-
-// ✅ Name match (fuzzy match function we defined earlier)
-const nameMatch = isNameMatch(dbFullName, extracted.name);
-
-// ✅ Final decision
-//const isValid = panValid && panMatch && nameMatch;  // my change 
-const isValid = nameMatch;
-
-// ✅ Convert input DOB
-const formattedInputDOB = formatDateToDDMMYYYY(inputDOB);
-
-// ✅ Compare DOB
-const dobMatch =
-  formattedInputDOB &&
-  extracted.dob &&
-  formattedInputDOB === extracted.dob;
-
-// ✅ LOG DOB COMPARISON
-console.log("📌 FORMATTED INPUT DOB:", formattedInputDOB);
-console.log("📌 EXTRACTED DOB:", extracted.dob);
-console.log("✅ DOB MATCH:", dobMatch);
-
-// ✅ Debug logs (VERY useful)
-console.log("🔍 Extracted PAN:", extracted.panNumber);
-console.log("🔍 Extracted Name:", extracted.name);
-console.log("👤 DB Name:", dbFullName);
-console.log("✅ PAN VALID:", panValid);
-console.log("✅ NAME MATCH:", nameMatch);
-
-// ✅ Final response
-const verification = {
-  result: isValid ? "MATCHED" : "FAILED",
-  score: isValid ? 0.95 : 0.5
-};
-
-
-// const verification = {
-//   result: isValidPAN ? "MATCHED" : "FAILED",
-//   score: isValidPAN ? 0.95 : 0.4
-// };
-
-
-    await tx.run(
-      UPDATE(CandidateDocuments)
-        .set({
-          verificationStatus: verification.result,
-          aiConfidenceScore: verification.score
-        })
-        .where({ ID: documentID })
+    const total = await tx.run(SELECT.from("Candidates").columns("count(*) as c"));
+    const pending = await tx.run(
+        SELECT.from("Candidates").where({ status: "DOCS_UPLOADED" }).columns("count(*) as c")
+    );
+    const failed = await tx.run(
+        SELECT.from("CandidateDocuments").where({ verificationStatus: "FAILED" }).columns("count(*) as c")
+    );
+    const success = await tx.run(
+        SELECT.from("Candidates").where({ status: "COMPLETED" }).columns("count(*) as c")
     );
 
-    await tx.run(
-      INSERT.into(DocumentVerifications).entries({
-        document_ID: documentID,
-        aiEngine: "OCR_RULE_ENGINE",
-        verificationResult: verification.result,
-        matchedFields: JSON.stringify(extracted),
-        verifiedAt: new Date()
-      })
-    );
+    return {
+        totalCandidates: total[0].c,
+        pendingValidation: pending[0].c,
+        failedValidation: failed[0].c,
+        successfulSubmission: success[0].c
+    };
+});
+this.on("getDashboardData", async (req) => {
 
-    return verification;
-  });
+    const tx = cds.transaction(req);
+
+    return await tx.run(`
+        SELECT 
+            c.ID,
+            c.firstName || ' ' || c.lastName AS candidateName,
+            c.candidateCode AS candidateId,
+            cc.email AS email,
+            'Software Engineer' AS position,
+            c.status,
+            d.verificationStatus AS validation,
+            c.failureReason,
+            d.uploadedAt,
+            dv.verifiedAt
+        FROM Candidate c
+        LEFT JOIN CandidateContact cc ON cc.candidate_ID = c.ID
+        LEFT JOIN CandidateDocument d ON d.candidate_ID = c.ID
+        LEFT JOIN DocumentVerification dv ON dv.document_ID = d.ID
+    `);
+});
+this.on("getAnalytics", async (req) => {
+
+    const tx = cds.transaction(req);
+
+    return await tx.run(`
+        SELECT status, COUNT(*) as count
+        FROM Candidate
+        GROUP BY status
+    `);
+});
+
 });

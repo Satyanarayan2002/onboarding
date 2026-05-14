@@ -15,14 +15,17 @@ sap.ui.define([
  
             onInit: function () {
  
-                var oModel = new JSONModel({
-                    consentAccepted: false
-                });
- 
-                this.getView().setModel(
-                    oModel,
-                    "viewModel"
-                );
+                
+var oViewModel = new JSONModel({
+        consentAccepted: false
+    });
+
+    this.getView().setModel(oViewModel, "viewModel");
+
+    // ✅ LOG MODEL DATA
+    const oData = this.getOwnerComponent().getModel("onb").getData();
+    console.log("✅ Review Page Model:", oData);
+
  
             },
  

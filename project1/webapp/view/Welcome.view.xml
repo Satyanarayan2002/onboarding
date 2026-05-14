@@ -1,64 +1,154 @@
-<!-- Welcome.view.xml -->
- 
 <mvc:View
     controllerName="com.wipro.project1.controller.Welcome"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
+    xmlns:core="sap.ui.core"
     displayBlock="true">
  
     <Page
+        id="welcomePage"
         showHeader="false"
         class="welcomePage">
  
         <content>
  
-            <!-- Main Center Layout -->
+            <VBox class="welcomeMainContainer">
  
-            <FlexBox
-                justifyContent="Center"
-                alignItems="Center"
-                direction="Column"
-                class="welcomeContainer">
+                <!-- ================================================= -->
+                <!-- HEADER -->
+                <!-- ================================================= -->
  
-                <!-- Welcome Card -->
+                <OverflowToolbar class="welcomeHeader">
  
-                <VBox class="welcomeCard">
+                    <HBox
+                        alignItems="Center"
+                        class="headerLeftSection">
  
-                    <!-- Icon -->
+                        <Image
+                            src="https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg"
+                            class="sapLogo" />
  
-                    <!-- <Icon
-                        src="sap-icon://employee-pane"
-                        size="4rem"
-                        color="#0a6ed1"
-                        class="welcomeIcon"/> -->
+                        <Title
+                            text="OnboardPro"
+                            class="productTitle" />
  
-                    <!-- Title -->
+                        <VBox class="headerDivider"></VBox>
  
-                    <Title
-                        text="Welcome to Candidate Onboarding"
-                        class="welcomeTitle"/>
+                        <Button
+                            text="Candidate Onboarding"
+                            type="Transparent"
+                            icon="sap-icon://slim-arrow-down"
+                            iconFirst="false"
+                            class="moduleButton" />
+                    </HBox>
  
-                    <!-- Subtitle -->
+                    <ToolbarSpacer />
+ 
+                    <HBox
+                        alignItems="Center"
+                        class="headerRightSection">
+ 
+                        <Button
+                            icon="sap-icon://bell"
+                            type="Transparent"
+                            class="headerIconBtn" />
+ 
+                        <Button
+                            icon="sap-icon://sys-help"
+                            type="Transparent"
+                            class="headerIconBtn" />
+ 
+                        <Button
+                            icon="sap-icon://employee"
+                            type="Transparent"
+                            class="headerIconBtn" />
+                    </HBox>
+ 
+                </OverflowToolbar>
+ 
+                <!-- ================================================= -->
+                <!-- BODY -->
+                <!-- ================================================= -->
+ 
+                <FlexBox
+                    justifyContent="Center"
+                    alignItems="Center"
+                    class="welcomeBodyContainer">
+ 
+                    <!-- Decorative Shapes -->
+ 
+                    <VBox class="leftCircle"></VBox>
+                    <VBox class="rightCircle"></VBox>
+ 
+                    <VBox class="dotPatternTop"></VBox>
+                    <VBox class="dotPatternBottom"></VBox>
+ 
+                    <!-- Welcome Card -->
+ 
+                    <VBox class="welcomeCard">
+ 
+                        <Image
+                            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                            class="welcomeIllustration" />
+ 
+                        <Title
+                            text="Welcome to OnboardPro"
+                            class="welcomeTitle" />
+ 
+                        <VBox class="welcomeUnderline"></VBox>
+ 
+                        <Text
+                            text="Your onboarding journey begins here."
+                            class="welcomeDesc" />
+ 
+                        <Text
+                            text="We’re excited to have you onboard!"
+                            class="welcomeDescSub" />
+ 
+                        <Button
+                            text="Start Onboarding"
+                            type="Emphasized"
+                            icon="sap-icon://navigation-right-arrow"
+                            iconFirst="false"
+                            press=".onStartOnboarding"
+                            class="startOnboardingBtn" />
+ 
+                    </VBox>
+ 
+                </FlexBox>
+ 
+                <!-- ================================================= -->
+                <!-- FOOTER -->
+                <!-- ================================================= -->
+ 
+                <HBox
+                    justifyContent="Center"
+                    alignItems="Center"
+                    class="welcomeFooter">
  
                     <Text
-                        text="Your onboarding process has been initiated. Click below to begin providing your details."
-                        textAlign="Center"
-                        class="welcomeSubtitle"/>
+                        text="© 2025 OnboardPro. All rights reserved."
+                        class="footerText" />
  
-                    <!-- Start Button -->
+                    <Link
+                        text="Privacy Policy"
+                        class="footerLink" />
  
-                    <Button
-                        text="Start Onboarding"
-                        type="Emphasized"
-                        press=".onStartOnboarding"
-                        class="startButton"/>
+                    <Link
+                        text="Terms of Use"
+                        class="footerLink" />
  
-                </VBox>
+                    <Link
+                        text="Support"
+                        class="footerLink" />
  
-            </FlexBox>
+                </HBox>
+ 
+            </VBox>
  
         </content>
  
     </Page>
  
 </mvc:View>
+ 

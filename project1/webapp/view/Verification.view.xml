@@ -185,10 +185,10 @@
                                 <Input
                                     value=""
                                     class="inputField"
-                                    placeholder="Enter Mobile numberart"/>
+                                    placeholder="Enter Mobile number"/>
  
                                 <Text
-                                    text="Include country code (e.g., +91 9876543210)"
+                                    text="(e.g., 9876543210)"
                                     class="helperText"/>
  
                             </VBox>
@@ -294,7 +294,8 @@
  
                                 <Input
                                     value="{onb>/panNumber}"
-                                    class="inputField"/>
+                                    class="inputField"
+                                    enabled="{onb>/otpVerified}"/>
  
                                 <Text
                                     text="Enter the document number as per selected type"
@@ -386,12 +387,6 @@
  
                             <HBox>
  
-                                <Button
-                                    text="Edit Details"
-                                    icon="sap-icon://edit"
-                                    class="secondaryButton"/>
- 
-                                
 
 
 <Button

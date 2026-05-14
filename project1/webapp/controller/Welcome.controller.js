@@ -14,3 +14,23 @@ sap.ui.define([
  
     });
 })
+// sap.ui.define([
+//    "com/wipro/project1/controller/BaseController"
+// ], function (Controller) {
+//     "use strict";
+ 
+//     return BaseController.extend("com.wipro.project1.controller.Welcome", {
+ 
+//         onInit: function () {
+ 
+//         },
+ 
+//         onStartOnboarding: function () {
+ 
+//             // Navigate to Personal Details Page
+//             this.getRouter().navTo("personalDetails");      
+ 
+//         }
+ 
+//     });
+// });

@@ -1,0 +1,665 @@
+<mvc:View
+    controllerName="com.wipro.project1.controller.HRDashboard"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:viz="sap.viz.ui5.controls"
+    xmlns:viz.data="sap.viz.ui5.data"
+    xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds">
+
+    <Page
+        showHeader="false"
+        class="dashboardPage">
+
+        <content>
+
+            <!-- ================================================= -->
+            <!-- GLOBAL HEADER -->
+            <!-- ================================================= -->
+
+            <VBox class="shellHeaderWrapper">
+
+                <HBox
+                    justifyContent="SpaceBetween"
+                    alignItems="Center"
+                    class="shellHeader">
+
+                    <!-- LEFT -->
+
+                    <HBox alignItems="Center">
+
+                        <Title
+                            text="HR Onboarding Dashboard"
+                            level="H4"
+                            class="shellTitle"/>
+
+                        <Button
+                            icon="sap-icon://slim-arrow-down"
+                            type="Transparent"/>
+
+                    </HBox>
+
+                    <!-- RIGHT -->
+
+                    <HBox alignItems="Center">
+
+                        <Button
+                            icon="sap-icon://search"
+                            type="Transparent"/>
+
+                        <Button
+                            icon="sap-icon://bell"
+                            type="Transparent"/>
+
+                        <Button
+                            icon="sap-icon://sys-help"
+                            type="Transparent"/>
+
+                        <Avatar
+                            initials="HR"
+                            class="headerAvatar"/>
+
+                        <VBox class="userInfoWrapper">
+
+                            <Text
+                                text="Ravi Sharma"
+                                class="userName"/>
+
+                            <Text
+                                text="HR Administrator"
+                                class="userRole"/>
+
+                        </VBox>
+
+                    </HBox>
+
+                </HBox>
+
+            </VBox>
+
+            <!-- ================================================= -->
+            <!-- PAGE CONTENT -->
+            <!-- ================================================= -->
+
+            <VBox class="pageWrapper">
+
+                <!-- TITLE -->
+
+                <HBox
+                    justifyContent="SpaceBetween"
+                    alignItems="Center"
+                    class="titleSection">
+
+                    <VBox>
+
+                        <Title
+                            text="HR Onboarding Dashboard"
+                            level="H1"
+                            class="mainTitle"/>
+
+                        <Text
+                            text="Monitor candidate onboarding validation and take corrective actions."
+                            class="subTitle"/>
+
+                    </VBox>
+
+                    <HBox alignItems="Center">
+
+                        <Text
+                            text="Last refreshed: 20 May 2025, 10:30 AM"
+                            class="refreshText"/>
+
+                        <Button
+                            text="Refresh"
+                            icon="sap-icon://refresh"
+                            type="Transparent"
+                            press=".onRefresh"/>
+
+                        <Button
+                            text="Export"
+                            icon="sap-icon://excel-attachment"
+                            type="Transparent"
+                            press=".onExport"/>
+
+                    </HBox>
+
+                </HBox>
+
+                <!-- KPI CARDS -->
+
+                <FlexBox
+                    wrap="Wrap"
+                    justifyContent="SpaceBetween"
+                    class="kpiWrapper">
+
+                    <VBox class="kpiCard blueCard">
+
+                        <Text
+                            text="Total Candidates"
+                            class="kpiTitle"/>
+
+                        <Title
+                            text="248"
+                            class="kpiValue"/>
+
+                        <Text
+                            text="All onboarding cases"
+                            class="kpiSubText"/>
+
+                    </VBox>
+
+                    <VBox class="kpiCard orangeCard">
+
+                        <Text
+                            text="Pending Validation"
+                            class="kpiTitle"/>
+
+                        <Title
+                            text="62"
+                            class="kpiValue"/>
+
+                        <Text
+                            text="Require validation"
+                            class="kpiSubText"/>
+
+                    </VBox>
+
+                    <VBox class="kpiCard redCard">
+
+                        <Text
+                            text="Validation Failed"
+                            class="kpiTitle"/>
+
+                        <Title
+                            text="28"
+                            class="kpiValue"/>
+
+                        <Text
+                            text="Require HR attention"
+                            class="kpiSubText"/>
+
+                    </VBox>
+
+                    <VBox class="kpiCard greenCard">
+
+                        <Text
+                            text="Successfully Submitted"
+                            class="kpiTitle"/>
+
+                        <Title
+                            text="158"
+                            class="kpiValue"/>
+
+                        <Text
+                            text="Submitted to SuccessFactors"
+                            class="kpiSubText"/>
+
+                    </VBox>
+
+                </FlexBox>
+
+                <!-- ================================================= -->
+                <!-- ANALYTICS SECTION -->
+                <!-- ================================================= -->
+
+                <FlexBox
+                    wrap="Wrap"
+                    justifyContent="SpaceBetween"
+                    class="analyticsWrapper">
+
+                    <!-- PIE CHART -->
+
+                    <VBox class="analyticsCard">
+
+                        <Title
+                            text="Onboarding Status Distribution"
+                            class="analyticsTitle"/>
+
+                        <viz:VizFrame
+                            id="idPieChart"
+                            vizType="pie"
+                            width="100%"
+                            height="300px"
+                            uiConfig="{applicationSet:'fiori'}">
+
+                            <viz:dataset>
+
+                                <viz.data:FlattenedDataset
+                                    data="{/statusData}">
+
+                                    <viz.data:dimensions>
+
+                                        <viz.data:DimensionDefinition
+                                            name="Status"
+                                            value="{status}"/>
+
+                                    </viz.data:dimensions>
+
+                                    <viz.data:measures>
+
+                                        <viz.data:MeasureDefinition
+                                            name="Count"
+                                            value="{count}"/>
+
+                                    </viz.data:measures>
+
+                                </viz.data:FlattenedDataset>
+
+                            </viz:dataset>
+
+                            <viz:feeds>
+
+                                <viz.feeds:FeedItem
+                                    uid="size"
+                                    type="Measure"
+                                    values="Count"/>
+
+                                <viz.feeds:FeedItem
+                                    uid="color"
+                                    type="Dimension"
+                                    values="Status"/>
+
+                            </viz:feeds>
+
+                        </viz:VizFrame>
+
+                    </VBox>
+
+                    <!-- BAR CHART -->
+
+                    <VBox class="analyticsCard">
+
+                        <Title
+                            text="Validation Failure Reasons"
+                            class="analyticsTitle"/>
+
+                        <viz:VizFrame
+                            id="idBarChart"
+                            vizType="column"
+                            width="100%"
+                            height="300px"
+                            uiConfig="{applicationSet:'fiori'}">
+
+                            <viz:dataset>
+
+                                <viz.data:FlattenedDataset
+                                    data="{/failureData}">
+
+                                    <viz.data:dimensions>
+
+                                        <viz.data:DimensionDefinition
+                                            name="Reason"
+                                            value="{reason}"/>
+
+                                    </viz.data:dimensions>
+
+                                    <viz.data:measures>
+
+                                        <viz.data:MeasureDefinition
+                                            name="Count"
+                                            value="{count}"/>
+
+                                    </viz.data:measures>
+
+                                </viz.data:FlattenedDataset>
+
+                            </viz:dataset>
+
+                            <viz:feeds>
+
+                                <viz.feeds:FeedItem
+                                    uid="valueAxis"
+                                    type="Measure"
+                                    values="Count"/>
+
+                                <viz.feeds:FeedItem
+                                    uid="categoryAxis"
+                                    type="Dimension"
+                                    values="Reason"/>
+
+                            </viz:feeds>
+
+                        </viz:VizFrame>
+
+                    </VBox>
+
+                    <!-- LINE CHART -->
+
+                    <VBox class="analyticsCard">
+
+                        <Title
+                            text="Onboarding Trend"
+                            class="analyticsTitle"/>
+
+                        <viz:VizFrame
+                            id="idLineChart"
+                            vizType="line"
+                            width="100%"
+                            height="300px"
+                            uiConfig="{applicationSet:'fiori'}">
+
+                            <viz:dataset>
+
+                                <viz.data:FlattenedDataset
+                                    data="{/trendData}">
+
+                                    <viz.data:dimensions>
+
+                                        <viz.data:DimensionDefinition
+                                            name="Day"
+                                            value="{day}"/>
+
+                                    </viz.data:dimensions>
+
+                                    <viz.data:measures>
+
+                                        <viz.data:MeasureDefinition
+                                            name="Submissions"
+                                            value="{count}"/>
+
+                                    </viz.data:measures>
+
+                                </viz.data:FlattenedDataset>
+
+                            </viz:dataset>
+
+                            <viz:feeds>
+
+                                <viz.feeds:FeedItem
+                                    uid="valueAxis"
+                                    type="Measure"
+                                    values="Submissions"/>
+
+                                <viz.feeds:FeedItem
+                                    uid="categoryAxis"
+                                    type="Dimension"
+                                    values="Day"/>
+
+                            </viz:feeds>
+
+                        </viz:VizFrame>
+
+                    </VBox>
+
+                </FlexBox>
+
+                <!-- ================================================= -->
+                <!-- ALERTS -->
+                <!-- ================================================= -->
+
+                <VBox class="alertsPanel">
+
+                    <Title
+                        text="Alerts &amp; Exceptions"
+                        class="alertsTitle"/>
+
+                    <VBox class="alertItem redAlert">
+
+                        <HBox justifyContent="SpaceBetween">
+
+                            <VBox>
+
+                                <Text
+                                    text="Document verification failed today"
+                                    class="alertTitle"/>
+
+                                <Text
+                                    text="3 candidates"
+                                    class="alertSubText"/>
+
+                            </VBox>
+
+                            <ObjectNumber number="3"/>
+
+                        </HBox>
+
+                    </VBox>
+
+                    <VBox class="alertItem orangeAlert">
+
+                        <HBox justifyContent="SpaceBetween">
+
+                            <VBox>
+
+                                <Text
+                                    text="Onboarding pending for more than 48 hours"
+                                    class="alertTitle"/>
+
+                                <Text
+                                    text="12 candidates"
+                                    class="alertSubText"/>
+
+                            </VBox>
+
+                            <ObjectNumber number="12"/>
+
+                        </HBox>
+
+                    </VBox>
+
+                </VBox>
+
+                <!-- ================================================= -->
+                <!-- SEARCH FILTERS -->
+                <!-- ================================================= -->
+
+                <VBox class="filterPanel">
+
+                    <Title
+                        text="Search &amp; Filters"
+                        class="filterTitle"/>
+
+                    <l:Grid
+                        defaultSpan="XL2 L2 M6 S12"
+                        hSpacing="1"
+                        vSpacing="1">
+
+                        <VBox>
+
+                            <Label text="Candidate Name"/>
+
+                            <SearchField
+                                placeholder="Search by name"
+                                width="100%"/>
+
+                        </VBox>
+
+                        <VBox>
+
+                            <Label text="Candidate ID"/>
+
+                            <Input
+                                placeholder="Enter Candidate ID"
+                                width="100%"/>
+
+                        </VBox>
+
+                        <VBox>
+
+                            <Label text="Email Address"/>
+
+                            <Input
+                                placeholder="Enter email"
+                                width="100%"/>
+
+                        </VBox>
+
+                        <VBox>
+
+                            <Label text="Position / Job ID"/>
+
+                            <Select width="100%">
+
+                                <items>
+
+                                    <core:Item
+                                        key="1"
+                                        text="Developer"/>
+
+                                    <core:Item
+                                        key="2"
+                                        text="Consultant"/>
+
+                                </items>
+
+                            </Select>
+
+                        </VBox>
+
+                        <VBox>
+
+                            <Label text="Onboarding Status"/>
+
+                            <Select width="100%">
+
+                                <items>
+
+                                    <core:Item
+                                        key="1"
+                                        text="All Statuses"/>
+
+                                    <core:Item
+                                        key="2"
+                                        text="Pending"/>
+
+                                    <core:Item
+                                        key="3"
+                                        text="Completed"/>
+
+                                </items>
+
+                            </Select>
+
+                        </VBox>
+
+                    </l:Grid>
+
+                    <HBox
+                        justifyContent="End"
+                        class="filterButtonWrapper">
+
+                        <Button
+                            text="Clear Filters"
+                            type="Transparent"/>
+
+                        <Button
+                            text="Apply Filters"
+                            type="Emphasized"/>
+
+                    </HBox>
+
+                </VBox>
+
+                <!-- ================================================= -->
+                <!-- TABLE -->
+                <!-- ================================================= -->
+
+                <VBox class="tablePanel">
+
+                    <HBox
+                        justifyContent="SpaceBetween"
+                        alignItems="Center"
+                        class="tableHeader">
+
+                        <Title
+                            text="Candidate List (248)"
+                            level="H3"/>
+
+                        <Button
+                            icon="sap-icon://action-settings"
+                            type="Transparent"/>
+
+                    </HBox>
+
+                    <Table
+                        items="{/candidates}"
+                        class="candidateTable">
+
+                        <columns>
+
+                            <Column>
+                                <Text text="Candidate Name"/>
+                            </Column>
+
+                            <Column>
+                                <Text text="Candidate ID"/>
+                            </Column>
+
+                            <Column>
+                                <Text text="Email"/>
+                            </Column>
+
+                            <Column>
+                                <Text text="Position / Role"/>
+                            </Column>
+
+                            <Column>
+                                <Text text="Current Status"/>
+                            </Column>
+
+                            <Column>
+                                <Text text="Validation Result"/>
+                            </Column>
+
+                            <Column>
+                                <Text text="Failure Reason"/>
+                            </Column>
+
+                            <Column>
+                                <Text text="Last Updated"/>
+                            </Column>
+
+                            <Column>
+                                <Text text="Actions"/>
+                            </Column>
+
+                        </columns>
+
+                        <items>
+
+                            <ColumnListItem>
+
+                                <cells>
+
+                                    <Link text="{name}"/>
+
+                                    <Text text="{candidateId}"/>
+
+                                    <Text text="{email}"/>
+
+                                    <Text text="{position}"/>
+
+                                    <ObjectStatus
+                                        text="{status}"
+                                        state="Success"/>
+
+                                    <ObjectStatus
+                                        text="{validation}"
+                                        state="Success"/>
+
+                                    <Text text="{reason}"/>
+
+                                    <Text text="{updated}"/>
+
+                                    <Button
+                                        text="View"
+                                        type="Transparent"/>
+
+                                </cells>
+
+                            </ColumnListItem>
+
+                        </items>
+
+                    </Table>
+
+                </VBox>
+
+            </VBox>
+
+        </content>
+
+    </Page>
+
+</mvc:View>

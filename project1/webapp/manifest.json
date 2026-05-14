@@ -106,9 +106,9 @@
       },
   
       {
-        "name": "dashboard",
-        "pattern": "dashboard",
-        "target": "dashboard"
+        "name": "HRDashboard",
+        "pattern": "HRDashboard",
+        "target": "HRDashboard"
       },
   
       {
@@ -146,9 +146,9 @@
         "name": "SubmissionSuccess"
       },
   
-      "dashboard": {
-        "id": "dashboard",
-        "name": "Dashboard"
+      "HRDashboard": {
+        "id": "HRDashboard",
+        "name": "HRDashboard"
       },
   
       "candidateDetails": {

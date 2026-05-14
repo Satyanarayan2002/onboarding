@@ -29,6 +29,8 @@ function (JSONModel, Device) {
                 // ✅ ADD THESE
                     panNumber: "",   // <---- ADD THIS
                     dob: "",         // <---- ADD THIS
+                
+                nationality: "",  // ✅ ADD THIS
 
                 /* ======================
                    OTP FLOW
@@ -45,6 +47,8 @@ function (JSONModel, Device) {
                 documentUploaded: false,
                 documentVerified: null,    // true / false after AI check
                 filePath: "",
+                fileName: "",
+                uploadedOn: "",
 
                 /* ======================
                    UI / STATE FLAGS
@@ -56,4 +60,3 @@ function (JSONModel, Device) {
 
     };
 });
-``

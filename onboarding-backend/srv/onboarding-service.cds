@@ -148,15 +148,17 @@ entity DocumentVerifications
     filePath     : String
   );
 
+
 action triggerAIVerification(
-  documentID : UUID,
-  panNumber  : String,
-  dob        : String
-)
-returns {
+  documentID  : UUID,
+  firstName   : String,
+  lastName    : String,
+  panNumber   : String,
+  dob         : String,
+  nationality : String
+) returns {
   result : String;
-  score  : Decimal(5,2);
-  reason : String;
+  score  : Decimal(3,2);
 };
 
   action restartOnboarding(
@@ -176,5 +178,10 @@ returns {
     mimeType : String,
     content : LargeBinary
   ) returns UUID;
+
+
+// action getDashboardData() returns array of DashboardData;
+// action getDashboardKPI() returns DashboardKPI;
+// action getAnalytics() returns array of DashboardAnalytics;
 
 }

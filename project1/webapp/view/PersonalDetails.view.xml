@@ -218,7 +218,7 @@
 
                                         placeholder="Enter your first name"
 
-                                        class="customInput" required="true"/>
+                                        class="customInput" value="{onb>/firstName}" required="true"/>
  
                                     <Text
 
@@ -242,7 +242,7 @@
 
                                         placeholder="Enter your last name"
 
-                                        class="customInput" required="true"/>
+                                        class="customInput" value="{onb>/lastName}" required="true"/>
  
                                     <Text
 
@@ -305,7 +305,7 @@
 
                                         class="fieldLabel"/>
  
-                                    <Select
+                                    <Select selectedKey="{onb>/gender}"
 
                                         class="customInput"
 
@@ -338,7 +338,7 @@
  
                                     <ComboBox
 
-                                        placeholder="Search and select nationality"
+                                        placeholder="Search and select nationality" value="{onb>/nationality}"
 
                                         class="customInput"  required="true"
 

@@ -4,13 +4,16 @@ const sharp = require("sharp");
 exports.extractTextFromImage = async (imagePath) => {
   
 
+
 const processedImage = await sharp(imagePath)
-  .resize({ width: 1200 })
+  .resize({ width: 1600 })      // 🔥 increase clarity
   .grayscale()
   .normalize()
   .sharpen()
-  .threshold(150)
+  .median(1)
+  .threshold(130)               // 🔥 improve digit separation
   .toBuffer();
+
 
 
   

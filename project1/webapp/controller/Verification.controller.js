@@ -30,6 +30,7 @@ sap.ui.define([
 // Ensure document type = PAN
             oModel.setProperty("/documentType", "PAN");
             oModel.setProperty("/documentVerified", null);
+            
 
 },
         async onSendOtp() {
@@ -96,6 +97,17 @@ async onFileUpload(oEvent) {
     MessageToast.show("No file selected");
     return;
   }
+  oModel.setProperty("/fileName", file.name);
+  const now = new Date();
+  const formattedDate = now.toLocaleString("en-IN", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: true
+});
+oModel.setProperty("/uploadedOn", formattedDate);
 
   const candidateID = oModel.getProperty("/candidateID");
   if (!candidateID) {
@@ -145,32 +157,61 @@ _toBase64(file) {
         reader.readAsDataURL(file);
     });
 },
+// async onValidateDocument() {
+//   const oModel = this.getOwnerComponent().getModel("onb");
+//   const documentID = oModel.getProperty("/documentID");
+
+//   if (!documentID) {
+//     MessageToast.show("No document uploaded");
+//     return;
+//   }
+
+//   const response = await fetch("/odata/v4/otp/triggerAIVerification", {
+//     method: "POST",
+//     headers: { "Content-Type": "application/json" },
+//     body: JSON.stringify({ documentID })
+//   });
+
+//   const result = await response.json();
+
+//   if (result.result === "MATCHED") {
+//     oModel.setProperty("/documentValidated", true);
+//     MessageToast.show("✅ PAN verified successfully");
+//   } else {
+//     oModel.setProperty("/documentValidated", false);
+//     MessageToast.show("❌ PAN verification failed");
+//   }
+// },
 async onValidateDocument() {
   const oModel = this.getOwnerComponent().getModel("onb");
-  const documentID = oModel.getProperty("/documentID");
 
-  if (!documentID) {
-    MessageToast.show("No document uploaded");
-    return;
-  }
+  const payload = {
+    documentID: oModel.getProperty("/documentID"),
+    firstName: oModel.getProperty("/firstName"),
+    lastName: oModel.getProperty("/lastName"),
+    panNumber: oModel.getProperty("/panNumber"),
+    dob: oModel.getProperty("/dob"),
+    nationality: oModel.getProperty("/nationality")
+  };
+
+  console.log("📤 Sending payload:", payload);
 
   const response = await fetch("/odata/v4/otp/triggerAIVerification", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ documentID })
+    body: JSON.stringify(payload)
   });
 
   const result = await response.json();
 
   if (result.result === "MATCHED") {
     oModel.setProperty("/documentValidated", true);
-    MessageToast.show("✅ PAN verified successfully");
+    MessageToast.show("✅ Document verified successfully");
   } else {
     oModel.setProperty("/documentValidated", false);
-    MessageToast.show("❌ PAN verification failed");
+    MessageToast.show("❌ Document verification failed !! Please re-upload the document with correct details");
   }
 },
-
 
         /* ===================================================== */
         /* AI VERIFICATION                                      */
@@ -207,39 +248,48 @@ async onValidateDocument() {
         /* ===================================================== */
         /* SUBMIT                                               */
         /* ===================================================== */
-        async onSubmit() {
+//         async onSubmit() {
+//     const oModel = this.getOwnerComponent().getModel("onb");
+
+//     const candidateID = oModel.getProperty("/candidateID");
+//     const documentValidated = oModel.getProperty("/documentValidated");
+
+//     console.log("📤 Submit clicked");
+//     console.log({ candidateID, documentValidated });
+
+//     if (!candidateID) {
+//         MessageToast.show("Missing candidate information");
+//         return;
+//     }
+
+//     if (!documentValidated) {
+//         MessageToast.show("Document not verified yet");
+//         return;
+//     }
+
+//     const response = await fetch("/odata/v4/otp/submitOnboarding", {
+//         method: "POST",
+//         headers: { "Content-Type": "application/json" },
+//         body: JSON.stringify({ candidateID })
+//     });
+
+//     if (response.ok) {
+//         MessageToast.show("✅ Onboarding submitted successfully");
+//         console.log("✅ submitOnboarding successful");
+//     } else {
+//         const err = await response.json();
+//         console.error("❌ submitOnboarding failed:", err);
+//         MessageToast.show(err.error?.message || "Submission failed");
+//     }
+// }
+
+
+onSubmit: function () {
     const oModel = this.getOwnerComponent().getModel("onb");
 
-    const candidateID = oModel.getProperty("/candidateID");
-    const documentValidated = oModel.getProperty("/documentValidated");
+    console.log("✅ Verification Model:", oModel.getData());
 
-    console.log("📤 Submit clicked");
-    console.log({ candidateID, documentValidated });
-
-    if (!candidateID) {
-        MessageToast.show("Missing candidate information");
-        return;
-    }
-
-    if (!documentValidated) {
-        MessageToast.show("Document not verified yet");
-        return;
-    }
-
-    const response = await fetch("/odata/v4/otp/submitOnboarding", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ candidateID })
-    });
-
-    if (response.ok) {
-        MessageToast.show("✅ Onboarding submitted successfully");
-        console.log("✅ submitOnboarding successful");
-    } else {
-        const err = await response.json();
-        console.error("❌ submitOnboarding failed:", err);
-        MessageToast.show(err.error?.message || "Submission failed");
-    }
+    this.getOwnerComponent().getRouter().navTo("reviewSubmit");
 }
 
         // async onSubmit() {

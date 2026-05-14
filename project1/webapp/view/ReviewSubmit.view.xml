@@ -172,27 +172,27 @@
  
                                 <VBox class="reviewRow">
 <Text text="First Name" class="reviewLabel"/>
-<Text text="John" class="reviewValue"/>
+<Text text="{onb>/firstName}" class="reviewValue"/>
 </VBox>
  
                                 <VBox class="reviewRow">
 <Text text="Last Name" class="reviewLabel"/>
-<Text text="Doe" class="reviewValue"/>
+<Text text="{onb>/lastName}" class="reviewValue"/>
 </VBox>
  
                                 <VBox class="reviewRow">
 <Text text="Date of Birth" class="reviewLabel"/>
-<Text text="15 Mar 1990" class="reviewValue"/>
+<Text text="{onb>/dob}" class="reviewValue"/>
 </VBox>
  
                                 <VBox class="reviewRow">
 <Text text="Gender" class="reviewLabel"/>
-<Text text="Male" class="reviewValue"/>
+<Text text="{onb>/gender}" class="reviewValue"/>
 </VBox>
  
                                 <VBox class="reviewRow">
 <Text text="Nationality" class="reviewLabel"/>
-<Text text="Indian" class="reviewValue"/>
+<Text text="{onb>/nationality}" class="reviewValue"/>
 </VBox>
  
                             </VBox>
@@ -216,7 +216,7 @@
 <Text text="Email Address"
                                                   class="reviewLabel"/>
  
-                                            <Text text="john.doe@email.com"
+                                            <Text text="{onb>/email}"
                                                   class="reviewValue"/>
 </VBox>
  
@@ -234,7 +234,7 @@
                                     <Text text="Mobile Number"
                                           class="reviewLabel"/>
  
-                                    <Text text="+91 98765 43210"
+                                    <Text text="{onb>/mobile}"
                                           class="reviewValue"/>
  
                                 </VBox>
@@ -301,16 +301,17 @@
  
                             <HBox class="tableRow">
  
-                                <Text text="Passport"
+                                <Text text="PAN"
                                       class="tableCell"/>
  
-                                <Text text="P1234567"
+ 
+                                <Text text="{onb>/documentID}"
                                       class="tableCell"/>
  
-                                <Link text="Passport_JohnDoe.pdf"
+                                <Link text="{onb>/fileName}"
                                       class="tableCell"/>
  
-                                <Text text="20 May 2025, 10:24 AM"
+                                <Text text="{onb>/uploadedOn}"
                                       class="tableCell"/>
  
                                 <ObjectStatus
@@ -322,6 +323,7 @@
  
                             <Link
                                 text="View Document"
+                                href="{onb>/fileName}"
                                 icon="sap-icon://show"
                                 class="viewDocumentLink"/>
  
