@@ -52,7 +52,18 @@
         "settings": {
           "bundleName": "com.wipro.project1.i18n.i18n"
         }
-      }
+      },
+      
+"": {
+    "type": "sap.ui.model.odata.v4.ODataModel",
+    "settings": {
+      "serviceUrl": "/odata/v4/otp/", 
+      "synchronizationMode": "None",
+      "operationMode": "Server",
+      "autoExpandSelect": true
+    }
+  }
+
     },
     "resources": {
       "css": [

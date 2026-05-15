@@ -351,7 +351,7 @@
                                 />
 
                                 <Text
-                                    text="{onb>/documentID}"
+                                    text="{onb>/panNumber}"
                                     class="tableCell"
                                 />
 
@@ -429,15 +429,14 @@
                     justifyContent="End"
                     class="buttonSection"
                 >
-                    <Button
-                        text="Edit Information"
-                        icon="sap-icon://edit"
-                        press=".onEdit"
-                        class="secondaryBtn"
-                    />
+                    <!-- <Button
+                        text="Back"
+                        type="Transparent"
+                        press=".onBack"
+                    /> -->
 
                     <Button
-                        text="Submit for Onboarding"
+                        text="Submit"
                         type="Emphasized"
                         enabled="{viewModel>/consentAccepted}"
                         press=".onSubmit"
