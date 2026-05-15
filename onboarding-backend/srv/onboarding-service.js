@@ -670,10 +670,13 @@ module.exports = cds.service.impl(async function () {
     // ============================
     // ✅ FINAL VALIDATION
     // ============================
+    // const isValid =
+    //   panMatch &&
+    //   nameMatch &&
+    //   (dobMatch || !dob);
     const isValid =
       panMatch &&
-      nameMatch &&
-      (dobMatch || !dob);
+      nameMatch ;
 
     const verification = {
       result: isValid ? "MATCHED" : "FAILED",
@@ -726,6 +729,88 @@ module.exports = cds.service.impl(async function () {
       successfulSubmission: success[0].c
     };
   });
+
+this.on("finalSubmit", async (req) => {
+
+  const {
+    candidateID,
+    firstName,
+    lastName,
+    email,
+    nationality,
+    documentType,
+    documentNumber,
+    fileName
+  } = req.data;
+
+  const tx = cds.transaction(req);
+
+  console.log("🚀 FINAL SUBMIT:", req.data);
+
+  // ✅ GET candidate
+  const candidate = await tx.run(
+    SELECT.one.from(Candidates).where({ ID: candidateID })
+  );
+
+  if (!candidate) req.reject(404, "Candidate not found");
+
+  // ✅ GET latest document
+  
+const doc = await tx.run(
+  SELECT.one
+    .from(CandidateDocuments)
+    .where({ candidate_ID: candidateID })
+);
+
+console.log("📄 DOCUMENT FOUND:", doc);
+
+if (!doc) {
+  req.reject(404, "Document not found");
+}
+
+
+  // ✅ CREATE FINAL SUBMISSION ENTRY
+  await tx.run(
+    INSERT.into("onboarding.db.FinalSubmission").entries({
+      candidate_ID: candidateID,
+
+      firstName,
+      lastName,
+      email,
+      nationality,
+
+      documentType,
+      documentNumber,
+      nationalId: documentNumber,  // ✅ IMPORTANT
+
+      fileName: doc.fileName,
+      filePath: doc.filePath,
+
+      verificationStatus: doc.verificationStatus,
+      aiConfidenceScore: doc.aiConfidenceScore,
+
+      submittedAt: new Date()
+    })
+  );
+
+  // ✅ UPDATE CANDIDATE STATUS
+  await tx.run(
+    UPDATE(Candidates)
+      .set({
+        status: "COMPLETED",
+        completionPct: 100
+      })
+      .where({ ID: candidateID })
+  );
+
+  console.log("✅ FINAL SUBMISSION STORED");
+
+  return "FINAL_SUBMITTED_SUCCESS";
+});
+
+
+
+
   this.on("getDashboardData", async (req) => {
 
     const tx = cds.transaction(req);

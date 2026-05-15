@@ -128,10 +128,11 @@ entity OTPTransaction : cuid, managed {
    DOCUMENTS
    ===================================================== */
 
+
 entity CandidateDocument : cuid, managed {
   candidate           : Association to Candidate;
 
-  documentType        : String(30);     // AADHAR / PAN / PASSPORT
+  documentType        : String(30);
   fileName            : String(255);
   mimeType            : String(100);
   fileSize            : Integer;
@@ -146,6 +147,7 @@ entity CandidateDocument : cuid, managed {
   verifications       : Composition of many DocumentVerification
                           on verifications.document = $self;
 }
+
 
 /* =====================================================
    DOCUMENT VERIFICATION
@@ -202,6 +204,34 @@ entity AuditLog : cuid, managed {
 
   eventTime      : Timestamp;
 }
+
+
+entity FinalSubmission : cuid, managed {
+
+  candidate        : Association to Candidate;
+
+  // ✅ PERSONAL DETAILS
+  firstName        : String(80);
+  lastName         : String(80);
+  email            : String(255);
+  nationality      : String(50);
+
+  // ✅ DOCUMENT DETAILS
+  documentType     : String(30);
+  documentNumber   : String(20);   // ✅ PAN
+  nationalId       : String(20);   // ✅ same as PAN
+
+  fileName         : String(255);
+  filePath         : String(255);
+
+  // ✅ VERIFICATION
+  verificationStatus : String(20);
+  aiConfidenceScore  : Decimal(5,2);
+
+  // ✅ TRACKING
+  submittedAt      : Timestamp;
+}
+
 
 entity DashboardData {
 

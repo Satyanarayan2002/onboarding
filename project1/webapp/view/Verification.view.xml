@@ -404,7 +404,7 @@
                                 />
 
                                 <Button
-                                    text="Submit"
+                                    text="Next"
                                     type="Accept"
                                     press=".onSubmit"
                                     visible="{onb>/documentValidated}"

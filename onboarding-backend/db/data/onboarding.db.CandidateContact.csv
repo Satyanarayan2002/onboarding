@@ -1,0 +1,16 @@
+ID,candidate_ID,email,phone,emailVerified,phoneVerified,emailVerifiedAt,phoneVerifiedAt
+C011,100011,arjun.kapoor11@gmail.com,9876500011,true,true,2026-05-14T22:00:00Z,2026-05-14T22:02:00Z
+C012,100012,neha.agarwal12@gmail.com,9876500012,true,true,2026-05-14T22:05:00Z,2026-05-14T22:07:00Z
+C013,100013,rakesh.yadav13@gmail.com,9876500013,true,false,2026-05-14T22:10:00Z,
+C014,100014,simran.kaur14@gmail.com,9876500014,true,true,2026-05-14T22:15:00Z,2026-05-14T22:16:00Z
+C015,100015,mohit.saxena15@gmail.com,9876500015,true,true,2026-05-14T22:20:00Z,2026-05-14T22:22:00Z
+C016,100016,kavita.naidu16@gmail.com,9876500016,true,true,2026-05-14T22:25:00Z,2026-05-14T22:27:00Z
+C017,100017,sachin.pawar17@gmail.com,9876500017,true,true,2026-05-14T22:30:00Z,2026-05-14T22:31:00Z
+C018,100018,deepa.menon18@gmail.com,9876500018,true,false,2026-05-14T22:35:00Z,
+C019,100019,harish.reddy19@gmail.com,9876500019,true,true,2026-05-14T22:40:00Z,2026-05-14T22:42:00Z
+C020,100020,ritu.malhotra20@gmail.com,9876500020,true,true,2026-05-14T22:45:00Z,2026-05-14T22:47:00Z
+C021,100021,ankit.shukla21@gmail.com,9876500021,true,true,2026-05-14T22:50:00Z,2026-05-14T22:52:00Z
+C022,100022,shruti.das22@gmail.com,9876500022,true,false,2026-05-14T22:55:00Z,
+C023,100023,nitin.garg23@gmail.com,9876500023,true,true,2026-05-14T23:00:00Z,2026-05-14T23:02:00Z
+C024,100024,poornima.rao24@gmail.com,9876500024,true,true,2026-05-14T23:05:00Z,2026-05-14T23:06:00Z
+C025,100025,rahul.chauhan25@gmail.com,9876500025,true,true,2026-05-14T23:10:00Z,2026-05-14T23:12:00Z

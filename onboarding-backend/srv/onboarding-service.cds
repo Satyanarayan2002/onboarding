@@ -107,6 +107,10 @@ entity DocumentVerifications
     createdAt
 };
 
+entity FinalSubmissions
+  as projection on db.FinalSubmission;
+
+
 
   /* =====================================================
      AUDIT LOGS
@@ -178,6 +182,19 @@ action triggerAIVerification(
     mimeType : String,
     content : LargeBinary
   ) returns UUID;
+
+
+action finalSubmit(
+  candidateID   : UUID,
+  firstName     : String,
+  lastName      : String,
+  email         : String,
+  nationality   : String,
+  documentType  : String,
+  documentNumber: String,
+  fileName      : String
+);
+
 
 
 // action getDashboardData() returns array of DashboardData;
