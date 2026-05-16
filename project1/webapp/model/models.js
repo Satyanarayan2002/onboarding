@@ -56,6 +56,7 @@ function (JSONModel, Device) {
                 submissionAllowed: false
 
             });
+            
         }
 
     };

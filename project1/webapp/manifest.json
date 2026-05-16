@@ -124,7 +124,7 @@
   
       {
         "name": "candidateDetails",
-        "pattern": "candidateDetails",
+        "pattern": "candidateDetails/{candidateId}",
         "target": "candidateDetails"
       }
   

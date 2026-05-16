@@ -23,6 +23,14 @@ sap.ui.define([
 
             this.setModel(models.createOnboardingModel(), "onb");
 
+            
+// ✅ NEW model for dashboard + candidate details
+    const oDashboardModel = new sap.ui.model.json.JSONModel();
+    oDashboardModel.loadData("model/hrDashboardData.json");
+
+    this.setModel(oDashboardModel, "dashboard");
+
+
             // enable routing
             this.getRouter().initialize();
         }

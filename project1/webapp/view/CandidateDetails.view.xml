@@ -3,84 +3,84 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     xmlns:core="sap.ui.core"
-    xmlns:l="sap.ui.layout">
-
+    xmlns:l="sap.ui.layout"
+>
     <Page
         showHeader="false"
-        class="detailsPage">
-
+        class="detailsPage"
+    >
         <content>
-
             <!-- ================================================= -->
             <!-- HEADER -->
             <!-- ================================================= -->
 
             <VBox class="shellHeaderWrapper">
-
                 <HBox
                     justifyContent="SpaceBetween"
                     alignItems="Center"
-                    class="shellHeader">
-
+                    class="shellHeader"
+                >
                     <!-- LEFT -->
 
                     <HBox alignItems="Center">
-
                         <Image
                             src="img/sap-logo.png"
-                            width="54px"/>
+                            width="54px"
+                        />
 
                         <Title
                             text="HR Onboarding"
                             level="H4"
-                            class="shellTitle"/>
+                            class="shellTitle"
+                        />
 
                         <Button
                             icon="sap-icon://slim-arrow-down"
-                            type="Transparent"/>
-
+                            type="Transparent"
+                        />
                     </HBox>
 
                     <!-- RIGHT -->
 
                     <HBox alignItems="Center">
-
                         <Button
                             icon="sap-icon://search"
-                            type="Transparent"/>
+                            type="Transparent"
+                        />
 
                         <Button
                             icon="sap-icon://bell"
-                            type="Transparent"/>
+                            type="Transparent"
+                        />
 
                         <Button
                             icon="sap-icon://sys-help"
-                            type="Transparent"/>
+                            type="Transparent"
+                        />
 
                         <Avatar
                             initials="RS"
-                            class="headerAvatar"/>
+                            class="headerAvatar"
+                        />
 
                         <VBox class="userInfoWrapper">
-
                             <Text
                                 text="Ravi Sharma"
-                                class="userName"/>
+                                class="userName"
+                            />
 
                             <Text
                                 text="HR Administrator"
-                                class="userRole"/>
-
+                                class="userRole"
+                            />
                         </VBox>
 
                         <Button
                             icon="sap-icon://slim-arrow-down"
-                            type="Transparent"/>
-
+                            type="Transparent"
+                        />
                     </HBox>
-
                 </HBox>
-
             </VBox>
 
             <!-- ================================================= -->
@@ -88,106 +88,103 @@
             <!-- ================================================= -->
 
             <VBox class="pageWrapper">
-
                 <!-- BACK -->
 
                 <Link
                     text="Back to Dashboard"
                     class="backLink"
-                    press=".onBack"/>
+                    press=".onBack"
+                />
 
                 <!-- TITLE -->
 
                 <Title
                     text="Candidate Onboarding Details"
                     level="H1"
-                    class="mainTitle"/>
+                    class="mainTitle"
+                />
 
                 <Text
                     text="Read-only view with controlled actions."
-                    class="subTitle"/>
+                    class="subTitle"
+                />
 
                 <!-- ================================================= -->
                 <!-- OBJECT HEADER -->
                 <!-- ================================================= -->
 
                 <VBox class="objectHeaderCard">
-
                     <HBox
                         justifyContent="SpaceBetween"
-                        alignItems="Start">
-
+                        alignItems="Start"
+                    >
                         <!-- LEFT -->
 
                         <HBox>
-
                             <Avatar
                                 displayShape="Circle"
                                 class="candidateAvatar"
-                                icon="sap-icon://person-placeholder"/>
+                                icon="sap-icon://person-placeholder"
+                            />
 
                             <VBox class="candidateInfoWrapper">
-
                                 <Title
-                                    text="John Doe"
+                                    text="{candidate>/name}"
                                     level="H2"
-                                    class="candidateName"/>
+                                    class="candidateName"
+                                />
 
                                 <HBox class="candidateMetaWrapper">
-
                                     <VBox class="metaItem">
-
                                         <Text
                                             text="Candidate ID (Avature)"
-                                            class="metaLabel"/>
+                                            class="metaLabel"
+                                        />
 
                                         <Text
-                                            text="AV-CAND-102938"
-                                            class="metaValue"/>
-
+                                            text="{candidate>/candidateId}"
+                                            class="metaValue"
+                                        />
                                     </VBox>
 
                                     <VBox class="metaItem">
-
                                         <Text
                                             text="Position / Role"
-                                            class="metaLabel"/>
+                                            class="metaLabel"
+                                        />
 
                                         <Text
-                                            text="Software Engineer"
-                                            class="metaValue"/>
-
+                                            text="{candidate>/position}"
+                                            class="metaValue"
+                                        />
                                     </VBox>
 
                                     <VBox class="metaItem">
-
                                         <Text
                                             text="Applied On"
-                                            class="metaLabel"/>
+                                            class="metaLabel"
+                                        />
 
                                         <Text
-                                            text="10 May 2025"
-                                            class="metaValue"/>
-
+                                            text="{candidate>/appliedOn}"
+                                            class="metaValue"
+                                        />
                                     </VBox>
 
                                     <VBox class="metaItem">
-
                                         <Text
                                             text="Current Onboarding Status"
-                                            class="metaLabel"/>
+                                            class="metaLabel"
+                                        />
 
                                         <ObjectStatus
-                                            text="Validation Completed"
-                                            state="Success"
-                                            class="statusBadge"/>
-
+                                            text="{candidate>/validation}"
+                                            state="{= ${candidate>/validation} === 'Success' ? 'Success' : ${candidate>/validation} === 'Failed' ? 'Error' : 'Warning'}"
+                                            class="statusBadge"
+                                        />
                                     </VBox>
-
                                 </HBox>
-
                             </VBox>
-
                         </HBox>
 
                         <!-- ACTION MENU -->
@@ -196,35 +193,31 @@
                             icon="sap-icon://overflow"
                             type="Transparent"
                             buttonMode="Regular"
-                            class="actionMenuButton">
-
+                            class="actionMenuButton"
+                        >
                             <menu>
-
                                 <Menu>
-
                                     <MenuItem
                                         text="Restart Onboarding"
                                         icon="sap-icon://refresh"
-                                        press=".onRestart"/>
+                                        press=".onRestart"
+                                    />
 
                                     <MenuItem
                                         text="Cancel Onboarding"
                                         icon="sap-icon://decline"
-                                        press=".onCancel"/>
+                                        press=".onCancel"
+                                    />
 
                                     <MenuItem
                                         text="View Audit History"
                                         icon="sap-icon://document-text"
-                                        press=".onAudit"/>
-
+                                        press=".onAudit"
+                                    />
                                 </Menu>
-
                             </menu>
-
                         </MenuButton>
-
                     </HBox>
-
                 </VBox>
 
                 <!-- ================================================= -->
@@ -232,99 +225,142 @@
                 <!-- ================================================= -->
 
                 <VBox class="sectionCard">
-
                     <HBox
                         alignItems="Center"
-                        class="sectionHeader">
-
+                        class="sectionHeader"
+                    >
                         <core:Icon
                             src="sap-icon://person-placeholder"
-                            class="sectionIcon"/>
+                            class="sectionIcon"
+                        />
 
                         <Title
                             text="1. Personal &amp; Contact Information"
                             level="H3"
-                            class="sectionTitle"/>
-
+                            class="sectionTitle"
+                        />
                     </HBox>
 
                     <HBox
                         justifyContent="SpaceBetween"
-                        class="dualPanelWrapper">
-
+                        class="dualPanelWrapper"
+                    >
                         <!-- PERSONAL -->
 
                         <VBox class="infoPanel">
-
                             <Title
                                 text="Personal Information"
                                 level="H4"
-                                class="panelTitle"/>
+                                class="panelTitle"
+                            />
 
                             <VBox class="readOnlyGrid">
-
                                 <HBox class="dataRow">
-                                    <Text text="First Name" class="label"/>
-                                    <Text text="John" class="value"/>
+                                    <Text
+                                        text="First Name"
+                                        class="label"
+                                    />
+
+                                    <Text
+                                        text="{candidate>/firstName}"
+                                        class="value"
+                                    />
                                 </HBox>
 
                                 <HBox class="dataRow">
-                                    <Text text="Last Name" class="label"/>
-                                    <Text text="Doe" class="value"/>
+                                    <Text
+                                        text="Last Name"
+                                        class="label"
+                                    />
+
+                                    <Text
+                                        text="{candidate>/lastName}"
+                                        class="value"
+                                    />
                                 </HBox>
 
                                 <HBox class="dataRow">
-                                    <Text text="Date of Birth" class="label"/>
-                                    <Text text="15 Mar 1990" class="value"/>
+                                    <Text
+                                        text="Date of Birth"
+                                        class="label"
+                                    />
+
+                                    <Text
+                                        text="{candidate>/dob}"
+                                        class="value"
+                                    />
                                 </HBox>
 
                                 <HBox class="dataRow">
-                                    <Text text="Gender" class="label"/>
-                                    <Text text="Male" class="value"/>
+                                    <Text
+                                        text="Gender"
+                                        class="label"
+                                    />
+
+                                    <Text
+                                        text="{candidate>/gender}"
+                                        class="value"
+                                    />
                                 </HBox>
 
                                 <HBox class="dataRow">
-                                    <Text text="Nationality" class="label"/>
-                                    <Text text="Indian" class="value"/>
-                                </HBox>
+                                    <Text
+                                        text="Nationality"
+                                        class="label"
+                                    />
 
+                                    <Text
+                                        text="{candidate>/nationality}"
+                                        class="value"
+                                    />
+                                </HBox>
                             </VBox>
-
                         </VBox>
 
                         <!-- CONTACT -->
 
                         <VBox class="infoPanel">
-
                             <Title
                                 text="Contact Information"
                                 level="H4"
-                                class="panelTitle"/>
+                                class="panelTitle"
+                            />
 
                             <VBox class="readOnlyGrid">
-
                                 <HBox class="dataRow">
-                                    <Text text="Personal Email" class="label"/>
+                                    <Text
+                                        text="Personal Email"
+                                        class="label"
+                                    />
+
                                     <HBox>
-                                        <Text text="john.doe@email.com" class="value"/>
+                                        <Text
+                                            text="{candidate>/email}"
+                                            class="value"
+                                        />
+
                                         <ObjectStatus
-                                            text="Verified"
-                                            state="Success"
-                                            class="verifiedStatus"/>
+                                            text="{= (${candidate>/status} === 'CONTACT_VERIFIED' || ${candidate>/status} === 'COMPLETED') ? 'Verified' : 'Pending'}"
+                                            state="{= (${candidate>/status} === 'CONTACT_VERIFIED' || ${candidate>/status} === 'COMPLETED') ? 'Success' : 'Warning'}"
+                                            class="verifiedStatus"
+                                        />
                                     </HBox>
                                 </HBox>
 
                                 <HBox class="dataRow">
-                                    <Text text="Mobile Number" class="label"/>
-                                    <Text text="+91 98765 43210" class="value"/>
+                                    <Text
+                                        text="Mobile Number"
+                                        class="label"
+                                    />
+
+                                    <Text
+                                        text="{candidate>/mobile}"
+                                        class="value"
+                                    />
                                 </HBox>
-
                             </VBox>
-
                         </VBox>
-
                     </HBox>
-
                 </VBox>
 
                 <!-- ================================================= -->
@@ -332,153 +368,185 @@
                 <!-- ================================================= -->
 
                 <VBox class="sectionCard">
-
                     <HBox
                         alignItems="Center"
-                        class="sectionHeader">
-
+                        class="sectionHeader"
+                    >
                         <core:Icon
                             src="sap-icon://shield"
-                            class="sectionIcon"/>
+                            class="sectionIcon"
+                        />
 
                         <Title
                             text="2. Validation Summary"
                             level="H3"
-                            class="sectionTitle"/>
-
+                            class="sectionTitle"
+                        />
                     </HBox>
 
                     <HBox
                         justifyContent="SpaceBetween"
-                        class="validationWrapper">
-
+                        class="validationWrapper"
+                    >
                         <!-- CARD 1 -->
 
                         <VBox class="validationCard">
-
                             <HBox justifyContent="SpaceBetween">
-
                                 <HBox alignItems="Center">
-
                                     <core:Icon
                                         src="sap-icon://status-positive"
-                                        class="successIcon"/>
+                                        class="successIcon"
+                                    />
 
                                     <Title
                                         text="OTP Verification"
-                                        level="H4"/>
-
+                                        level="H4"
+                                    />
                                 </HBox>
 
                                 <ObjectStatus
-                                    text="Verified"
-                                    state="Success"/>
-
+                                    text="{= ${candidate>/validation} === 'Success' ? 'Verified' : 'Pending'}"
+                                    state="{= ${candidate>/validation} === 'Success' ? 'Success' : 'Warning'}"
+                                />
                             </HBox>
 
                             <VBox class="validationContent">
-
                                 <HBox class="validationRow">
-                                    <Text text="Status" class="label"/>
-                                    <Text text="Verified" class="value"/>
+                                    <Text
+                                        text="Status"
+                                        class="label"
+                                    />
+
+                                    <Text
+                                        text="{= ${candidate>/validation} === 'Success' ? 'Verified' : 'Pending'}"
+                                        class="value"
+                                    />
                                 </HBox>
 
                                 <HBox class="validationRow">
-                                    <Text text="Verified On" class="label"/>
-                                    <Text text="20 May 2025, 09:15 AM" class="value"/>
+                                    <Text
+                                        text="Verified On"
+                                        class="label"
+                                    />
+
+                                    <Text
+                                        text="{= ${candidate>/validation} === 'Success' ? 'Verified' : 'Pending'}"
+                                        class="value"
+                                    />
                                 </HBox>
 
                                 <HBox class="validationRow">
-                                    <Text text="Retry Count" class="label"/>
-                                    <Text text="1" class="value"/>
-                                </HBox>
+                                    <Text
+                                        text="Retry Count"
+                                        class="label"
+                                    />
 
+                                    <Text
+                                        text="1"
+                                        class="value"
+                                    />
+                                </HBox>
                             </VBox>
-
                         </VBox>
 
                         <!-- CARD 2 -->
 
                         <VBox class="validationCard">
-
                             <HBox justifyContent="SpaceBetween">
-
                                 <HBox alignItems="Center">
-
                                     <core:Icon
                                         src="sap-icon://status-positive"
-                                        class="successIcon"/>
+                                        class="successIcon"
+                                    />
 
                                     <Title
                                         text="Document Validation"
-                                        level="H4"/>
-
+                                        level="H4"
+                                    />
                                 </HBox>
 
                                 <ObjectStatus
-                                    text="Verified"
-                                    state="Success"/>
-
+                                    text="{= ${candidate>/validation} === 'Failed' ? 'Failed' : ${candidate>/validation} === 'Success' ? 'Verified' : 'Pending'}"
+                                    state="{= ${candidate>/validation} === 'Failed' ? 'Error' : ${candidate>/validation} === 'Success' ? 'Success' : 'Warning'}"
+                                />
                             </HBox>
 
                             <VBox class="validationContent">
-
                                 <HBox class="validationRow">
-                                    <Text text="Status" class="label"/>
-                                    <Text text="Verified" class="value"/>
+                                    <Text
+                                        text="Status"
+                                        class="label"
+                                    />
+
+                                    <Text
+                                        text="{= ${candidate>/validation} === 'Failed' ? 'Failed' : ${candidate>/validation} === 'Success' ? 'Verified' : 'Pending'}"
+                                        class="value"
+                                    />
                                 </HBox>
 
                                 <HBox class="validationRow">
-                                    <Text text="Validation Method" class="label"/>
-                                    <Text text="System (OCR)" class="value"/>
-                                </HBox>
+                                    <Text
+                                        text="Validation Method"
+                                        class="label"
+                                    />
 
+                                    <Text
+                                        text="{= ${candidate>/reason} ? 'OCR Validation' : 'System (OCR)'}"
+                                        class="value"
+                                    />
+                                </HBox>
                             </VBox>
-
                         </VBox>
 
                         <!-- CARD 3 -->
 
                         <VBox class="validationCard">
-
                             <HBox justifyContent="SpaceBetween">
-
                                 <HBox alignItems="Center">
-
                                     <core:Icon
                                         src="sap-icon://status-positive"
-                                        class="successIcon"/>
+                                        class="successIcon"
+                                    />
 
                                     <Title
                                         text="Name Match Check"
-                                        level="H4"/>
-
+                                        level="H4"
+                                    />
                                 </HBox>
 
                                 <ObjectStatus
-                                    text="Match"
-                                    state="Success"/>
-
+                                    text="{= ${candidate>/validation} === 'Failed' ? 'Mismatch' : 'Match'}"
+                                    state="{= ${candidate>/validation} === 'Failed' ? 'Error' : 'Success'}"
+                                />
                             </HBox>
 
                             <VBox class="validationContent">
-
                                 <HBox class="validationRow">
-                                    <Text text="Result" class="label"/>
-                                    <Text text="Match" class="value"/>
+                                    <Text
+                                        text="Result"
+                                        class="label"
+                                    />
+
+                                    <Text
+                                        text="{= ${candidate>/validation} === 'Failed' ? 'Mismatch' : 'Match'}"
+                                        class="value"
+                                    />
                                 </HBox>
 
                                 <HBox class="validationRow">
-                                    <Text text="Confidence Score" class="label"/>
-                                    <Text text="98%" class="value"/>
-                                </HBox>
+                                    <Text
+                                        text="Confidence Score"
+                                        class="label"
+                                    />
 
+                                    <Text
+                                        text="{= ${candidate>/validation} === 'Failed' ? '72%' : '98%'}"
+                                        class="value"
+                                    />
+                                </HBox>
                             </VBox>
-
                         </VBox>
-
                     </HBox>
-
                 </VBox>
 
                 <!-- ================================================= -->
@@ -486,80 +554,115 @@
                 <!-- ================================================= -->
 
                 <VBox class="sectionCard">
-
                     <HBox
                         alignItems="Center"
-                        class="sectionHeader">
-
+                        class="sectionHeader"
+                    >
                         <core:Icon
                             src="sap-icon://document-text"
-                            class="sectionIcon"/>
+                            class="sectionIcon"
+                        />
 
                         <Title
                             text="3. Identity Document Details"
                             level="H3"
-                            class="sectionTitle"/>
-
+                            class="sectionTitle"
+                        />
                     </HBox>
 
                     <HBox
                         justifyContent="SpaceBetween"
-                        class="documentWrapper">
-
+                        class="documentWrapper"
+                    >
                         <!-- LEFT -->
 
                         <VBox width="60%">
-
                             <HBox class="dataRow">
-                                <Text text="Document Type" class="label"/>
-                                <Text text="Passport" class="value"/>
+                                <Text
+                                    text="Document Type"
+                                    class="label"
+                                />
+
+                                <Text
+                                    text="PAN Card"
+                                    class="value"
+                                    visible="{= ${candidate>/validation} === 'Success' ? true : false}"
+                                />
                             </HBox>
 
                             <HBox class="dataRow">
-                                <Text text="Document Number (Masked)" class="label"/>
-                                <Text text="P123****67" class="value"/>
+                                <Text
+                                    text="Document Number (Masked)"
+                                    class="label"
+                                />
+
+                                <Text
+                                    text="{candidate>/candidateId}"
+                                    class="value"
+                                    visible="{= ${candidate>/validation} === 'Success' ? true : false}"
+                                />
                             </HBox>
 
                             <HBox class="dataRow">
-                                <Text text="Uploaded File Name" class="label"/>
-                                <Text text="Passport_JohnDoe.pdf" class="value"/>
+                                <Text
+                                    text="Uploaded File Name"
+                                    class="label"
+                                />
+
+                                <Text
+                                    text="{= 'Document_' + ${candidate>/candidateId} + '.png'}"
+                                    class="value"
+                                    visible="{= ${candidate>/validation} === 'Success' ? true : false}"
+                                />
                             </HBox>
 
                             <HBox class="dataRow">
-                                <Text text="Uploaded On" class="label"/>
-                                <Text text="20 May 2025, 10:10 AM" class="value"/>
+                                <Text
+                                    text="Uploaded On"
+                                    class="label"
+                                />
+
+                                <Text
+                                    text="{candidate>/updated}"
+                                    class="value"
+                                    visible="{= ${candidate>/validation} === 'Success' ? true : false}"
+                                />
                             </HBox>
 
                             <HBox class="dataRow">
-                                <Text text="Validation Status" class="label"/>
+                                <Text
+                                    text="Validation Status"
+                                    class="label"
+                                />
 
                                 <ObjectStatus
-                                    text="Verified"
-                                    state="Success"/>
+                                    text="{= ${candidate>/validation} === 'Failed' ? 'Rejected' : ${candidate>/validation} === 'Success' ? 'Verified' : 'Pending'}"
+                                    state="{= ${candidate>/validation} === 'Failed' ? 'Error' : ${candidate>/validation} === 'Success' ? 'Success' : 'Warning'}"
+                                />
                             </HBox>
-
                         </VBox>
 
                         <!-- RIGHT -->
 
                         <VBox
                             alignItems="Center"
-                            class="documentPreview">
-
+                            class="documentPreview"
+                        >
                             <core:Icon
                                 src="sap-icon://pdf-attachment"
-                                class="pdfIcon"/>
+                                class="pdfIcon"
+                                visible="{= ${candidate>/validation} === 'Success' ? true : false}"
+                            />
 
                             <Button
                                 text="View Document"
                                 icon="sap-icon://show"
                                 type="Emphasized"
-                                press=".onViewDocument"/>
-
+                                press=".onViewDocument"
+                                visible="{= ${candidate>/validation} === 'Success' ? true : false}"
+                            />
                         </VBox>
-
                     </HBox>
-
                 </VBox>
 
                 <!-- ================================================= -->
@@ -567,71 +670,86 @@
                 <!-- ================================================= -->
 
                 <VBox class="sectionCard">
-
                     <HBox
                         alignItems="Center"
-                        class="sectionHeader">
-
+                        class="sectionHeader"
+                    >
                         <core:Icon
                             src="sap-icon://history"
-                            class="sectionIcon"/>
+                            class="sectionIcon"
+                        />
 
                         <Title
                             text="4. Onboarding Lifecycle Overview"
                             level="H3"
-                            class="sectionTitle"/>
-
+                            class="sectionTitle"
+                        />
                     </HBox>
 
                     <HBox justifyContent="SpaceBetween">
-
                         <VBox width="48%">
-
                             <HBox class="dataRow">
-                                <Text text="Current Status" class="label"/>
+                                <Text
+                                    text="Current Status"
+                                    class="label"
+                                />
 
                                 <ObjectStatus
-                                    text="Validation Completed"
-                                    state="Success"/>
+                                    text="{candidate>/validation}"
+                                    state="{= ${candidate>/validation} === 'Success' ? 'Success' : ${candidate>/validation} === 'Failed' ? 'Error' : 'Warning'}"
+                                />
                             </HBox>
 
                             <HBox class="dataRow">
-                                <Text text="Previous Status" class="label"/>
-                                <Text text="Document Verification" class="value"/>
-                            </HBox>
+                                <Text
+                                    text="Previous Status"
+                                    class="label"
+                                />
 
+                                <Text
+                                    text="{= ${candidate>/validation} === 'Success' ? 'Document Verification Completed' : ${candidate>/validation} === 'Failed' ? 'Validation Failed' : 'Verification In Progress'}"
+                                    class="value"
+                                />
+                            </HBox>
                         </VBox>
 
                         <VBox width="48%">
-
                             <HBox class="dataRow">
-                                <Text text="Last Updated By" class="label"/>
-                                <Text text="System" class="value"/>
+                                <Text
+                                    text="Last Updated By"
+                                    class="label"
+                                />
+
+                                <Text
+                                    text="HR System"
+                                    class="value"
+                                />
                             </HBox>
 
                             <HBox class="dataRow">
-                                <Text text="Next Step" class="label"/>
-                                <Text text="Submitted to SuccessFactors" class="value"/>
-                            </HBox>
+                                <Text
+                                    text="Next Step"
+                                    class="label"
+                                />
 
+                                <Text
+                                    text="{= ${candidate>/validation} === 'Success' ? 'Submitted to SuccessFactors' : ${candidate>/validation} === 'Failed' ? 'Requires HR Review' : 'Pending Verification'}"
+                                    class="value"
+                                />
+                            </HBox>
                         </VBox>
-
                     </HBox>
-
                 </VBox>
 
                 <!-- INFO BAR -->
 
                 <MessageStrip
-                    text="This is a read-only view. To take action, use the options from the action menu (⋮) at the top right."
+                    text="This is a read-only view. To take action, use the options from the action menu (:) at the top right."
                     type="Information"
                     showIcon="true"
-                    class="infoStrip"/>
-                    
-                                </VBox>
-
+                    class="infoStrip"
+                />
+            </VBox>
         </content>
-
     </Page>
-
 </mvc:View>

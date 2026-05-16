@@ -208,13 +208,15 @@ sap.ui.define([
         }
 
         ,onCandidateSelect: function (oEvent) {
-            const candidateId = oEvent.getSource().getBindingContext().getProperty("ID");
+            const candidateId = oEvent.getSource().getBindingContext().getProperty("candidateId");
+            console.log(candidateId);
             this.getOwnerComponent().getRouter().navTo("CandidateDetails", { candidateId });
         }
 
         ,onCandidateNamePress: function (oEvent) {
-            //const candidateId = oEvent.getSource().getBindingContext().getProperty("candidateId");
-            this.getOwnerComponent().getRouter().navTo("CandidateDetails");
+            const candidateId = oEvent.getSource().getBindingContext().getProperty("candidateId");
+            console.log(candidateId);
+            this.getOwnerComponent().getRouter().navTo("candidateDetails", { candidateId });
         }
 
     });

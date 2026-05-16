@@ -382,16 +382,16 @@
                             <VBox>
 
                                 <Text
-                                    text="Document verification failed today"
+                                    text="Document verification failed"
                                     class="alertTitle"/>
 
                                 <Text
-                                    text="3 candidates"
+                                    text="{= ${/kpi/failedValidation} } candidates"
                                     class="alertSubText"/>
 
                             </VBox>
 
-                            <ObjectNumber number="3"/>
+                            <!-- <ObjectNumber number="3"/> -->
 
                         </HBox>
 
@@ -408,12 +408,12 @@
                                     class="alertTitle"/>
 
                                 <Text
-                                    text="12 candidates"
+                                    text="{= ${/kpi/pendingValidation} }"
                                     class="alertSubText"/>
 
                             </VBox>
 
-                            <ObjectNumber number="12"/>
+                            <!-- <ObjectNumber number="12"/> -->
 
                         </HBox>
 
