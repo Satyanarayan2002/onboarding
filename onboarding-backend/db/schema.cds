@@ -55,6 +55,7 @@ entity Candidate : cuid, managed {
   lastName       : String(80);
   dateOfBirth    : Date;
   gender         : String(10);
+  jobRole        : String(80);
 
   status         : CandidateStatus default 'DRAFT';
   completionPct  : Integer default 0;

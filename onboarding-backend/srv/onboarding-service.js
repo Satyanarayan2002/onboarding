@@ -821,7 +821,7 @@ if (!doc) {
             c.firstName || ' ' || c.lastName AS candidateName,
             c.candidateCode AS candidateId,
             cc.email AS email,
-            'Software Engineer' AS position,
+            c.jobRole AS position,
             c.status,
             d.verificationStatus AS validation,
             c.failureReason,

@@ -12,6 +12,7 @@ service otp {
       candidateCode,
       firstName,
       lastName,
+      jobRole,
       gender,
       status,
       completionPct,

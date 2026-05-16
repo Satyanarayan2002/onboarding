@@ -17,4 +17,13 @@ async function sendOtpMail(toEmail, otp) {
   });
 }
 
-module.exports = { sendOtpMail };
+async function sendStatusMail(toEmail, subject, text) {
+  await transporter.sendMail({
+    from: "no-reply@onboarding.com",
+    to: toEmail,
+    subject: subject,
+    text: text
+  });
+}
+
+module.exports = { sendOtpMail, sendStatusMail };

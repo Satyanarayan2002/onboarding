@@ -627,8 +627,8 @@
                     type="Information"
                     showIcon="true"
                     class="infoStrip"/>
-
-            </VBox>
+                    
+                                </VBox>
 
         </content>
 

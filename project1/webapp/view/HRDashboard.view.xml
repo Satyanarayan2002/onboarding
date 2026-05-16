@@ -9,6 +9,7 @@
     xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds">
 
     <Page
+        id="hrDashboardPage"
         showHeader="false"
         class="dashboardPage">
 
@@ -18,57 +19,37 @@
             <!-- GLOBAL HEADER -->
             <!-- ================================================= -->
 
-            <VBox class="shellHeaderWrapper">
+            <VBox id="shellHeaderWrapper" class="shellHeaderWrapper">
 
-                <HBox
-                    justifyContent="SpaceBetween"
-                    alignItems="Center"
-                    class="shellHeader">
+                <HBox id="shellHeader" justifyContent="SpaceBetween" alignItems="Center" class="shellHeader">
 
                     <!-- LEFT -->
 
-                    <HBox alignItems="Center">
+                    <HBox id="shellHeaderLeft" alignItems="Center">
 
-                        <Title
-                            text="HR Onboarding Dashboard"
-                            level="H4"
-                            class="shellTitle"/>
+                        <Title id="shellTitle" text="HR Onboarding Dashboard" level="H4" class="shellTitle"/>
 
-                        <Button
-                            icon="sap-icon://slim-arrow-down"
-                            type="Transparent"/>
+                        <Button id="shellDropdown" icon="sap-icon://slim-arrow-down" type="Transparent"/>
 
                     </HBox>
 
                     <!-- RIGHT -->
 
-                    <HBox alignItems="Center">
+                    <HBox id="shellHeaderRight" alignItems="Center">
 
-                        <Button
-                            icon="sap-icon://search"
-                            type="Transparent"/>
+                        <Button id="searchButton" icon="sap-icon://search" type="Transparent"/>
 
-                        <Button
-                            icon="sap-icon://bell"
-                            type="Transparent"/>
+                        <Button id="notificationButton" icon="sap-icon://bell" type="Transparent"/>
 
-                        <Button
-                            icon="sap-icon://sys-help"
-                            type="Transparent"/>
+                        <Button id="helpButton" icon="sap-icon://sys-help" type="Transparent"/>
 
-                        <Avatar
-                            initials="HR"
-                            class="headerAvatar"/>
+                        <Avatar id="headerAvatar" initials="HR" class="headerAvatar"/>
 
-                        <VBox class="userInfoWrapper">
+                        <VBox id="userInfoWrapper" class="userInfoWrapper">
 
-                            <Text
-                                text="Ravi Sharma"
-                                class="userName"/>
+                            <Text id="userName" text="Ravi Sharma" class="userName"/>
 
-                            <Text
-                                text="HR Administrator"
-                                class="userRole"/>
+                            <Text id="userRole" text="HR Administrator" class="userRole"/>
 
                         </VBox>
 
@@ -140,7 +121,7 @@
                             class="kpiTitle"/>
 
                         <Title
-                            text="248"
+                            text="{= ${/kpi/totalCandidates} }"
                             class="kpiValue"/>
 
                         <Text
@@ -156,7 +137,7 @@
                             class="kpiTitle"/>
 
                         <Title
-                            text="62"
+                            text="{= ${/kpi/pendingValidation} }"
                             class="kpiValue"/>
 
                         <Text
@@ -172,7 +153,7 @@
                             class="kpiTitle"/>
 
                         <Title
-                            text="28"
+                            text="{= ${/kpi/failedValidation} }"
                             class="kpiValue"/>
 
                         <Text
@@ -188,7 +169,7 @@
                             class="kpiTitle"/>
 
                         <Title
-                            text="158"
+                            text="{= ${/kpi/successfullySubmitted} }"
                             class="kpiValue"/>
 
                         <Text
@@ -444,7 +425,7 @@
                 <!-- SEARCH FILTERS -->
                 <!-- ================================================= -->
 
-                <VBox class="filterPanel">
+                    <VBox class="filterPanel">
 
                     <Title
                         text="Search &amp; Filters"
@@ -460,8 +441,10 @@
                             <Label text="Candidate Name"/>
 
                             <SearchField
+                                id="searchName"
                                 placeholder="Search by name"
-                                width="100%"/>
+                                width="100%"
+                                search=".onApplyFilters"/>
 
                         </VBox>
 
@@ -470,6 +453,7 @@
                             <Label text="Candidate ID"/>
 
                             <Input
+                                id="inputCandidateId"
                                 placeholder="Enter Candidate ID"
                                 width="100%"/>
 
@@ -480,6 +464,7 @@
                             <Label text="Email Address"/>
 
                             <Input
+                                id="inputEmail"
                                 placeholder="Enter email"
                                 width="100%"/>
 
@@ -489,18 +474,13 @@
 
                             <Label text="Position / Job ID"/>
 
-                            <Select width="100%">
+                            <Select id="selectPosition" width="100%">
 
                                 <items>
-
-                                    <core:Item
-                                        key="1"
-                                        text="Developer"/>
-
-                                    <core:Item
-                                        key="2"
-                                        text="Consultant"/>
-
+                                    <core:Item key="all" text="All Positions"/>
+                                    <core:Item key="Developer" text="Developer"/>
+                                    <core:Item key="Consultant" text="Consultant"/>
+                                    <core:Item key="Intern" text="Intern"/>
                                 </items>
 
                             </Select>
@@ -511,22 +491,13 @@
 
                             <Label text="Onboarding Status"/>
 
-                            <Select width="100%">
+                            <Select id="selectStatus" width="100%">
 
                                 <items>
-
-                                    <core:Item
-                                        key="1"
-                                        text="All Statuses"/>
-
-                                    <core:Item
-                                        key="2"
-                                        text="Pending"/>
-
-                                    <core:Item
-                                        key="3"
-                                        text="Completed"/>
-
+                                    <core:Item key="all" text="All Statuses"/>
+                                    <core:Item key="pending" text="Pending"/>
+                                    <core:Item key="success" text="Success"/>
+                                    <core:Item key="failed" text="Failed"/>
                                 </items>
 
                             </Select>
@@ -541,11 +512,13 @@
 
                         <Button
                             text="Clear Filters"
-                            type="Transparent"/>
+                            type="Transparent"
+                            press=".onClearFilters"/>
 
                         <Button
                             text="Apply Filters"
-                            type="Emphasized"/>
+                            type="Emphasized"
+                            press=".onApplyFilters"/>
 
                     </HBox>
 
@@ -563,7 +536,7 @@
                         class="tableHeader">
 
                         <Title
-                            text="Candidate List (248)"
+                            text="{= 'Candidate List (' + ${/kpi/totalCandidates} + ')' }"
                             level="H3"/>
 
                         <Button
@@ -573,7 +546,7 @@
                     </HBox>
 
                     <Table
-                        items="{/candidates}"
+                        items="{/filteredCandidates}"
                         class="candidateTable">
 
                         <columns>
@@ -622,7 +595,7 @@
 
                                 <cells>
 
-                                    <Link text="{name}"/>
+                                    <Link text="{name}" press=".onCandidateNamePress"/>
 
                                     <Text text="{candidateId}"/>
 
@@ -643,8 +616,10 @@
                                     <Text text="{updated}"/>
 
                                     <Button
-                                        text="View"
-                                        type="Transparent"/>
+                                        text="Send Email"
+                                        icon="sap-icon://email"
+                                        type="Transparent"
+                                        press=".onSendStatusEmail"/>
 
                                 </cells>
 

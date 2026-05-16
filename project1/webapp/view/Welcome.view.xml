@@ -58,10 +58,10 @@
                             type="Transparent"
                             class="headerIconBtn" />
  
-                        <Button
-                            icon="sap-icon://employee"
-                            type="Transparent"
-                            class="headerIconBtn" />
+                        <Select id="roleSelect" change="onRoleChange" width="150px">
+                            <core:Item key="Employee" text="Employee" />
+                            <core:Item key="HR" text="HR" />
+                        </Select>
                     </HBox>
  
                 </OverflowToolbar>
@@ -88,7 +88,7 @@
                     <VBox class="welcomeCard">
  
                         <Image
-                            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                           
                             class="welcomeIllustration" />
  
                         <Title
@@ -104,7 +104,7 @@
                         <Text
                             text="We’re excited to have you onboard!"
                             class="welcomeDescSub" />
- 
+
                         <Button
                             text="Start Onboarding"
                             type="Emphasized"
@@ -112,6 +112,13 @@
                             iconFirst="false"
                             press=".onStartOnboarding"
                             class="startOnboardingBtn" />
+                        <!-- <Button
+                            text="HR Dashboard"
+                            type="Emphasized"
+                            icon="sap-icon://navigation-right-arrow"
+                            iconFirst="false"
+                            press=".onHRPage"
+                            class="startOnboardingBtn" /> -->
  
                     </VBox>
  
@@ -151,4 +158,3 @@
     </Page>
  
 </mvc:View>
- 

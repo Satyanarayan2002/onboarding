@@ -75,6 +75,8 @@ var oViewModel = new JSONModel({
     await oAction.execute();
 
     sap.m.MessageToast.show("✅ Onboarding Submitted Successfully");
+    // navigate to success page
+    this.getOwnerComponent().getRouter().navTo("submissionSuccess");
 
   } catch (error) {
     console.error(error);

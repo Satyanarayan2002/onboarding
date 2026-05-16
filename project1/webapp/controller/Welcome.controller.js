@@ -10,6 +10,20 @@ sap.ui.define([
             // Navigate to Personal Details Page
             this.getRouter().navTo("personalDetails");
  
+        },
+ 
+        onRoleChange: function (oEvent) {
+            const selectedKey = oEvent.getParameter("selectedItem").getKey();
+            if (selectedKey === "Employee") {
+                this.getOwnerComponent().getRouter().navTo("Welcome");
+            } else if (selectedKey === "HR") {
+                this.getOwnerComponent().getRouter().navTo("HRDashboard");
+            }
+        },
+ 
+        onCandidateSelect: function (oEvent) {
+            const candidateId = oEvent.getSource().getBindingContext().getProperty("ID");
+            this.getOwnerComponent().getRouter().navTo("CandidateDetails", { candidateId });
         }
  
     });
