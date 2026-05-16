@@ -1,0 +1,2012 @@
+.verificationPage {
+    background: #f5f6f7;
+}
+
+/* ========================================= */
+/* HEADER */
+/* ========================================= */
+
+.topShellHeader {
+    background: #ffffff;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.shellBar {
+    height: 56px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.sapLogo {
+    margin-right: 18px;
+}
+
+.shellTitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: #223548;
+}
+
+.pageContentWrapper {
+    padding: 24px;
+}
+
+.mainPageTitle {
+    font-size: 34px;
+    font-weight: 700;
+    color: #0a1f33;
+}
+
+.pageSubTitle {
+    margin-top: 8px;
+    color: #5c6b77;
+    font-size: 15px;
+}
+
+.pageHeaderSection {
+    margin-bottom: 28px;
+}
+
+/* ========================================= */
+/* WIZARD */
+/* ========================================= */
+
+.wizardStepsWrapper {
+    gap: 14px;
+}
+
+.wizardLine {
+    width: 70px;
+    height: 2px;
+    background: #cfd8e3;
+}
+
+.wizardCompleted {
+    background: #ffffff;
+    border: 2px solid #0a6ed1;
+    color: #0a6ed1;
+}
+
+.wizardActive {
+    background: #0a6ed1;
+    color: white;
+}
+
+.wizardInactive {
+    background: white;
+    border: 2px solid #cfd8e3;
+    color: #5c6b77;
+}
+
+.wizardText {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #5c6b77;
+}
+
+.wizardTextActive {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #0a6ed1;
+    font-weight: 600;
+}
+
+/* ========================================= */
+/* PANELS */
+/* ========================================= */
+
+.mainPanel {
+    margin-bottom: 24px;
+    border-radius: 8px;
+    border: 1px solid #d9d9d9;
+    overflow: hidden;
+    background: white;
+}
+
+.sectionToolbar {
+    background: white;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.panelContentSpacing {
+    padding: 24px;
+}
+
+.innerSectionTitle {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.fieldLabel {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #223548;
+}
+
+.topSpacing {
+    margin-top: 18px;
+}
+
+.inputField {
+    height: 44px;
+}
+
+.helperText {
+    font-size: 12px;
+    color: #6a6d70;
+    margin-top: 6px;
+}
+
+/* ========================================= */
+/* OTP */
+/* ========================================= */
+
+.otpButton {
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+.otpSuccess {
+    margin-bottom: 18px;
+}
+
+.verifyButton {
+    margin-top: 18px;
+}
+
+.otpInfoWrapper {
+    margin-top: 14px;
+    align-items: center;
+}
+
+.infoIcon {
+    color: #0a6ed1;
+    margin-right: 6px;
+}
+
+.otpInfoText {
+    font-size: 12px;
+    color: #5c6b77;
+}
+
+/* ========================================= */
+/* UPLOAD */
+/* ========================================= */
+
+.uploadArea {
+    border: 2px dashed #cfd8e3;
+    border-radius: 8px;
+    padding: 28px;
+    align-items: center;
+    justify-content: center;
+    background: #fafafa;
+}
+
+.uploadIcon {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #5c6b77;
+}
+
+.uploadText {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.uploadSubText {
+    font-size: 12px;
+    color: #6a6d70;
+}
+
+.documentSuccess {
+    margin: 24px;
+}
+
+/* ========================================= */
+/* SUBMISSION */
+/* ========================================= */
+
+.submissionSection {
+    padding: 20px 24px;
+}
+
+.submissionText {
+    color: #5c6b77;
+}
+
+.secondaryButton {
+    margin-right: 12px;
+}
+
+.primaryButton {
+    min-width: 180px;
+}
+
+/* ================================================= */
+/* PAGE */
+/* ================================================= */
+
+.onboardingPage {
+    background: #f5f6f7;
+}
+
+/* ================================================= */
+/* HEADER */
+/* ================================================= */
+
+.shellHeaderWrapper {
+    background: #ffffff;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.shellHeader {
+    height: 56px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.shellTitle {
+    margin-left: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #223548;
+}
+
+/* ================================================= */
+/* PAGE CONTENT */
+/* ================================================= */
+
+.pageWrapper {
+    padding: 24px;
+}
+
+.pageHeaderSection {
+    margin-bottom: 28px;
+}
+
+.mainTitle {
+    font-size: 42px;
+    font-weight: 700;
+    color: #0f1f33;
+}
+
+.subTitle {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #5f6b7a;
+}
+
+/* ================================================= */
+/* WIZARD */
+/* ================================================= */
+
+.wizardTitle {
+    color: #0a6ed1;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.wizardWrapper {
+    gap: 12px;
+}
+
+.wizardLine {
+    width: 80px;
+    height: 2px;
+    background: #cfd8e3;
+}
+
+.wizardCompleted {
+    background: white;
+    border: 2px solid #0a6ed1;
+    color: #0a6ed1;
+}
+
+.wizardActive {
+    background: #0a6ed1;
+    color: white;
+}
+
+.wizardInactive {
+    background: white;
+    border: 2px solid #cfd8e3;
+    color: #5f6b7a;
+}
+
+.wizardText {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #5f6b7a;
+}
+
+.wizardTextActive {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #0a6ed1;
+    font-weight: 700;
+}
+
+/* ================================================= */
+/* PANEL */
+/* ================================================= */
+
+.mainPanel {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #d9d9d9;
+    background: white;
+}
+
+.formWrapper {
+    padding: 24px;
+}
+
+/* ================================================= */
+/* FORM */
+/* ================================================= */
+
+.fieldWrapper {
+    margin-bottom: 28px;
+}
+
+.fieldLabel {
+    font-size: 15px;
+    font-weight: 600;
+    color: #223548;
+    margin-bottom: 8px;
+}
+
+/* .customInput {
+    height: 44px;
+}  */
+/*  
+.customInput .sapMInputBaseInner {
+    height: 44px !important;
+    border-radius: 6px;
+    border: 1px solid #b8c4d1;
+    font-size: 16px;
+    padding: 14px;
+    padding: 14px;
+} */
+
+.readOnlyInput .sapMInputBaseInner {
+    background: #f5f6f7;
+    color: #5f6b7a;
+}
+
+.helperText {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #6a6d70;
+}
+
+/* ================================================= */
+/* BUTTONS */
+/* ================================================= */
+
+.buttonSection {
+    padding: 0 24px 24px 24px;
+    gap: 16px;
+}
+
+.secondaryBtn {
+    width: 140px;
+    height: 44px;
+}
+
+.primaryBtn {
+    width: 180px;
+    height: 44px;
+}
+
+/* ================================================= */
+/* INFO STRIP */
+/* ================================================= */
+
+.infoStrip {
+    margin: 0 24px 24px 24px;
+    padding: 16px;
+    border-radius: 6px;
+    background: #f3f8ff;
+    align-items: center;
+}
+
+.infoIcon {
+    color: #0a6ed1;
+    margin-right: 10px;
+}
+
+.infoText {
+    font-size: 14px;
+    color: #223548;
+}
+
+/* ================================================= */
+/* FOOTER */
+/* ================================================= */
+
+.footerSection {
+    margin-top: 24px;
+    gap: 18px;
+}
+
+.footerText {
+    font-size: 12px;
+    color: #5f6b7a;
+}
+
+.footerLink {
+    font-size: 12px;
+}
+
+.sapUiBody {
+    background: #f5f6f7;
+    font-family: "72", Arial, sans-serif;
+}
+
+.pagePadding {
+    padding: 1.5rem;
+}
+
+.sectionSpacing {
+    margin-top: 1rem;
+}
+
+.pageTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.pageSubtitle {
+    font-size: 1rem;
+    color: #64748b;
+    margin-top: 0.3rem;
+}
+
+.sfCard {
+    background: #ffffff;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.sfCardHeader {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.sfCardBody {
+    padding: 1.5rem;
+}
+
+.sfInput .sapMInputBaseInner,
+.sfSelect .sapMSlt {
+    height: 3rem !important;
+    border-radius: 0.5rem !important;
+    font-size: 1rem !important;
+}
+
+.readOnlyField {
+    background: #f8fafc;
+    border-radius: 0.5rem;
+    padding: 0.85rem 1rem;
+    min-height: 2.75rem;
+}
+
+.primaryButton .sapMBtnInner {
+    margin-left: 20px;
+    background: #0a6ed1;
+    border-radius: 0.5rem;
+    height: 2.75rem;
+    align-items: center;
+    font-weight: 600;
+}
+
+.secondaryButton .sapMBtnInner {
+    border-radius: 0.5rem;
+    height: 2.75rem;
+    align-items: center;
+}
+
+.statusSuccess {
+    background: #dcfce7;
+    color: #15803d;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+.statusWarning {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.statusError {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+
+/* css for submission success page */
+/* ================================================= */
+/* PAGE */
+/* ================================================= */
+
+.successPage {
+    background: #f5f6f7;
+}
+
+.pageWrapper {
+    width: 100%;
+    padding: 2rem 2.5rem 3rem;
+    box-sizing: border-box;
+}
+
+/* ================================================= */
+/* GLOBAL HEADER */
+/* ================================================= */
+
+.shellHeaderWrapper {
+    background: #ffffff;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.shellHeader {
+    height: 4rem;
+    padding: 0 2rem;
+}
+
+.shellTitle {
+    margin-left: 0.75rem;
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: #0a1f44;
+}
+
+/* ================================================= */
+/* PAGE HEADER */
+/* ================================================= */
+
+.pageHeaderSection {
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+    gap: 2rem;
+}
+
+.mainTitle {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: #071b3a;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.subTitle {
+    font-size: 1.35rem;
+    color: #4f647d;
+}
+
+/* ================================================= */
+/* WIZARD */
+/* ================================================= */
+
+.wizardTitleCompleted {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #071b3a;
+    margin-bottom: 1.5rem;
+}
+
+.wizardWrapper {
+    gap: 1rem;
+    align-items: center;
+}
+
+.wizardCompleted .sapFAvatar {
+    background: white;
+    border: 2px solid #0a6ed1;
+    color: #0a6ed1;
+}
+
+.wizardFinalCompleted .sapFAvatar {
+    background: #dff1ff;
+    border: 2px solid #dff1ff;
+    color: #0a6ed1;
+}
+
+.wizardCompleted,
+.wizardFinalCompleted {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.wizardLine {
+    width: 5rem;
+    height: 2px;
+    background: #cfd8e3;
+    margin-top: -1.5rem;
+}
+
+.wizardText {
+    margin-top: 0.7rem;
+    font-size: 1rem;
+    color: #4d5f77;
+}
+
+.wizardTextActive {
+    margin-top: 0.7rem;
+    font-size: 1rem;
+    color: #0a6ed1;
+    font-weight: 700;
+}
+
+/* ================================================= */
+/* SUCCESS MESSAGE */
+/* ================================================= */
+
+.successMessageSection {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.successAvatar .sapFAvatar {
+    background: #dff1ff;
+    color: #0a6ed1;
+    width: 4.8rem;
+    height: 4.8rem;
+    font-size: 2rem;
+}
+
+.successTitle {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #071b3a;
+}
+
+.successSubTitle {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    color: #4f647d;
+}
+
+/* ================================================= */
+/* SUMMARY CARDS */
+/* ================================================= */
+
+.summaryCardsWrapper {
+    width: 100%;
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    align-items: stretch;
+}
+
+.summaryCard {
+    flex: 1;
+    min-width: 0;
+    background: #ffffff;
+    border-radius: 1rem;
+    padding: 1.8rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+}
+
+.cardIcon {
+    font-size: 1.3rem;
+    color: #0a6ed1;
+    margin-right: 0.6rem;
+}
+
+.cardTitle {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #071b3a;
+}
+
+.summaryRow {
+    margin-top: 1rem;
+}
+
+.summaryLabel {
+    font-size: 0.95rem;
+    color: #5e6b7b;
+    margin-bottom: 0.3rem;
+}
+
+.summaryValue {
+    font-size: 1.08rem;
+    color: #071b3a;
+    font-weight: 600;
+}
+
+.verifiedRow {
+    margin-top: 1rem;
+    align-items: flex-start;
+}
+
+/* ================================================= */
+/* WHAT HAPPENS NEXT */
+/* ================================================= */
+
+.nextStepsPanel {
+    background: #ffffff;
+    border-radius: 1rem;
+    padding: 1.8rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.nextStepIcon {
+    font-size: 1.6rem;
+    color: #0a6ed1;
+    margin-top: 0.2rem;
+}
+
+.nextStepTitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    color: #071b3a;
+}
+
+.nextStepText {
+    margin-bottom: 0.5rem;
+    color: #4f647d;
+    font-size: 1rem;
+}
+
+/* ================================================= */
+/* EMAIL CONFIRMATION */
+/* ================================================= */
+
+.confirmationBar {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    gap: 0.5rem;
+}
+
+.confirmationIcon {
+    color: #0a6ed1;
+    font-size: 1.2rem;
+}
+
+.confirmationText {
+    font-size: 1rem;
+    color: #4f647d;
+}
+
+/* ================================================= */
+/* BUTTON */
+/* ================================================= */
+
+.buttonSection {
+    margin-top: 1rem;
+}
+
+.closeButton {
+    height: 3rem;
+}
+
+.closeButton .sapMBtnInner {
+    border-radius: 0.7rem;
+    font-weight: 700;
+    padding: 0 1.6rem;
+}
+
+/* ================================================= */
+/* RESPONSIVE */
+/* ================================================= */
+
+
+
+/* dashboard page  */
+/* ================================================= */
+/* PAGE */
+/* ================================================= */
+
+.dashboardPage {
+    background: #f5f7f9;
+}
+
+/* ================================================= */
+/* HEADER */
+/* ================================================= */
+
+.shellHeaderWrapper {
+    background: #ffffff;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.shellHeader {
+    height: 64px;
+    padding: 0 20px;
+}
+
+.shellTitle {
+    margin-left: 16px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.headerAvatar {
+    margin-left: 18px;
+    margin-right: 10px;
+    background: #d8eefe;
+    color: #0a6ed1;
+}
+
+.userInfoWrapper {
+    margin-right: 12px;
+}
+
+.userName {
+    font-weight: 600;
+}
+
+.userRole {
+    font-size: 12px;
+    color: #5f6b7a;
+}
+
+/* ================================================= */
+/* WRAPPER */
+/* ================================================= */
+
+.pageWrapper {
+    padding: 22px;
+}
+
+.titleSection {
+    margin-bottom: 24px;
+}
+
+.mainTitle {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.subTitle {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #5f6b7a;
+}
+
+.refreshText {
+    margin-right: 18px;
+    color: #5f6b7a;
+}
+
+/* ================================================= */
+/* KPI CARDS */
+/* ================================================= */
+
+.kpiWrapper {
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.kpiCard {
+    width: 24%;
+    background: white;
+    border-radius: 10px;
+    padding: 24px;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+}
+
+.blueCard {
+    border-top: 4px solid #0a6ed1;
+}
+
+.orangeCard {
+    border-top: 4px solid #e9730c;
+}
+
+.redCard {
+    border-top: 4px solid #bb0000;
+}
+
+.greenCard {
+    border-top: 4px solid #107e3e;
+}
+
+.kpiIcon {
+    font-size: 28px;
+    margin-right: 18px;
+}
+
+.blueIcon {
+    color: #0a6ed1;
+}
+
+.orangeIcon {
+    color: #e9730c;
+}
+
+.redIcon {
+    color: #bb0000;
+}
+
+.greenIcon {
+    color: #107e3e;
+}
+
+.kpiTitle {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.kpiValue {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.kpiSubText {
+    color: #5f6b7a;
+}
+
+/* ================================================= */
+/* ANALYTICS */
+/* ================================================= */
+
+.analyticsWrapper {
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.analyticsCard {
+    width: 32%;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    min-height: 280px;
+}
+
+.analyticsTitle {
+    margin-bottom: 18px;
+}
+
+.chartPlaceholder {
+    height: 220px;
+    background: #f7f8fa;
+    border-radius: 8px;
+}
+
+.chartText {
+    color: #5f6b7a;
+}
+
+/* ================================================= */
+/* ALERT PANEL */
+/* ================================================= */
+
+.alertsPanel {
+    width: 20%;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.alertsTitle {
+    margin-bottom: 18px;
+}
+
+.alertItem {
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 14px;
+}
+
+.redAlert {
+    background: #fff1f1;
+}
+
+.orangeAlert {
+    background: #fff7ed;
+}
+
+.alertIconRed {
+    color: #bb0000;
+    margin-right: 10px;
+}
+
+.alertIconOrange {
+    color: #e9730c;
+    margin-right: 10px;
+}
+
+.alertTitle {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.alertSubText {
+    font-size: 13px;
+    color: #5f6b7a;
+}
+
+/* ================================================= */
+/* FILTER PANEL */
+/* ================================================= */
+
+.filterPanel {
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    padding: 22px;
+    margin-bottom: 24px;
+}
+
+.filterTitle {
+    margin-bottom: 18px;
+}
+
+.filterButtonWrapper {
+    margin-top: 18px;
+    gap: 12px;
+}
+
+/* ================================================= */
+/* TABLE */
+/* ================================================= */
+
+.tablePanel {
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+
+.tableHeader {
+    padding: 18px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.candidateTable .sapMListTblHeaderCell {
+    background: #f5f7f9;
+}
+
+.candidateTable .sapMText,
+.candidateTable .sapMLnk {
+    font-size: 14px;
+}
+
+/* ================================================= */
+/* RESPONSIVE */
+/* ================================================= */
+
+
+
+/* dashboard css 2  */
+.dashboardPage {
+    background: #f5f7fa;
+}
+
+.pageWrapper {
+    padding: 1.5rem;
+}
+
+/* ========================= */
+/* TITLE */
+/* ========================= */
+
+.titleSection {
+    margin-bottom: 1.5rem;
+}
+
+.mainTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0a1f44;
+}
+
+.subTitle {
+    color: #6a6d70;
+    margin-top: 0.5rem;
+}
+
+/* ========================= */
+/* KPI */
+/* ========================= */
+
+.kpiWrapper {
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.kpiCard {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 23%;
+    min-width: 250px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.blueCard {
+    border-top: 4px solid #0a6ed1;
+}
+
+.orangeCard {
+    border-top: 4px solid #e9730c;
+}
+
+.redCard {
+    border-top: 4px solid #bb0000;
+}
+
+.greenCard {
+    border-top: 4px solid #107e3e;
+}
+
+.kpiTitle {
+    font-size: 1rem;
+    color: #555;
+}
+
+.kpiValue {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* ========================= */
+/* ANALYTICS */
+/* ========================= */
+
+.analyticsWrapper {
+    gap: 1rem;
+}
+
+.analyticsCard {
+    width: 32%;
+    min-width: 350px;
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.analyticsTitle {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+/* candidate details page */
+.detailsPage {
+    background: #f5f7f9;
+}
+
+/* ================================================= */
+/* HEADER */
+/* ================================================= */
+
+.shellHeaderWrapper {
+    background: #ffffff;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.shellHeader {
+    height: 64px;
+    padding: 0 20px;
+}
+
+.shellTitle {
+    margin-left: 16px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.headerAvatar {
+    margin-left: 18px;
+    margin-right: 10px;
+    background: #d8eefe;
+    color: #0a6ed1;
+}
+
+.userInfoWrapper {
+    margin-right: 12px;
+}
+
+.userName {
+    font-weight: 600;
+}
+
+.userRole {
+    font-size: 12px;
+    color: #5f6b7a;
+}
+
+/* ================================================= */
+/* PAGE */
+/* ================================================= */
+
+.pageWrapper {
+    padding: 20px;
+}
+
+.backLink {
+    margin-bottom: 16px;
+}
+
+.mainTitle {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.subTitle {
+    margin-top: 6px;
+    margin-bottom: 20px;
+    color: #5f6b7a;
+}
+
+/* ================================================= */
+/* OBJECT HEADER */
+/* ================================================= */
+
+.objectHeaderCard {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 22px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.candidateAvatar {
+    width: 72px;
+    height: 72px;
+    font-size: 34px;
+    background: #f3f4f5;
+}
+
+.candidateInfoWrapper {
+    margin-left: 22px;
+}
+
+.candidateName {
+    margin-bottom: 18px;
+}
+
+.candidateMetaWrapper {
+    gap: 36px;
+}
+
+.metaItem {
+    border-right: 1px solid #d9d9d9;
+    padding-right: 28px;
+}
+
+.metaLabel {
+    font-size: 13px;
+    color: #5f6b7a;
+    margin-bottom: 4px;
+}
+
+.metaValue {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.statusBadge {
+    margin-top: 6px;
+}
+
+.actionMenuButton {
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+}
+
+/* ================================================= */
+/* SECTION */
+/* ================================================= */
+
+.sectionCard {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+
+.sectionHeader {
+    margin-bottom: 20px;
+}
+
+.sectionIcon {
+    font-size: 18px;
+    color: #0a6ed1;
+    margin-right: 12px;
+}
+
+.sectionTitle {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* ================================================= */
+/* PANELS */
+/* ================================================= */
+
+.dualPanelWrapper {
+    gap: 20px;
+}
+
+.infoPanel {
+    width: 49%;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 18px;
+}
+
+.panelTitle {
+    margin-bottom: 18px;
+}
+
+.readOnlyGrid {
+    gap: 14px;
+}
+
+.dataRow {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.label {
+    width: 220px;
+    color: #5f6b7a;
+    font-size: 15px;
+}
+
+.value {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.verifiedStatus {
+    margin-left: 12px;
+}
+
+/* ================================================= */
+/* VALIDATION */
+/* ================================================= */
+
+.validationWrapper {
+    gap: 20px;
+}
+
+.validationCard {
+    width: 32%;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 18px;
+}
+
+.successIcon {
+    color: #107e3e;
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.validationContent {
+    margin-top: 18px;
+}
+
+.validationRow {
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+/* ================================================= */
+/* DOCUMENT */
+/* ================================================= */
+
+.documentWrapper {
+    align-items: center;
+}
+
+.documentPreview {
+    width: 220px;
+    height: 180px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    justify-content: center;
+    gap: 18px;
+}
+
+.pdfIcon {
+    font-size: 58px;
+    color: #d20a0a;
+}
+
+/* ================================================= */
+/* INFO */
+/* ================================================= */
+
+.infoStrip {
+    margin-top: 12px;
+}
+
+/* ================================================= */
+/* RESPONSIVE */
+/* ================================================= */
+
+/* welcome page  */
+/* ========================================================== */
+/* GLOBAL PAGE */
+/* ========================================================== */
+
+.welcomePage {
+    background: linear-gradient(135deg, #f4f7fb 0%, #eef3fa 100%);
+}
+
+.welcomeMainContainer {
+    min-height: 100vh;
+}
+
+/* ========================================================== */
+/* HEADER */
+/* ========================================================== */
+
+.welcomeHeader {
+    height: 50px;
+    background: #ffffff;
+    border-bottom: 1px solid #d9dfe7;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.headerLeftSection {
+    gap: 1rem;
+}
+
+.sapLogo {
+    width: 3.2rem;
+    height: 2rem;
+}
+
+.productTitle {
+    font-size: 1.7rem !important;
+    font-weight: 700 !important;
+    color: #081f4d !important;
+}
+
+.headerDivider {
+    width: 1px;
+    height: 1.8rem;
+    background: #d9dfe7;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.moduleButton .sapMBtnInner {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1f2d3d;
+}
+
+.headerRightSection {
+    gap: 0.5rem;
+}
+
+.headerIconBtn .sapMBtnIcon {
+    font-size: 1.1rem;
+    color: #243b53;
+}
+
+/* ========================================================== */
+/* BODY */
+/* ========================================================== */
+
+.welcomeBodyContainer {
+    position: relative;
+    flex: 1;
+    min-height: calc(100vh - 8rem);
+    overflow: hidden;
+    padding: 2rem;
+}
+
+/* ========================================================== */
+/* DECORATIONS */
+/* ========================================================== */
+
+.leftCircle {
+    position: absolute;
+    width: 18rem;
+    height: 18rem;
+    background: rgba(87, 140, 255, 0.08);
+    border-radius: 50%;
+    left: -6rem;
+    bottom: -6rem;
+}
+
+.rightCircle {
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    background: rgba(87, 140, 255, 0.08);
+    border-radius: 50%;
+    right: -3rem;
+    top: 12rem;
+}
+
+.dotPatternTop {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    top: 7rem;
+    left: 10rem;
+    opacity: 0.3;
+    background-image: radial-gradient(#0a6ed1 1px, transparent 1px);
+    background-size: 12px 12px;
+}
+
+.dotPatternBottom {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    bottom: 6rem;
+    right: 10rem;
+    opacity: 0.3;
+    background-image: radial-gradient(#0a6ed1 1px, transparent 1px);
+    background-size: 12px 12px;
+}
+
+/* ========================================================== */
+/* WELCOME CARD */
+/* ========================================================== */
+
+.welcomeCard {
+    width: 44rem;
+    min-height: 38rem;
+    background: #ffffff;
+    border-radius: 1.3rem;
+    box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08);
+    border: 1px solid #edf1f7;
+    padding: 3.5rem 4rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.welcomeIllustration {
+    width: 13rem;
+    margin-bottom: 2rem;
+}
+
+.welcomeTitle {
+    font-size: 2.8rem !important;
+    font-weight: 700 !important;
+    color: #081f4d !important;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.welcomeUnderline {
+    width: 5rem;
+    height: 0.25rem;
+    background: #0a6ed1;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.welcomeDesc {
+    font-size: 1.3rem;
+    color: #52667a;
+    text-align: center;
+    margin-bottom: 0.4rem;
+}
+
+.welcomeDescSub {
+    font-size: 1.3rem;
+    color: #52667a;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* ========================================================== */
+/* BUTTON */
+/* ========================================================== */
+
+.startOnboardingBtn {
+    margin-top: 1rem;
+}
+
+.startOnboardingBtn .sapMBtnInner {
+    width: 20rem;
+    height: 2rem;
+    border-radius: 0.7rem;
+    background: linear-gradient(90deg, #0a6ed1 0%, #0854a0 100%);
+    border: none;
+    box-shadow: 0 8px 20px rgba(10, 110, 209, 0.25);
+}
+
+.startOnboardingBtn .sapMBtnContent {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ffffff;
+    padding-top: 5px;
+}
+
+.startOnboardingBtn .sapMBtnIcon {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.startOnboardingBtn:hover .sapMBtnInner {
+    transform: translateY(-2px);
+    transition: 0.2s ease;
+}
+
+/* ========================================================== */
+/* FOOTER */
+/* ========================================================== */
+
+.welcomeFooter {
+    padding-bottom: 1.5rem;
+    gap: 1.5rem;
+}
+
+.footerText {
+    font-size: 0.9rem;
+    color: #5b6b7a;
+}
+
+.footerLink {
+    font-size: 0.9rem;
+    color: #0a6ed1;
+}
+
+/* ========================================================== */
+/* RESPONSIVE */
+/* ========================================================== */
+
+
+/* REVIEW SUBMIT  */
+
+/* ========================================================= */
+/* GLOBAL PAGE */
+/* ========================================================= */
+
+.reviewPage {
+    background: #f5f7fa;
+}
+
+.sapMPage,
+.sapMPageBgStandard {
+    background: #f5f7fa !important;
+}
+
+/* ========================================================= */
+/* HEADER */
+/* ========================================================= */
+
+.shellHeaderWrapper {
+    background: #ffffff;
+    border-bottom: 1px solid #d9dfe7;
+    padding: 0 1.5rem;
+    height: 4rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.shellHeader {
+    height: 4rem;
+}
+
+.shellTitle {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-left: 1rem;
+    margin-right: 0.2rem;
+}
+
+/* ========================================================= */
+/* PAGE WRAPPER */
+/* ========================================================= */
+
+.pageWrapper {
+    padding: 1.5rem 2rem 2rem 2rem;
+}
+
+/* ========================================================= */
+/* PAGE HEADER */
+/* ========================================================= */
+
+.pageHeaderSection {
+    margin-bottom: 1.8rem;
+}
+
+.mainTitle {
+    font-size: 2.25rem !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    margin-bottom: 0.5rem;
+}
+
+.subTitle {
+    font-size: 1rem;
+    color: #5b6b82;
+}
+
+/* ========================================================= */
+/* WIZARD */
+/* ========================================================= */
+
+.wizardTitle {
+    color: #0057d2;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.wizardWrapper {
+    gap: 0.75rem;
+}
+
+.wizardLine {
+    width: 5rem;
+    height: 2px;
+    background: #cbd5e1;
+    margin-bottom: 1.5rem;
+}
+
+.wizardCompleted {
+    background: #ffffff !important;
+    border: 2px solid #94a3b8;
+    color: #0057d2 !important;
+    width: 2.6rem !important;
+    height: 2.6rem !important;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.wizardActive {
+    background: #0057d2 !important;
+    color: #ffffff !important;
+    width: 2.7rem !important;
+    height: 2.7rem !important;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.wizardText {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+.wizardTextActive {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* ========================================================= */
+/* MAIN PANELS */
+/* ========================================================= */
+
+.mainPanel {
+    margin-bottom: 1.5rem;
+    border-radius: 0.8rem !important;
+    overflow: hidden;
+    border: 1px solid #dce3ea !important;
+    background: #ffffff !important;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.mainPanel .sapMPanelHdr {
+    height: 4rem;
+    background: #ffffff;
+    border-bottom: 1px solid #e5eaf0;
+}
+
+.mainPanel .sapMTB {
+    height: 4rem;
+    padding: 0 1.5rem;
+    background: #ffffff;
+}
+
+.mainPanel .sapMTitle {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+/* ========================================================= */
+/* REVIEW SECTION */
+/* ========================================================= */
+
+.reviewSection {
+    padding: 1.5rem;
+    gap: 2rem;
+}
+
+.sectionTitle {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 1.2rem;
+}
+
+.reviewRow {
+    margin-bottom: 1rem;
+}
+
+.reviewLabel {
+    font-size: 0.92rem;
+    color: #475569;
+    margin-bottom: 0.45rem;
+    font-weight: 600;
+}
+
+.reviewValue {
+    background: #f8fafc;
+    border: 1px solid #edf2f7;
+    border-radius: 0.45rem;
+    padding: 0.9rem 1rem;
+    width: 100%;
+    min-height: 2.9rem;
+    font-size: 0.96rem;
+    color: #0f172a;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.contactVerified {
+    margin-top: 1.7rem;
+}
+
+/* ========================================================= */
+/* DOCUMENT SECTION */
+/* ========================================================= */
+
+.documentSection {
+    padding: 1.5rem;
+}
+
+.tableHeader {
+    background: #ffffff;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #e2e8f0;
+    gap: 1rem;
+}
+
+.tableHeaderText {
+
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #334155;
+}
+
+.tableRow {
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+.tableCell {
+    font-size: 0.95rem;
+    color: #0f172a;
+}
+
+.viewDocumentLink {
+    margin-top: 0.5rem;
+}
+
+/* ========================================================= */
+/* DECLARATION */
+/* ========================================================= */
+
+.declarationSection {
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+.consentTextWrapper {
+    margin-top: 0.1rem;
+}
+
+.consentText {
+    color: #334155;
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+}
+
+/* ========================================================= */
+/* BUTTON SECTION */
+/* ========================================================= */
+
+.buttonSection {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+/* .primaryBtn .sapMBtnInner {
+    background: #0057d2 !important;
+    border: none !important;
+    color: #ffffff !important;
+    height: 3rem !important;
+    padding: 0 1.8rem;
+    border-radius: 0.5rem !important;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+ 
+.primaryBtn .sapMBtnInner:hover {
+    background: #0046a8 !important;
+} */
+
+/* .secondaryBtn .sapMBtnInner {
+    background: #ffffff !important;
+    border: 1px solid #0057d2 !important;
+    color: #0057d2 !important;
+    height: 3rem !important;
+    padding: 0 1.8rem;
+    border-radius: 0.5rem !important;
+    font-weight: 700;
+    font-size: 0.95rem;
+} */
+
+/* .secondaryBtn .sapMBtnInner:hover {
+    background: #f3f8ff !important;
+} */
+
+/* ========================================================= */
+/* FOOTER */
+/* ========================================================= */
+
+.footerSection {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.footerText {
+    color: #64748b;
+    font-size: 0.88rem;
+}
+
+.footerLink {
+    color: #0057d2;
+    font-size: 0.88rem;
+}
+
+/* ========================================================= */
+/* OBJECT STATUS */
+/* ========================================================= */
+
+.sapMObjStatusSuccess .sapMObjStatusText {
+    color: #188038 !important;
+    font-weight: 700;
+}
+
+.sapMObjStatusSuccess .sapUiIcon {
+    color: #188038 !important;
+}
+
+/* ========================================================= */
+/* CHECKBOX */
+/* ========================================================= */
+
+.sapMCbBg.sapMCbMarkChecked:before {
+    color: #0057d2 !important;
+}

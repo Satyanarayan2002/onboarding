@@ -1,0 +1,474 @@
+<mvc:View
+    controllerName="com.wipro.onboarding-fronend.controller.ReviewSubmit"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+>
+    <Page
+        showHeader="false"
+        class="reviewPage"
+    >
+        <content>
+            <!-- ================================================= -->
+            <!-- GLOBAL HEADER -->
+            <!-- ================================================= -->
+
+            <VBox class="shellHeaderWrapper">
+                <HBox
+                    justifyContent="SpaceBetween"
+                    alignItems="Center"
+                    class="shellHeader"
+                >
+                    <HBox alignItems="Center">
+                        <Image
+                            src="img/sap-logo.png"
+                            width="54px"
+                        />
+
+                        <Title
+                            text="Candidate Onboarding"
+                            level="H4"
+                            class="shellTitle"
+                        />
+
+                        <Button
+                            icon="sap-icon://slim-arrow-down"
+                            type="Transparent"
+                        />
+                    </HBox>
+
+                    <HBox>
+                        <Button
+                            icon="sap-icon://sys-help"
+                            type="Transparent"
+                        />
+
+                        <Button
+                            icon="sap-icon://employee"
+                            type="Transparent"
+                        />
+
+                        <Button
+                            icon="sap-icon://slim-arrow-down"
+                            type="Transparent"
+                        />
+                    </HBox>
+                </HBox>
+            </VBox>
+
+            <!-- ================================================= -->
+            <!-- PAGE CONTENT -->
+            <!-- ================================================= -->
+
+            <VBox class="pageWrapper">
+                <!-- PAGE HEADER -->
+
+                <HBox
+                    justifyContent="SpaceBetween"
+                    class="pageHeaderSection"
+                >
+                    <VBox width="55%">
+                        <Title
+                            text="Candidate Onboarding – Review &amp; Submit"
+                            level="H1"
+                            class="mainTitle"
+                        />
+
+                        <Text
+                            text="Please review your details carefully before final submission."
+                            class="subTitle"
+                        />
+                    </VBox>
+
+                    <!-- WIZARD -->
+
+                    <VBox alignItems="Center">
+                        <Title
+                            text="Step 4 of 4 – Review &amp; Submit"
+                            level="H5"
+                            class="wizardTitle"
+                        />
+
+                        <HBox
+                            alignItems="Center"
+                            class="wizardWrapper"
+                        >
+                            <VBox alignItems="Center">
+                                <Avatar
+                                    initials="✓"
+                                    class="wizardCompleted"
+                                />
+                                <Text
+                                    text="Welcome"
+                                    class="wizardText"
+                                />
+                            </VBox>
+
+                            <HBox class="wizardLine" />
+
+                            <VBox alignItems="Center">
+                                <Avatar
+                                    initials="✓"
+                                    class="wizardCompleted"
+                                />
+                                <Text
+                                    text="Personal Details"
+                                    class="wizardText"
+                                />
+                            </VBox>
+
+                            <HBox class="wizardLine" />
+
+                            <VBox alignItems="Center">
+                                <Avatar
+                                    initials="✓"
+                                    class="wizardCompleted"
+                                />
+                                <Text
+                                    text="Verification"
+                                    class="wizardText"
+                                />
+                            </VBox>
+
+                            <HBox class="wizardLine" />
+
+                            <VBox alignItems="Center">
+                                <Avatar
+                                    initials="4"
+                                    class="wizardActive"
+                                />
+                                <Text
+                                    text="Review &amp; Submit"
+                                    class="wizardTextActive"
+                                />
+                            </VBox>
+                        </HBox>
+                    </VBox>
+                </HBox>
+
+                <!-- ================================================= -->
+                <!-- PERSONAL & CONTACT -->
+                <!-- ================================================= -->
+
+                <Panel class="mainPanel">
+                    <headerToolbar>
+                        <Toolbar>
+                            <Title
+                                text="1. Personal &amp; Contact Information"
+                                level="H3"
+                            />
+
+                            <ToolbarSpacer />
+
+                            <ObjectStatus
+                                text="Completed"
+                                state="Success"
+                                icon="sap-icon://status-positive"
+                            />
+                        </Toolbar>
+                    </headerToolbar>
+
+                    <content>
+                        <HBox
+                            justifyContent="SpaceBetween"
+                            class="reviewSection"
+                        >
+                            <!-- LEFT -->
+
+                            <VBox width="48%">
+                                <Title
+                                    text="Personal Information"
+                                    level="H5"
+                                    class="sectionTitle"
+                                />
+
+                                <VBox class="reviewRow">
+                                    <Text
+                                        text="First Name"
+                                        class="reviewLabel"
+                                    />
+                                    <Text
+                                        text="{onb>/firstName}"
+                                        class="reviewValue"
+                                    />
+                                </VBox>
+
+                                <VBox class="reviewRow">
+                                    <Text
+                                        text="Last Name"
+                                        class="reviewLabel"
+                                    />
+                                    <Text
+                                        text="{onb>/lastName}"
+                                        class="reviewValue"
+                                    />
+                                </VBox>
+
+                                <VBox class="reviewRow">
+                                    <Text
+                                        text="Date of Birth"
+                                        class="reviewLabel"
+                                    />
+                                    <Text
+                                        text="{onb>/dob}"
+                                        class="reviewValue"
+                                    />
+                                </VBox>
+
+                                <VBox class="reviewRow">
+                                    <Text
+                                        text="Gender"
+                                        class="reviewLabel"
+                                    />
+                                    <Text
+                                        text="{onb>/gender}"
+                                        class="reviewValue"
+                                    />
+                                </VBox>
+
+                                <VBox class="reviewRow">
+                                    <Text
+                                        text="Nationality"
+                                        class="reviewLabel"
+                                    />
+                                    <Text
+                                        text="{onb>/nationality}"
+                                        class="reviewValue"
+                                    />
+                                </VBox>
+                            </VBox>
+
+                            <!-- RIGHT -->
+
+                            <VBox width="46%">
+                                <Title
+                                    text="Contact Information"
+                                    level="H5"
+                                    class="sectionTitle"
+                                />
+
+                                <VBox class="reviewRow">
+                                    <HBox
+                                        justifyContent="SpaceBetween"
+                                        width="100%"
+                                    >
+                                        <VBox>
+                                            <Text
+                                                text="Email Address"
+                                                class="reviewLabel"
+                                            />
+
+                                            <Text
+                                                text="{onb>/email}"
+                                                class="reviewValue"
+                                            />
+                                        </VBox>
+
+                                        <ObjectStatus
+                                            text="Verified"
+                                            state="Success"
+                                            icon="sap-icon://status-positive"
+                                        />
+                                    </HBox>
+                                </VBox>
+
+                                <VBox class="reviewRow">
+                                    <Text
+                                        text="Mobile Number"
+                                        class="reviewLabel"
+                                    />
+
+                                    <Text
+                                        text="{onb>/mobile}"
+                                        class="reviewValue"
+                                    />
+                                </VBox>
+                            </VBox>
+                        </HBox>
+                    </content>
+                </Panel>
+
+                <!-- ================================================= -->
+                <!-- DOCUMENT VERIFICATION -->
+                <!-- ================================================= -->
+
+                <Panel class="mainPanel">
+                    <headerToolbar>
+                        <Toolbar>
+                            <Title
+                                text="2. Identity Document Verification"
+                                level="H3"
+                            />
+
+                            <ToolbarSpacer />
+
+                            <ObjectStatus
+                                text="Completed"
+                                state="Success"
+                                icon="sap-icon://status-positive"
+                            />
+                        </Toolbar>
+                    </headerToolbar>
+
+                    <content>
+                        <VBox class="documentSection">
+                            <!-- TABLE HEADER -->
+
+                            <HBox class="tableHeader">
+                                <Text
+                                    text="Document Type"
+                                    class="tableHeaderText"
+                                />
+
+                                <Text
+                                    text="Document Number (Masked)"
+                                    class="tableHeaderText"
+                                />
+
+                                <Text
+                                    text="File Uploaded"
+                                    class="tableHeaderText"
+                                />
+
+                                <Text
+                                    text="Uploaded On"
+                                    class="tableHeaderText"
+                                />
+
+                                <Text
+                                    text="Verification Status"
+                                    class="tableHeaderText"
+                                />
+                            </HBox>
+
+                            <!-- TABLE ROW -->
+
+                            <HBox class="tableRow">
+                                <Text
+                                    text="PAN"
+                                    class="tableCell"
+                                />
+
+                                <Text
+                                    text="{onb>/panNumber}"
+                                    class="tableCell"
+                                />
+
+                                <Link
+                                    text="{onb>/fileName}"
+                                    class="tableCell"
+                                />
+
+                                <Text
+                                    text="{onb>/uploadedOn}"
+                                    class="tableCell"
+                                />
+
+                                <ObjectStatus
+                                    text="Document Verified Successfully"
+                                    state="Success"
+                                    icon="sap-icon://status-positive"
+                                />
+                            </HBox>
+
+                            <Link
+                                text="View Document"
+                                href="{onb>/fileName}"
+                                icon="sap-icon://show"
+                                class="viewDocumentLink"
+                            />
+                        </VBox>
+                    </content>
+                </Panel>
+
+                <!-- ================================================= -->
+                <!-- DECLARATION -->
+                <!-- ================================================= -->
+
+                <Panel class="mainPanel">
+                    <headerToolbar>
+                        <Toolbar>
+                            <Title
+                                text="3. Declaration &amp; Consent"
+                                level="H3"
+                            />
+                        </Toolbar>
+                    </headerToolbar>
+
+                    <content>
+                        <HBox
+                            alignItems="Start"
+                            class="declarationSection"
+                        >
+                            <CheckBox
+                                selected="{viewModel>/consentAccepted}"
+                                select=".onConsentSelect"
+                            />
+
+                            <VBox class="consentTextWrapper">
+                                <Text
+                                    text="I confirm that the information provided above is accurate, complete, and matches my official identity documents."
+                                    class="consentText"
+                                />
+
+                                <Text
+                                    text="I understand that providing incorrect information may delay or cancel my onboarding."
+                                    class="consentText"
+                                />
+                            </VBox>
+                        </HBox>
+                    </content>
+                </Panel>
+
+                <!-- ================================================= -->
+                <!-- ACTION BUTTONS -->
+                <!-- ================================================= -->
+
+                <HBox
+                    justifyContent="End"
+                    class="buttonSection"
+                >
+                    <!-- <Button
+                        text="Back"
+                        type="Transparent"
+                        press=".onBack"
+                    /> -->
+
+                    <Button
+                        text="Submit"
+                        type="Emphasized"
+                        enabled="{viewModel>/consentAccepted}"
+                        press=".onSubmit"
+                        class="primaryBtn"
+                    />
+                </HBox>
+
+                <!-- FOOTER -->
+
+                <HBox
+                    justifyContent="Center"
+                    class="footerSection"
+                >
+                    <Text
+                        text="© 2025 SAP SE or an SAP affiliate company. All rights reserved."
+                        class="footerText"
+                    />
+
+                    <Link
+                        text="Privacy"
+                        class="footerLink"
+                    />
+                    <Link
+                        text="Terms of Use"
+                        class="footerLink"
+                    />
+                    <Link
+                        text="Cookie Preferences"
+                        class="footerLink"
+                    />
+                </HBox>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
